@@ -222,7 +222,7 @@
   <!-- NAV -->
   <nav class="navbar" role="navigation" aria-label="Main navigation">
     <a href="../index.html" class="logo">
-      <span class="logo-icon">🎵</span>
+      <span class="logo-icon" style="display:inline-flex; align-items:center; justify-content:center; width:20px; height:20px;"><i data-lucide="music" style="width:16px; height:16px; color:var(--accent-gold);"></i></span>
       <span class="text-gold">WebHarmonium</span>
     </a>
     <nav style="margin-left:auto;display:flex;gap:8px;align-items:center;">
@@ -235,7 +235,7 @@
 
   <!-- HERO -->
   <div class="raag-hero">
-    <div class="raag-badge">🎵 Indian Classical Raag</div>
+    <div class="raag-badge" style="display:inline-flex; align-items:center; gap:4px;"><i data-lucide="music" style="width:12px; height:12px;"></i> Indian Classical Raag</div>
     <h1>Raag Todi <span class="text-gold">on Harmonium</span></h1>
     <p class="lead">One of the most complex and emotionally powerful raags. Uses three komal notes and tivra Ma. Master-level raag requiring deep practice.</p>
     <!-- Notes pills -->
@@ -251,9 +251,9 @@
     </div>
     <!-- Meta row -->
     <div class="raag-meta-row">
-      <div class="meta-pill">🕐 <strong>Morning (9 AM – 12 PM)</strong></div>
-      <div class="meta-pill">🎭 <strong>Serious, Intense, Emotional</strong></div>
-      <div class="meta-pill">🏷️ Thaat: <strong>Todi</strong></div>
+      <div class="meta-pill" style="display:inline-flex; align-items:center; gap:6px;"><i data-lucide="clock" style="width:14px; height:14px; color:var(--accent-gold);"></i> <strong>Morning (9 AM – 12 PM)</strong></div>
+      <div class="meta-pill" style="display:inline-flex; align-items:center; gap:6px;"><i data-lucide="smile" style="width:14px; height:14px; color:var(--accent-gold);"></i> <strong>Serious, Intense, Emotional</strong></div>
+      <div class="meta-pill" style="display:inline-flex; align-items:center; gap:6px;"><i data-lucide="book-open" style="width:14px; height:14px; color:var(--accent-gold);"></i> Thaat: <strong>Todi</strong></div>
       <div class="meta-pill"><span class="difficulty-tag diff-advanced">Advanced</span></div>
     </div>
   </div>
@@ -310,18 +310,18 @@
     <h2 class="section-title">🎼 Notes in Raag Todi</h2>
     <p style="color:var(--text-secondary);margin-bottom:20px;">The Raag Todi uses the following sargam notes. Golden keys on the harmonium above are highlighted for you to follow along:</p>
     <div style="display:flex;flex-wrap:wrap;gap:10px;margin-bottom:32px;">
-      <a href="../notes/c.html" class="raag-chip">🎹 Sa (C)</a>
-<a href="../notes/db.html" class="raag-chip">🎹 Re♭ (Db)</a>
-<a href="../notes/eb.html" class="raag-chip">🎹 Ga♭ (Eb)</a>
-<a href="../notes/gb.html" class="raag-chip">🎹 Ma# (Gb)</a>
-<a href="../notes/g.html" class="raag-chip">🎹 Pa (G)</a>
-<a href="../notes/ab.html" class="raag-chip">🎹 Dha♭ (Ab)</a>
-<a href="../notes/b.html" class="raag-chip">🎹 Ni (B)</a>
+      <a href="../notes/c.html" class="raag-chip" style="display:inline-flex; align-items:center; gap:6px;"><i data-lucide="music" style="width:12px; height:12px;"></i>Sa (C)</a>
+<a href="../notes/db.html" class="raag-chip" style="display:inline-flex; align-items:center; gap:6px;"><i data-lucide="music" style="width:12px; height:12px;"></i>Re♭ (Db)</a>
+<a href="../notes/eb.html" class="raag-chip" style="display:inline-flex; align-items:center; gap:6px;"><i data-lucide="music" style="width:12px; height:12px;"></i>Ga♭ (Eb)</a>
+<a href="../notes/gb.html" class="raag-chip" style="display:inline-flex; align-items:center; gap:6px;"><i data-lucide="music" style="width:12px; height:12px;"></i>Ma# (Gb)</a>
+<a href="../notes/g.html" class="raag-chip" style="display:inline-flex; align-items:center; gap:6px;"><i data-lucide="music" style="width:12px; height:12px;"></i>Pa (G)</a>
+<a href="../notes/ab.html" class="raag-chip" style="display:inline-flex; align-items:center; gap:6px;"><i data-lucide="music" style="width:12px; height:12px;"></i>Dha♭ (Ab)</a>
+<a href="../notes/b.html" class="raag-chip" style="display:inline-flex; align-items:center; gap:6px;"><i data-lucide="music" style="width:12px; height:12px;"></i>Ni (B)</a>
 
     </div>
 
     <div style="margin-top:48px;text-align:center;">
-      <a href="../index.html#harmonium" class="btn btn-gold btn-lg">🎵 Play Full Harmonium</a>
+      <a href="../index.html#harmonium" class="btn btn-gold btn-lg" style="display:inline-flex; align-items:center; justify-content:center; gap:8px;"><i data-lucide="play-circle" style="width:18px; height:18px;"></i> Play Full Harmonium</a>
     </div>
   </div>
 
@@ -331,6 +331,9 @@
        <a href="../terms.html">Terms</a></p>
     <p style="margin-top:8px;">Free Virtual Harmonium — Learn Indian Classical Music Online</p>
   </footer>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
 
   <!-- MVC Scripts -->
   <script src="../js/engine/AudioEngine.js"></script>
@@ -391,6 +394,10 @@
       document.getElementById('playAvaroh')?.addEventListener('click', () => {
         playSequence(AVAROH_SARGAM, document.getElementById('playAvaroh'));
       });
+
+      if (typeof lucide !== 'undefined') {
+        lucide.createIcons();
+      }
     });
 
     /**

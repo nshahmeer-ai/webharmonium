@@ -42,6 +42,10 @@ class AIController {
 
     if (this._currentData) {
       this.renderResults();
+    } else {
+      if (typeof lucide !== 'undefined') {
+        lucide.createIcons();
+      }
     }
   }
 
@@ -114,6 +118,10 @@ class AIController {
         this.renderResults();
       });
     });
+
+    if (typeof lucide !== 'undefined') {
+      lucide.createIcons();
+    }
   }
 
   /** Handles the note generation pipeline */
@@ -129,6 +137,9 @@ class AIController {
     const resultsContainer = this._container.querySelector('#aiResultsContainer');
     if (resultsContainer) {
       resultsContainer.innerHTML = this._aiView.renderLoading();
+      if (typeof lucide !== 'undefined') {
+        lucide.createIcons();
+      }
     }
 
     try {
@@ -143,6 +154,10 @@ class AIController {
         const btnRetry = resultsContainer.querySelector('#btnRetryAI');
         if (btnRetry) {
           btnRetry.addEventListener('click', () => this.handleGeneration());
+        }
+
+        if (typeof lucide !== 'undefined') {
+          lucide.createIcons();
         }
       }
     }

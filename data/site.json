@@ -12,62 +12,62 @@
       {
         "label": "Home",
         "href": "index.html",
-        "icon": "\ud83c\udfe0"
+        "icon": "home"
       },
       {
         "label": "Play",
         "href": "#harmonium",
-        "icon": "\ud83c\udfb5"
+        "icon": "play-circle"
       },
       {
         "label": "Learn",
         "href": "#articles",
-        "icon": "\ud83d\udcda"
+        "icon": "book-open"
       },
       {
         "label": "AI Assistant",
         "href": "#ai-assistant-section",
-        "icon": "\u2728"
+        "icon": "sparkles"
       },
       {
         "label": "About",
         "href": "about.html",
-        "icon": "\u2139\ufe0f"
+        "icon": "info"
       },
       {
         "label": "Contact",
         "href": "contact.html",
-        "icon": "\u2709\ufe0f"
+        "icon": "mail"
       }
     ],
     "cta": {
-      "label": "\u25b6 Play Now",
+      "label": "Play Now",
       "href": "#harmonium"
     },
     "mobileExtra": [
       {
-        "label": "\ud83d\udd12 Privacy Policy",
+        "label": "Privacy Policy",
         "href": "privacy.html"
       },
       {
-        "label": "\ud83d\udcdc Terms",
+        "label": "Terms",
         "href": "terms.html"
       }
     ]
   },
   "hero": {
-    "badge": "\ud83c\udfb5 South Asia's #1 Free Harmonium Platform",
+    "badge": "South Asia's #1 Free Harmonium Platform",
     "h1Line1": "Play & Learn Harmonium",
     "h1Gold": "Online for Free",
     "lead": "Experience a beautifully crafted virtual harmonium with authentic multi-reed sound synthesis. Learn Sa Re Ga Ma, master Raags, and explore Indian classical music \u2014 no downloads required.",
     "cta": [
       {
-        "label": "\ud83c\udfb5 Play Now \u2014 Free",
+        "label": "Play Now \u2014 Free",
         "href": "#harmonium",
         "style": "btn-gold btn-lg"
       },
       {
-        "label": "\ud83d\udcda Start Learning",
+        "label": "Start Learning",
         "href": "#articles",
         "style": "btn-outline btn-lg"
       }
@@ -98,38 +98,38 @@
   ],
   "features": [
     {
-      "icon": "\ud83c\udfb5",
+      "icon": "music",
       "title": "Authentic Reed Sound",
       "desc": "Multi-reed synthesis engine replicates the warm, resonant tone of a real harmonium using the Web Audio API."
     },
     {
-      "icon": "\u2328\ufe0f",
+      "icon": "keyboard",
       "title": "Play 3 Ways",
       "desc": "Use your computer keyboard, click with your mouse, or tap on your phone. Fully responsive for any device."
     },
     {
-      "icon": "\u23fa",
+      "icon": "disc",
       "title": "Record & Download",
       "desc": "Record your practice sessions and download them as audio files to share or review your progress."
     },
     {
-      "icon": "\ud83c\udfbc",
+      "icon": "tag",
       "title": "Sa Re Ga Ma Labels",
       "desc": "Every key shows its Sargam notation. See Sa, Re, Ga, Ma, Pa, Dha, Ni clearly displayed as you play."
     },
     {
-      "icon": "\ud83c\udf9a\ufe0f",
+      "icon": "sliders",
       "title": "Reed Stops Control",
       "desc": "Activate Bass, Male, or Treble reed stops to create your perfect harmonium tone and timbre."
     },
     {
-      "icon": "\ud83d\udcf1",
+      "icon": "smartphone",
       "title": "Mobile Optimized",
       "desc": "Multi-touch support lets you play chords on your smartphone. Perfectly sized for touch screens."
     }
   ],
   "harmonium": {
-    "brand": "\ud83c\udfb5 WebHarmonium",
+    "brand": "WebHarmonium",
     "stops": [
       {
         "id": "bass",
@@ -162,51 +162,51 @@
   },
   "raagChips": [
     {
-      "label": "\ud83c\udfb5 Raag Yaman",
+      "label": "Raag Yaman",
       "href": "raags/raag-yaman.html"
     },
     {
-      "label": "\ud83c\udfb5 Raag Bhairav",
+      "label": "Raag Bhairav",
       "href": "raags/raag-bhairav.html"
     },
     {
-      "label": "\ud83c\udfb5 Raag Kafi",
+      "label": "Raag Kafi",
       "href": "raags/raag-kafi.html"
     },
     {
-      "label": "\ud83c\udfb5 Raag Bhopali",
+      "label": "Raag Bhopali",
       "href": "raags/raag-bhopali.html"
     },
     {
-      "label": "\ud83c\udfb5 Raag Durga",
+      "label": "Raag Durga",
       "href": "raags/raag-durga.html"
     },
     {
-      "label": "\ud83c\udfb9 C Major Scale",
+      "label": "C Major Scale",
       "href": "scales/c-major-scale.html"
     },
     {
-      "label": "\ud83c\udfb9 D Major Scale",
+      "label": "D Major Scale",
       "href": "scales/d-major-scale.html"
     },
     {
-      "label": "\ud83c\udfb9 G Major Scale",
+      "label": "G Major Scale",
       "href": "scales/g-major-scale.html"
     },
     {
-      "label": "\ud83c\udfb9 A Minor Scale",
+      "label": "A Minor Scale",
       "href": "scales/a-minor-scale.html"
     },
     {
-      "label": "\ud83c\udfb5 Pentatonic Scale",
+      "label": "Pentatonic Scale",
       "href": "scales/pentatonic-scale.html"
     },
     {
-      "label": "\ud83c\udfb5 Raag Marwa",
+      "label": "Raag Marwa",
       "href": "raags/raag-marwa.html"
     },
     {
-      "label": "\ud83c\udfb5 Raag Todi",
+      "label": "Raag Todi",
       "href": "raags/raag-todi.html"
     }
   ],
@@ -215,7 +215,7 @@
     "headingGold": "Harmonium Journey Today",
     "body": "Free forever. No sign-up. No downloads. Just click Play and begin learning the beautiful sounds of the harmonium.",
     "button": {
-      "label": "\ud83c\udfb5 Play Virtual Harmonium \u2014 Free",
+      "label": "Play Virtual Harmonium \u2014 Free",
       "href": "#harmonium",
       "style": "btn-cta btn-lg"
     }

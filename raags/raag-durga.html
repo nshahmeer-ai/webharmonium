@@ -222,7 +222,7 @@
   <!-- NAV -->
   <nav class="navbar" role="navigation" aria-label="Main navigation">
     <a href="../index.html" class="logo">
-      <span class="logo-icon">🎵</span>
+      <span class="logo-icon" style="display:inline-flex; align-items:center; justify-content:center; width:20px; height:20px;"><i data-lucide="music" style="width:16px; height:16px; color:var(--accent-gold);"></i></span>
       <span class="text-gold">WebHarmonium</span>
     </a>
     <nav style="margin-left:auto;display:flex;gap:8px;align-items:center;">
@@ -235,7 +235,7 @@
 
   <!-- HERO -->
   <div class="raag-hero">
-    <div class="raag-badge">🎵 Indian Classical Raag</div>
+    <div class="raag-badge" style="display:inline-flex; align-items:center; gap:4px;"><i data-lucide="music" style="width:12px; height:12px;"></i> Indian Classical Raag</div>
     <h1>Raag Durga <span class="text-gold">on Harmonium</span></h1>
     <p class="lead">Another pentatonic raag (Audhav jati). Named after Goddess Durga, it has a devotional character. Omits Ga and Ni.</p>
     <!-- Notes pills -->
@@ -249,9 +249,9 @@
     </div>
     <!-- Meta row -->
     <div class="raag-meta-row">
-      <div class="meta-pill">🕐 <strong>Evening</strong></div>
-      <div class="meta-pill">🎭 <strong>Devotional, Joyful</strong></div>
-      <div class="meta-pill">🏷️ Thaat: <strong>Bilawal</strong></div>
+      <div class="meta-pill" style="display:inline-flex; align-items:center; gap:6px;"><i data-lucide="clock" style="width:14px; height:14px; color:var(--accent-gold);"></i> <strong>Evening</strong></div>
+      <div class="meta-pill" style="display:inline-flex; align-items:center; gap:6px;"><i data-lucide="smile" style="width:14px; height:14px; color:var(--accent-gold);"></i> <strong>Devotional, Joyful</strong></div>
+      <div class="meta-pill" style="display:inline-flex; align-items:center; gap:6px;"><i data-lucide="book-open" style="width:14px; height:14px; color:var(--accent-gold);"></i> Thaat: <strong>Bilawal</strong></div>
       <div class="meta-pill"><span class="difficulty-tag diff-beginner">Beginner</span></div>
     </div>
   </div>
@@ -308,16 +308,16 @@
     <h2 class="section-title">🎼 Notes in Raag Durga</h2>
     <p style="color:var(--text-secondary);margin-bottom:20px;">The Raag Durga uses the following sargam notes. Golden keys on the harmonium above are highlighted for you to follow along:</p>
     <div style="display:flex;flex-wrap:wrap;gap:10px;margin-bottom:32px;">
-      <a href="../notes/c.html" class="raag-chip">🎹 Sa (C)</a>
-<a href="../notes/d.html" class="raag-chip">🎹 Re (D)</a>
-<a href="../notes/f.html" class="raag-chip">🎹 Ma (F)</a>
-<a href="../notes/g.html" class="raag-chip">🎹 Pa (G)</a>
-<a href="../notes/a.html" class="raag-chip">🎹 Dha (A)</a>
+      <a href="../notes/c.html" class="raag-chip" style="display:inline-flex; align-items:center; gap:6px;"><i data-lucide="music" style="width:12px; height:12px;"></i>Sa (C)</a>
+<a href="../notes/d.html" class="raag-chip" style="display:inline-flex; align-items:center; gap:6px;"><i data-lucide="music" style="width:12px; height:12px;"></i>Re (D)</a>
+<a href="../notes/f.html" class="raag-chip" style="display:inline-flex; align-items:center; gap:6px;"><i data-lucide="music" style="width:12px; height:12px;"></i>Ma (F)</a>
+<a href="../notes/g.html" class="raag-chip" style="display:inline-flex; align-items:center; gap:6px;"><i data-lucide="music" style="width:12px; height:12px;"></i>Pa (G)</a>
+<a href="../notes/a.html" class="raag-chip" style="display:inline-flex; align-items:center; gap:6px;"><i data-lucide="music" style="width:12px; height:12px;"></i>Dha (A)</a>
 
     </div>
 
     <div style="margin-top:48px;text-align:center;">
-      <a href="../index.html#harmonium" class="btn btn-gold btn-lg">🎵 Play Full Harmonium</a>
+      <a href="../index.html#harmonium" class="btn btn-gold btn-lg" style="display:inline-flex; align-items:center; justify-content:center; gap:8px;"><i data-lucide="play-circle" style="width:18px; height:18px;"></i> Play Full Harmonium</a>
     </div>
   </div>
 
@@ -327,6 +327,9 @@
        <a href="../terms.html">Terms</a></p>
     <p style="margin-top:8px;">Free Virtual Harmonium — Learn Indian Classical Music Online</p>
   </footer>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
 
   <!-- MVC Scripts -->
   <script src="../js/engine/AudioEngine.js"></script>
@@ -387,6 +390,10 @@
       document.getElementById('playAvaroh')?.addEventListener('click', () => {
         playSequence(AVAROH_SARGAM, document.getElementById('playAvaroh'));
       });
+
+      if (typeof lucide !== 'undefined') {
+        lucide.createIcons();
+      }
     });
 
     /**

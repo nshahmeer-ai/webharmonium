@@ -10,7 +10,7 @@ class FeaturesView {
   render(features) {
     const cards = features.map(f => /* html */`
       <div class="card feature-card">
-        <span class="icon">${f.icon}</span>
+        <span class="icon" style="display:flex; align-items:center; justify-content:center; height:36px; margin-bottom:16px;"><i data-lucide="${f.icon}" style="width:28px;height:28px;color:var(--accent-gold);"></i></span>
         <h3>${f.title}</h3>
         <p>${f.desc}</p>
       </div>

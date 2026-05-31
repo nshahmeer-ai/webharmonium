@@ -15,7 +15,7 @@ class NavView {
     ).join('');
 
     const mobileLinks = navConfig.links.map(l =>
-      `<a href="${l.href}">${l.icon} ${l.label}</a>`
+      `<a href="${l.href}"><i data-lucide="${l.icon}" style="width: 16px; height: 16px; vertical-align: middle; margin-right: 6px;"></i> ${l.label}</a>`
     ).join('');
 
     const mobileExtra = (navConfig.mobileExtra ?? []).map(l =>
@@ -25,7 +25,7 @@ class NavView {
     return /* html */`
       <header class="navbar" role="banner">
         <a href="index.html" class="logo" aria-label="${siteConfig.name} Home">
-          <div class="logo-icon" aria-hidden="true">🎵</div>
+          <div class="logo-icon" aria-hidden="true" style="display: flex; align-items: center; justify-content: center;"><i data-lucide="music" style="width: 18px; height: 18px; color: var(--accent-gold);"></i></div>
           <span class="text-gold">Web</span><span style="color:var(--text-primary)">Harmonium</span>
         </a>
         <nav aria-label="Main navigation">

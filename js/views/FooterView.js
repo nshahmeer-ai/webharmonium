@@ -27,7 +27,7 @@ class FooterView {
         <div class="footer-grid">
           <div class="footer-brand">
             <a href="index.html" class="logo" style="display:inline-flex;margin-bottom:4px">
-              <div class="logo-icon" style="width:30px;height:30px;font-size:15px">🎵</div>
+              <div class="logo-icon" style="width:30px;height:30px;display:flex;align-items:center;justify-content:center;"><i data-lucide="music" style="width:14px;height:14px;color:var(--accent-gold);"></i></div>
               <span class="text-gold" style="font-size:18px;font-family:var(--font-heading);font-weight:800">Web</span>
               <span style="color:var(--text-primary);font-size:18px;font-family:var(--font-heading);font-weight:800">Harmonium</span>
             </a>

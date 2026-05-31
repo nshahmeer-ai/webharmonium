@@ -222,7 +222,7 @@
   <!-- NAV -->
   <nav class="navbar" role="navigation" aria-label="Main navigation">
     <a href="../index.html" class="logo">
-      <span class="logo-icon">🎵</span>
+      <span class="logo-icon" style="display:inline-flex; align-items:center; justify-content:center; width:20px; height:20px;"><i data-lucide="music" style="width:16px; height:16px; color:var(--accent-gold);"></i></span>
       <span class="text-gold">WebHarmonium</span>
     </a>
     <nav style="margin-left:auto;display:flex;gap:8px;align-items:center;">
@@ -235,7 +235,7 @@
 
   <!-- HERO -->
   <div class="raag-hero">
-    <div class="raag-badge">🎵 Indian Classical Raag</div>
+    <div class="raag-badge" style="display:inline-flex; align-items:center; gap:4px;"><i data-lucide="music" style="width:12px; height:12px;"></i> Indian Classical Raag</div>
     <h1>{{RAAG_NAME}} <span class="text-gold">on Harmonium</span></h1>
     <p class="lead">{{DESCRIPTION}}</p>
     <!-- Notes pills -->
@@ -244,9 +244,9 @@
     </div>
     <!-- Meta row -->
     <div class="raag-meta-row">
-      <div class="meta-pill">🕐 <strong>{{TIME}}</strong></div>
-      <div class="meta-pill">🎭 <strong>{{MOOD}}</strong></div>
-      <div class="meta-pill">🏷️ Thaat: <strong>{{THAAT}}</strong></div>
+      <div class="meta-pill" style="display:inline-flex; align-items:center; gap:6px;"><i data-lucide="clock" style="width:14px; height:14px; color:var(--accent-gold);"></i> <strong>{{TIME}}</strong></div>
+      <div class="meta-pill" style="display:inline-flex; align-items:center; gap:6px;"><i data-lucide="smile" style="width:14px; height:14px; color:var(--accent-gold);"></i> <strong>{{MOOD}}</strong></div>
+      <div class="meta-pill" style="display:inline-flex; align-items:center; gap:6px;"><i data-lucide="book-open" style="width:14px; height:14px; color:var(--accent-gold);"></i> Thaat: <strong>{{THAAT}}</strong></div>
       <div class="meta-pill">{{DIFFICULTY_TAG}}</div>
     </div>
   </div>
@@ -307,7 +307,7 @@
     </div>
 
     <div style="margin-top:48px;text-align:center;">
-      <a href="../index.html#harmonium" class="btn btn-gold btn-lg">🎵 Play Full Harmonium</a>
+      <a href="../index.html#harmonium" class="btn btn-gold btn-lg" style="display:inline-flex; align-items:center; justify-content:center; gap:8px;"><i data-lucide="play-circle" style="width:18px; height:18px;"></i> Play Full Harmonium</a>
     </div>
   </div>
 
@@ -317,6 +317,9 @@
        <a href="../terms.html">Terms</a></p>
     <p style="margin-top:8px;">Free Virtual Harmonium — Learn Indian Classical Music Online</p>
   </footer>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
 
   <!-- MVC Scripts -->
   <script src="../js/engine/AudioEngine.js"></script>
@@ -377,6 +380,10 @@
       document.getElementById('playAvaroh')?.addEventListener('click', () => {
         playSequence(AVAROH_SARGAM, document.getElementById('playAvaroh'));
       });
+
+      if (typeof lucide !== 'undefined') {
+        lucide.createIcons();
+      }
     });
 
     /**

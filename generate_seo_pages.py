@@ -112,7 +112,7 @@ def main():
         raag_chips_html = ""
         if used_raags:
             for r in used_raags:
-                raag_chips_html += f'<a href="../raags/{r["slug"]}.html" class="raag-chip">🎵 {r["name"]}</a>\n'
+                raag_chips_html += f'<a href="../raags/{r["slug"]}.html" class="raag-chip" style="display:inline-flex; align-items:center; gap:6px;"><i data-lucide="music" style="width:12px; height:12px;"></i>{r["name"]}</a>\n'
         else:
             raag_chips_html = '<span style="color:var(--text-secondary);">No specific raags indexed.</span>'
 
@@ -235,7 +235,7 @@ def main():
         for n in notes:
             clean_n = n.replace("Ṡ", "S").strip()
             w_note = sargam_to_western.get(clean_n, "C")
-            note_chips_html += f'<a href="../notes/{w_note.lower()}.html" class="raag-chip">🎹 {n} ({w_note})</a>\n'
+            note_chips_html += f'<a href="../notes/{w_note.lower()}.html" class="raag-chip" style="display:inline-flex; align-items:center; gap:6px;"><i data-lucide="music" style="width:12px; height:12px;"></i>{n} ({w_note})</a>\n'
 
         # Difficulty tag class
         diff_class = "diff-beginner"

@@ -45,6 +45,10 @@ document.addEventListener('DOMContentLoaded', async () => {
       }, { passive: true });
     }
 
+    if (typeof lucide !== 'undefined') {
+      lucide.createIcons();
+    }
+
   } catch(err) {
     console.error('[WebHarmonium] Inner page load error:', err);
   }

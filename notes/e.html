@@ -179,7 +179,7 @@
   <!-- NAV (simplified for inner pages) -->
   <nav class="navbar" role="navigation" aria-label="Main navigation">
     <a href="../index.html" class="logo">
-      <span class="logo-icon">🎵</span>
+      <span class="logo-icon" style="display:inline-flex; align-items:center; justify-content:center; width:20px; height:20px;"><i data-lucide="music" style="width:16px; height:16px; color:var(--accent-gold);"></i></span>
       <span class="text-gold">WebHarmonium</span>
     </a>
     <nav style="margin-left:auto;display:flex;gap:8px;align-items:center;">
@@ -192,10 +192,10 @@
 
   <!-- HERO -->
   <div class="note-hero">
-    <div class="note-badge">🎵 Harmonium Note</div>
+    <div class="note-badge" style="display:inline-flex; align-items:center; gap:4px;"><i data-lucide="music" style="width:12px; height:12px;"></i> Harmonium Note</div>
     <h1>E <span class="text-gold">(Ga)</span></h1>
     <p class="lead">Shuddha Gandhar — the natural third. Used in Bilawal Thaat raags.</p>
-    <div class="freq-badge">♪ Frequency: 329.63 Hz (C4)</div>
+    <div class="freq-badge" style="display:inline-flex; align-items:center; gap:6px;"><i data-lucide="activity" style="width:14px; height:14px; color:var(--cta);"></i> Frequency: 329.63 Hz (C4)</div>
   </div>
 
   <!-- HARMONIUM (auto-highlights this note) -->
@@ -245,10 +245,10 @@
     <h2 class="section-title">🎼 Raags That Use E</h2>
     <p style="color:var(--text-secondary);margin-bottom:16px;">The following raags in Indian classical music include the Ga (E) note:</p>
     <div class="raags-using">
-      <a href="../raags/raag-yaman.html" class="raag-chip">🎵 Raag Yaman</a>
-<a href="../raags/raag-bhairav.html" class="raag-chip">🎵 Raag Bhairav</a>
-<a href="../raags/raag-bhopali.html" class="raag-chip">🎵 Raag Bhopali</a>
-<a href="../raags/raag-marwa.html" class="raag-chip">🎵 Raag Marwa</a>
+      <a href="../raags/raag-yaman.html" class="raag-chip" style="display:inline-flex; align-items:center; gap:6px;"><i data-lucide="music" style="width:12px; height:12px;"></i>Raag Yaman</a>
+<a href="../raags/raag-bhairav.html" class="raag-chip" style="display:inline-flex; align-items:center; gap:6px;"><i data-lucide="music" style="width:12px; height:12px;"></i>Raag Bhairav</a>
+<a href="../raags/raag-bhopali.html" class="raag-chip" style="display:inline-flex; align-items:center; gap:6px;"><i data-lucide="music" style="width:12px; height:12px;"></i>Raag Bhopali</a>
+<a href="../raags/raag-marwa.html" class="raag-chip" style="display:inline-flex; align-items:center; gap:6px;"><i data-lucide="music" style="width:12px; height:12px;"></i>Raag Marwa</a>
 
     </div>
 
@@ -256,7 +256,7 @@
     <p>In Indian classical music (Hindustani and Carnatic), Ga is the standard designation for this frequency range. As a Shuddha (Natural) note, it plays a vital role in constructing various raags. Western music refers to this note as E.</p>
 
     <div style="margin-top:48px;text-align:center;">
-      <a href="../index.html#harmonium" class="btn btn-gold btn-lg">🎵 Play Full Harmonium</a>
+      <a href="../index.html#harmonium" class="btn btn-gold btn-lg" style="display:inline-flex; align-items:center; justify-content:center; gap:8px;"><i data-lucide="play-circle" style="width:18px; height:18px;"></i> Play Full Harmonium</a>
     </div>
   </div>
 
@@ -266,6 +266,9 @@
        <a href="../terms.html">Terms</a></p>
     <p style="margin-top:8px;">Free Virtual Harmonium — Learn Indian Classical Music Online</p>
   </footer>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
 
   <!-- MVC Scripts (relative paths for sub-directory) -->
   <script src="../js/engine/AudioEngine.js"></script>
@@ -313,6 +316,10 @@
         harmoniumView, audioEngine, noteModel, appModel.harmonium
       );
       harmoniumCtrl.bindEvents();
+
+      if (typeof lucide !== 'undefined') {
+        lucide.createIcons();
+      }
     });
   </script>
 </body>

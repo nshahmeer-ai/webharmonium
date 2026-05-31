@@ -8,6 +8,9 @@ document.addEventListener('DOMContentLoaded', async () => {
   try {
     const app = new AppController();
     await app.start();
+    if (typeof lucide !== 'undefined') {
+      lucide.createIcons();
+    }
   } catch (err) {
     console.error('[WebHarmonium] Startup error:', err);
     // Graceful degradation — show a minimal error state

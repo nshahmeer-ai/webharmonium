@@ -15,7 +15,9 @@ class AIView {
       <section class="ai-section" id="ai-assistant-section">
         <div class="container">
           <div class="section-header" style="text-align: center; margin-bottom: 40px;">
-            <span class="badge" style="background:rgba(212,175,55,0.12); border:1px solid rgba(212,175,55,0.3); color:var(--accent-gold);">✨ Phase 3: AI Feature</span>
+            <span class="badge" style="background:rgba(212,175,55,0.12); border:1px solid rgba(212,175,55,0.3); color:var(--accent-gold); display:inline-flex; align-items:center; gap:4px;">
+              <i data-lucide="sparkles" style="width:12px; height:12px;"></i> Phase 3: AI Feature
+            </span>
             <h2 style="margin-top: 10px;">AI Music <span class="text-gold">Assistant</span></h2>
             <p class="lead" style="max-width: 600px; margin: 10px auto 0;">Auto-generate harmonium notes and playing guides for any song or melody globally using advanced AI.</p>
           </div>
@@ -26,8 +28,10 @@ class AIView {
               <!-- API Key Config Card -->
               <div class="glass-card key-config-card ${hasKey ? 'configured' : 'needs-config'}">
                 <div class="card-header">
-                  <h3>🔑 Gemini API Key Settings</h3>
-                  <span class="status-indicator">${hasKey ? '✓ Active' : '⚠ Action Required'}</span>
+                  <h3 style="display:inline-flex; align-items:center; gap:6px; margin:0;"><i data-lucide="key" style="width:16px; height:16px; color:var(--accent-gold);"></i> Gemini API Key Settings</h3>
+                  <span class="status-indicator" style="display:inline-flex; align-items:center; gap:4px;">
+                    ${hasKey ? '<i data-lucide="check" style="width:10px; height:10px;"></i> Active' : '<i data-lucide="alert-triangle" style="width:10px; height:10px;"></i> Action Required'}
+                  </span>
                 </div>
                 
                 <div class="config-toggle-view" id="configToggleView">
@@ -51,7 +55,7 @@ class AIView {
 
               <!-- Song Input Card -->
               <div class="glass-card input-card ${!hasKey ? 'disabled' : ''}">
-                <h3>✨ Request Harmonium Notes</h3>
+                <h3 style="display:inline-flex; align-items:center; gap:6px; margin:0 0 10px;"><i data-lucide="music" style="width:16px; height:16px; color:var(--accent-gold);"></i> Request Harmonium Notes</h3>
                 <p style="font-size:13px; color:var(--text-secondary); margin-bottom:16px;">
                   Enter a song title, artist, or paste a couple of lines of lyrics. The AI will transcribe the melody for you.
                 </p>
@@ -71,8 +75,8 @@ class AIView {
                   </div>
                 </div>
 
-                <button class="btn btn-gold btn-lg btn-block" id="btnGenerateAI" ${!hasKey ? 'disabled' : ''}>
-                  ✨ Generate Harmonium Notes
+                <button class="btn btn-gold btn-lg btn-block" id="btnGenerateAI" ${!hasKey ? 'disabled' : ''} style="display:inline-flex; align-items:center; justify-content:center; gap:8px;">
+                  <i data-lucide="sparkles" style="width:16px; height:16px;"></i> Generate Harmonium Notes
                 </button>
               </div>
             </div>
@@ -81,7 +85,7 @@ class AIView {
             <div class="ai-panel ai-results-panel">
               <div class="glass-card results-card" id="aiResultsContainer">
                 <div class="results-empty-state">
-                  <div class="empty-icon">✨</div>
+                  <div class="empty-icon" style="display:flex; align-items:center; justify-content:center; margin-bottom:12px;"><i data-lucide="sparkles" style="width:40px; height:40px; color:var(--accent-gold); opacity:0.6;"></i></div>
                   <h4>No Notes Generated Yet</h4>
                   <p>Configure your API Key and submit a song query on the left. The AI-generated notation and interactive practice rows will appear here.</p>
                 </div>
@@ -146,7 +150,7 @@ class AIView {
       <div class="results-success-view">
         <div class="results-success-header">
           <div>
-            <span class="badge badge-green">✓ Generated</span>
+            <span class="badge badge-green" style="display:inline-flex; align-items:center; gap:4px;"><i data-lucide="check" style="width:10px; height:10px;"></i> Generated</span>
             <h3 id="resultSongTitle" style="margin-top:4px; font-family:var(--font-heading); color:var(--text-primary);">${data.songTitle}</h3>
             <span style="font-size:12px; color:var(--text-secondary);">Suggested Scale: <strong>${data.key}</strong></span>
           </div>
@@ -160,8 +164,9 @@ class AIView {
           ${linesHtml}
         </div>
         
-        <div class="results-success-footer">
-          <p>💡 Click the play icon (▶) on any row to hear the sequence played step-by-step and watch the keys highlight above.</p>
+        <div class="results-success-footer" style="display:inline-flex; align-items:center; gap:6px;">
+          <i data-lucide="info" style="width:14px; height:14px; color:var(--accent-gold); flex-shrink:0;"></i>
+          <p style="margin:0;">Click the play icon (▶) on any row to hear the sequence played step-by-step and watch the keys highlight above.</p>
         </div>
       </div>
     `;
@@ -171,7 +176,7 @@ class AIView {
   renderError(message) {
     return `
       <div class="results-error-state">
-        <div class="error-icon">❌</div>
+        <div class="error-icon" style="display:flex; align-items:center; justify-content:center; margin-bottom:12px;"><i data-lucide="alert-circle" style="width:40px; height:40px; color:#EF4444;"></i></div>
         <h4>Generation Failed</h4>
         <p>${message}</p>
         <button class="btn btn-outline btn-sm" id="btnRetryAI" style="margin-top: 14px;">Try Again</button>
