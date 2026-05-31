@@ -49,6 +49,13 @@ document.addEventListener('DOMContentLoaded', async () => {
       lucide.createIcons();
     }
 
+    // Register Service Worker for PWA
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/sw.js').catch(err => {
+        console.warn('Service Worker registration failed: ', err);
+      });
+    }
+
   } catch(err) {
     console.error('[WebHarmonium] Inner page load error:', err);
   }

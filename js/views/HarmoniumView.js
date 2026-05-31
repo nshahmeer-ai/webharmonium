@@ -68,9 +68,14 @@ class HarmoniumView {
           <div class="harmonium-footer">
             <div class="recording-panel" role="group" aria-label="Recording controls">
               <button class="rec-btn" id="recBtn" title="Start/Stop Recording" aria-label="Toggle recording">⏺</button>
+              <div class="rec-waveform" id="recWaveform" aria-hidden="true">
+                <span></span><span></span><span></span><span></span><span></span>
+              </div>
               <span class="rec-timer" id="recTimer" aria-live="polite">00:00</span>
-              <button class="play-btn" id="playBtn" style="display:none" aria-label="Play recording">▶ Play</button>
-              <button class="download-btn" id="downloadBtn" style="display:none" aria-label="Download recording">⬇ Save</button>
+              <div class="rec-playback" id="recPlayback">
+                <button class="play-btn" id="playBtn" aria-label="Play recording">▶ Play</button>
+                <button class="download-btn" id="downloadBtn" aria-label="Download recording">⬇ Save</button>
+              </div>
             </div>
             <div class="keyboard-hint" aria-label="Keyboard shortcuts">
               White keys: <kbd class="kbd">${config.keyboardHintWhite}</kbd>
@@ -193,8 +198,19 @@ class HarmoniumView {
 
   // ── Recording UI ─────────────────────────────────────────────────────────
   setRecordingState(isRecording) {
-    const btn = document.getElementById('recBtn');
+    const btn      = document.getElementById('recBtn');
+    const waveform = document.getElementById('recWaveform');
+    const timer    = document.getElementById('recTimer');
+    const playback = document.getElementById('recPlayback');
+
     btn?.classList.toggle('recording', isRecording);
+    waveform?.classList.toggle('active', isRecording);
+    timer?.classList.toggle('active', isRecording);
+
+    // Reset timer display when starting
+    if (isRecording && timer) timer.textContent = '00:00';
+    // Hide playback while re-recording
+    if (isRecording && playback) playback.classList.remove('visible');
   }
 
   updateRecordTimer(seconds) {
@@ -207,16 +223,12 @@ class HarmoniumView {
   }
 
   showPlaybackButtons(audioUrl) {
-    const playBtn = document.getElementById('playBtn');
-    const dlBtn   = document.getElementById('downloadBtn');
-    if (playBtn) {
-      playBtn.style.display = '';
-      playBtn.dataset.audioUrl = audioUrl;
-    }
-    if (dlBtn) {
-      dlBtn.style.display = '';
-      dlBtn.dataset.audioUrl = audioUrl;
-    }
+    const playback = document.getElementById('recPlayback');
+    const playBtn  = document.getElementById('playBtn');
+    const dlBtn    = document.getElementById('downloadBtn');
+    if (playBtn) playBtn.dataset.audioUrl = audioUrl;
+    if (dlBtn)   dlBtn.dataset.audioUrl   = audioUrl;
+    if (playback) playback.classList.add('visible');
   }
 
   // ── Key Highlighting (for raag/scale/note pages) ──────────────────────────

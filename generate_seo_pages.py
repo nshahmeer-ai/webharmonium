@@ -12,6 +12,7 @@ def main():
     raags_json_path = os.path.join(data_dir, "raags.json")
     scales_json_path = os.path.join(data_dir, "scales.json")
     site_json_path = os.path.join(data_dir, "site.json")
+    songs_json_path = os.path.join(data_dir, "songs.json")
     
     # Load JSON files
     with open(notes_json_path, "r", encoding="utf-8") as f:
@@ -26,6 +27,9 @@ def main():
     with open(site_json_path, "r", encoding="utf-8") as f:
         site_data = json.load(f)
 
+    with open(songs_json_path, "r", encoding="utf-8") as f:
+        songs_data = json.load(f)
+
     # Load templates
     with open(os.path.join(template_dir, "note-template.html"), "r", encoding="utf-8") as f:
         note_template = f.read()
@@ -35,6 +39,9 @@ def main():
         
     with open(os.path.join(template_dir, "raag-template.html"), "r", encoding="utf-8") as f:
         raag_template = f.read()
+
+    with open(os.path.join(template_dir, "song-template.html"), "r", encoding="utf-8") as f:
+        song_template = f.read()
 
     # Base sargam map to Western notes
     sargam_to_western = {
@@ -57,6 +64,7 @@ def main():
     os.makedirs(os.path.join("d:\\webharmonium", "notes"), exist_ok=True)
     os.makedirs(os.path.join("d:\\webharmonium", "scales"), exist_ok=True)
     os.makedirs(os.path.join("d:\\webharmonium", "raags"), exist_ok=True)
+    os.makedirs(os.path.join("d:\\webharmonium", "songs"), exist_ok=True)
 
     generated_urls = []
 
@@ -287,6 +295,60 @@ def main():
             f.write(html)
             
         generated_urls.append((f"raags/{slug}.html", "0.8"))
+
+    # 3.5 GENERATE SONGS PAGES
+    print("Generating song pages...")
+    for song in songs_data["songs"]:
+        slug = song["slug"]
+        title = song["title"]
+        artist = song["artist"]
+        scale = song["scale"]
+        difficulty = song["difficulty"]
+        desc = song["description"]
+        lyrics = song["lyrics"]
+
+        # Build Lyrics HTML
+        lyrics_html = ""
+        for line_data in lyrics:
+            l_text = line_data["line"]
+            sargam = line_data["sargam"]
+            western = line_data["western"]
+            
+            lyrics_html += f'''
+            <div class="lyric-line">
+              <div class="lyric-text">{l_text}</div>
+              <div class="lyric-sargam">{sargam}</div>
+              <div class="lyric-western">{western}</div>
+              <button class="play-line-btn" onclick="playNotesSequence('{western}')">
+                <i data-lucide="play" style="width:14px; height:14px;"></i> Play Sequence
+              </button>
+            </div>
+            '''
+
+        diff_class = "diff-beginner"
+        if difficulty.lower() == "intermediate": diff_class = "diff-intermediate"
+        elif difficulty.lower() == "advanced": diff_class = "diff-advanced"
+
+        html = song_template
+        html = html.replace("{{META_TITLE}}", f"How to Play {title} on Harmonium | Notations & Tutorial")
+        html = html.replace("{{META_DESCRIPTION}}", f"Learn to play {title} by {artist} on the harmonium. Step-by-step sargam and western notations with interactive play-along.")
+        html = html.replace("{{META_KEYWORDS}}", f"{title} harmonium notes, {title} sargam, play {title}, {artist} harmonium tutorial")
+        html = html.replace("{{CANONICAL_URL}}", f"https://learnharmonium.netlify.app/songs/{slug}.html")
+        html = html.replace("{{OG_TITLE}}", f"{title} Harmonium Notes & Tutorial")
+        html = html.replace("{{HEADLINE}}", title)
+        html = html.replace("{{SONG_TITLE}}", title)
+        html = html.replace("{{ARTIST}}", artist)
+        html = html.replace("{{SCALE}}", scale)
+        html = html.replace("{{DIFFICULTY}}", difficulty)
+        html = html.replace("{{DIFFICULTY_CLASS}}", diff_class)
+        html = html.replace("{{DESCRIPTION}}", desc)
+        html = html.replace("{{LYRICS_HTML}}", lyrics_html)
+
+        output_file = os.path.join("d:\\webharmonium", "songs", f"{slug}.html")
+        with open(output_file, "w", encoding="utf-8") as f:
+            f.write(html)
+            
+        generated_urls.append((f"songs/{slug}.html", "0.8"))
 
     # 4. UPDATE site.json
     print("Updating site.json links...")

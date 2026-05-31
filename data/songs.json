@@ -1,0 +1,62 @@
+{
+  "songs": [
+    {
+      "slug": "tajdar-e-haram",
+      "title": "Tajdar-e-Haram",
+      "artist": "Sabri Brothers / Atif Aslam",
+      "scale": "Raag Yaman / Kalyan Thaat",
+      "difficulty": "Intermediate",
+      "description": "The legendary Sufi Qawwali, famous for its devotional depth and beautiful melody.",
+      "lyrics": [
+        {
+          "line": "Kismat mein meri chain se jeena likh de",
+          "sargam": "Pa Pa Pa, Dha Dha, M# Pa Ga Re Sa",
+          "western": "G4 G4 G4, A4 A4, F#4 G4 E4 D4 C4"
+        },
+        {
+          "line": "Tajdar-e-Haram, ho nigah-e-karam",
+          "sargam": "'Ni Sa Re Ga, Ga Re Ga, Re Sa 'Ni Sa",
+          "western": "B3 C4 D4 E4, E4 D4 E4, D4 C4 B3 C4"
+        }
+      ],
+      "tags": ["Qawwali", "Sufi", "Devotional"]
+    },
+    {
+      "slug": "lab-pe-aati-hai-dua",
+      "title": "Lab Pe Aati Hai Dua",
+      "artist": "Allama Iqbal",
+      "scale": "Bilawal Thaat (C Major)",
+      "difficulty": "Beginner",
+      "description": "A very popular and simple school prayer across South Asia, perfect for beginners.",
+      "lyrics": [
+        {
+          "line": "Lab pe aati hai dua banke tamanna meri",
+          "sargam": "Sa Re Ga Ga, Ga Re Ga, Re Sa Re Ga, Sa 'Ni Sa",
+          "western": "C4 D4 E4 E4, E4 D4 E4, D4 C4 D4 E4, C4 B3 C4"
+        },
+        {
+          "line": "Zindagi shama ki surat ho khudaya meri",
+          "sargam": "Ga Ma Pa Pa, Pa Ma Pa, Ma Ga Ma Pa, Ga Re Ga",
+          "western": "E4 F4 G4 G4, G4 F4 G4, F4 E4 F4 G4, E4 D4 E4"
+        }
+      ],
+      "tags": ["Prayer", "Beginner", "School"]
+    },
+    {
+      "slug": "kun-faya-kun",
+      "title": "Kun Faya Kun",
+      "artist": "A.R. Rahman",
+      "scale": "Khamaj Thaat",
+      "difficulty": "Intermediate",
+      "description": "A modern Sufi classic from Rockstar. Uses a soothing melody with a mix of Shuddha and Komal notes.",
+      "lyrics": [
+        {
+          "line": "Kun faya kun, kun faya kun",
+          "sargam": "Sa Re Ga, Re Sa 'Ni 'Dha",
+          "western": "C4 D4 E4, D4 C4 B3 A3"
+        }
+      ],
+      "tags": ["Bollywood", "Sufi", "ARRahman"]
+    }
+  ]
+}

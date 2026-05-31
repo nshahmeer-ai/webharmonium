@@ -11,6 +11,12 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (typeof lucide !== 'undefined') {
       lucide.createIcons();
     }
+    // Register Service Worker for PWA
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/sw.js').catch(err => {
+        console.warn('Service Worker registration failed: ', err);
+      });
+    }
   } catch (err) {
     console.error('[WebHarmonium] Startup error:', err);
     // Graceful degradation — show a minimal error state

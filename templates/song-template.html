@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{META_TITLE}}</title>
+  <meta name="description" content="{{META_DESCRIPTION}}" />
+  <meta name="keywords" content="{{META_KEYWORDS}}" />
+  <link rel="canonical" href="{{CANONICAL_URL}}" />
+  
+  <meta property="og:title" content="{{OG_TITLE}}" />
+  <meta property="og:description" content="{{META_DESCRIPTION}}" />
+  <meta property="og:type" content="article" />
+
+  <!-- PWA Manifest -->
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#0F172A">
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎵</text></svg>" />
+  <link rel="stylesheet" href="../index.css" />
+  
+  <!-- Social Share — uses global .social-share-bar styles from index.css -->
+  <style>
+    .song-lyrics-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+      margin-top: 32px;
+    }
+    .lyric-line {
+      margin-bottom: 24px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--border);
+    }
+    .lyric-line:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+    .lyric-text {
+      font-family: var(--font-heading);
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-bottom: 8px;
+    }
+    .lyric-sargam {
+      font-family: monospace;
+      color: var(--accent-gold);
+      font-size: 1.1rem;
+      margin-bottom: 4px;
+    }
+    .lyric-western {
+      font-family: monospace;
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+    }
+    .play-line-btn {
+      margin-top: 12px;
+      background: var(--surface-light);
+      border: 1px solid var(--border);
+      color: var(--text-primary);
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-size: 13px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .play-line-btn:hover { background: var(--border); }
+  </style>
+</head>
+<body>
+
+  <div id="navMount"></div>
+
+  <main class="page-container" style="max-width:900px; margin:0 auto; padding:40px 20px;">
+    
+    <div class="breadcrumb" style="margin-bottom:24px; font-size:14px; color:var(--text-secondary);">
+      <a href="../index.html" style="color:var(--accent-gold);text-decoration:none;">Home</a> / 
+      <a href="#" style="color:var(--accent-gold);text-decoration:none;">Songs</a> / 
+      <span>{{SONG_TITLE}}</span>
+    </div>
+
+    <h1 style="margin-bottom:12px; font-size:clamp(28px, 4vw, 42px);">{{HEADLINE}}</h1>
+    
+    <div style="display:flex; gap:12px; margin-bottom:24px; flex-wrap:wrap;">
+      <span class="difficulty-tag {{DIFFICULTY_CLASS}}">{{DIFFICULTY}}</span>
+      <span style="background:var(--surface); padding:4px 12px; border-radius:99px; font-size:13px; color:var(--text-secondary);">🎵 {{SCALE}}</span>
+      <span style="background:var(--surface); padding:4px 12px; border-radius:99px; font-size:13px; color:var(--text-secondary);">🎤 {{ARTIST}}</span>
+    </div>
+    
+    <p style="font-size:1.1rem; line-height:1.7; color:var(--text-secondary); margin-bottom:32px;">{{DESCRIPTION}}</p>
+
+    <!-- Social Share -->
+    <div class="social-share-bar" aria-label="Share this song">
+      <span class="share-label">Share:</span>
+      <a href="https://api.whatsapp.com/send?text=Learn to play {{SONG_TITLE}} on harmonium! {{CANONICAL_URL}}" target="_blank" rel="noopener" class="share-btn btn-wa" aria-label="Share on WhatsApp">💬 WhatsApp</a>
+      <a href="https://www.facebook.com/sharer/sharer.php?u={{CANONICAL_URL}}" target="_blank" rel="noopener" class="share-btn btn-fb" aria-label="Share on Facebook">📘 Facebook</a>
+      <a href="https://twitter.com/intent/tweet?url={{CANONICAL_URL}}&text=Learn to play {{SONG_TITLE}} on harmonium!" target="_blank" rel="noopener" class="share-btn btn-tw" aria-label="Share on Twitter">🐦 Twitter</a>
+      <button onclick="navigator.clipboard.writeText('{{CANONICAL_URL}}').then(()=>{this.textContent='✓ Copied!';setTimeout(()=>{this.textContent='🔗 Copy Link'},1600)})" class="share-btn btn-copy" aria-label="Copy link">🔗 Copy Link</button>
+    </div>
+
+    <div style="margin:40px 0;">
+      <!-- Interactive Harmonium Mount -->
+      <div id="harmoniumMount"></div>
+    </div>
+
+    <!-- Lyrics & Notations -->
+    <div class="song-lyrics-box">
+      <h3 style="margin-top:0; margin-bottom:24px; font-size:1.5rem;">Step-by-Step Notations</h3>
+      {{LYRICS_HTML}}
+    </div>
+    
+  </main>
+
+  <div id="footerMount"></div>
+
+  <!-- Scripts -->
+  <script src="../js/engine/AudioEngine.js"></script>
+  <script src="../js/models/AppModel.js"></script>
+  <script src="../js/models/NoteModel.js"></script>
+  <script src="../js/views/NavView.js"></script>
+  <script src="../js/views/HarmoniumView.js"></script>
+  <script src="../js/views/FooterView.js"></script>
+  <script src="../js/controllers/HarmoniumController.js"></script>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // 1. Init Navigation & Footer
+      const navTarget = document.getElementById('navMount');
+      if (navTarget) navTarget.innerHTML = new NavView().render(true); // true = isInnerPage
+
+      const footerTarget = document.getElementById('footerMount');
+      if (footerTarget) footerTarget.innerHTML = new FooterView().render();
+
+      // 2. Init Harmonium Engine & Controller
+      const harmTarget = document.getElementById('harmoniumMount');
+      if (harmTarget && typeof AppModel !== 'undefined') {
+        const config = AppModel.harmonium;
+        const noteModel = new NoteModel();
+        const view = new HarmoniumView();
+        
+        harmTarget.innerHTML = view.render(config, noteModel);
+        view.positionBlackKeys();
+
+        const engine = new AudioEngine();
+        const harmController = new HarmoniumController(view, engine, noteModel, config);
+        harmController.bindEvents();
+        
+        // Expose engine to window for the "Play Line" buttons
+        window.__audioEngine = engine;
+        window.__noteModel = noteModel;
+        window.__harmView = view;
+      }
+      
+      if(typeof lucide !== 'undefined') lucide.createIcons();
+      
+      // Setup PWA Service Worker
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js').catch(console.error);
+      }
+    });
+
+    // Autoplay functionality for notation lines
+    function playNotesSequence(westernStr) {
+      if (!window.__audioEngine) return;
+      const notes = westernStr.split(/[,\s]+/).filter(Boolean);
+      let time = 0;
+      
+      // Stop anything currently playing
+      window.__audioEngine.stopAll();
+      window.__harmView.clearHighlights();
+      
+      notes.forEach((n, i) => {
+        setTimeout(() => {
+          // Find freq
+          const freq = window.__noteModel.getFrequency(n);
+          if (freq) {
+            window.__audioEngine.play(n, freq);
+            window.__harmView.setKeyActive(n, true);
+            window.__harmView.highlightKeys([n.replace(/\d/, '')]);
+            
+            // Stop note after 400ms
+            setTimeout(() => {
+              window.__audioEngine.stop(n);
+              window.__harmView.setKeyActive(n, false);
+            }, 400);
+          }
+        }, i * 600); // 600ms between notes
+      });
+      
+      // Clear highlight at the end
+      setTimeout(() => {
+        window.__harmView.clearHighlights();
+      }, notes.length * 600);
+    }
+  </script>
+  
+  <script src="https://unpkg.com/lucide@latest"></script>
+</body>
+</html>

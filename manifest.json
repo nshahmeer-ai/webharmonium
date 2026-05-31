@@ -1,0 +1,17 @@
+{
+  "name": "LearnHarmonium",
+  "short_name": "LearnHarmonium",
+  "description": "South Asia's best free online harmonium platform. Learn, play, and master the harmonium at zero cost.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#141414",
+  "theme_color": "#141414",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
