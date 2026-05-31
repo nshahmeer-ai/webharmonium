@@ -9,8 +9,8 @@ class RaagModel {
     this._raags = [];
   }
 
-  async load() {
-    const res    = await fetch('data/raags.json');
+  async load(basePath = '') {
+    const res    = await fetch(`${basePath}data/raags.json`);
     const data   = await res.json();
     this._raags  = data.raags ?? [];
     return this;
@@ -25,7 +25,7 @@ class RaagModel {
   getChips() {
     return this._raags.map(r => ({
       label: `🎵 ${r.name}`,
-      href:  `#`,          // Will route to raag page in Phase 2
+      href:  `raags/${r.slug}.html`,
       id:    r.id,
     }));
   }

@@ -9,8 +9,8 @@ class ArticleModel {
     this._articles = [];
   }
 
-  async load() {
-    const res        = await fetch('data/articles.json');
+  async load(basePath = '') {
+    const res        = await fetch(`${basePath}data/articles.json`);
     const data       = await res.json();
     this._articles   = data.articles ?? [];
     return this;

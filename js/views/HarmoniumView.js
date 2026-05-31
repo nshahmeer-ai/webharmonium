@@ -218,4 +218,28 @@ class HarmoniumView {
       dlBtn.dataset.audioUrl = audioUrl;
     }
   }
+
+  // ── Key Highlighting (for raag/scale/note pages) ──────────────────────────
+  /**
+   * Highlights all octave keys matching the given base note IDs.
+   * @param {string[]} noteIds  e.g. ['C', 'E', 'G', 'Gb']
+   */
+  highlightKeys(noteIds) {
+    this.clearHighlights();
+    if (!noteIds || noteIds.length === 0) return;
+    document.querySelectorAll('.key[data-note]').forEach(el => {
+      // data-note is like 'C4', 'Gb3', etc. — strip octave digit.
+      const base = el.dataset.note.replace(/\d+$/, '');
+      if (noteIds.includes(base)) {
+        el.classList.add('highlighted');
+      }
+    });
+  }
+
+  /** Remove all highlight classes. */
+  clearHighlights() {
+    document.querySelectorAll('.key.highlighted').forEach(el => {
+      el.classList.remove('highlighted');
+    });
+  }
 }

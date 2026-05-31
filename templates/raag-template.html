@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO Meta — injected by generator -->
+  <title>{{META_TITLE}}</title>
+  <meta name="description" content="{{META_DESCRIPTION}}" />
+  <meta name="keywords" content="{{META_KEYWORDS}}" />
+  <link rel="canonical" href="{{CANONICAL_URL}}" />
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="article" />
+  <meta property="og:title"       content="{{OG_TITLE}}" />
+  <meta property="og:description" content="{{META_DESCRIPTION}}" />
+  <meta property="og:url"         content="{{CANONICAL_URL}}" />
+  <meta property="og:site_name"   content="WebHarmonium" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="{{OG_TITLE}}" />
+  <meta name="twitter:description" content="{{META_DESCRIPTION}}" />
+
+  <!-- Structured Data: MusicComposition -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "{{HEADLINE}}",
+    "description": "{{META_DESCRIPTION}}",
+    "url": "{{CANONICAL_URL}}",
+    "publisher": {
+      "@type": "Organization",
+      "name": "WebHarmonium",
+      "url": "https://webharmonium.netlify.app"
+    },
+    "mainEntity": {
+      "@type": "MusicComposition",
+      "name": "{{RAAG_NAME}}",
+      "musicalKey": "C",
+      "genre": "Indian Classical Music",
+      "abstract": "{{DESCRIPTION}}"
+    }
+  }
+  </script>
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎵</text></svg>" />
+
+  <!-- Design System -->
+  <link rel="stylesheet" href="../index.css" />
+
+  <style>
+    .raag-hero {
+      padding: 120px clamp(16px,5vw,64px) 60px;
+      text-align: center;
+      background: radial-gradient(ellipse at top, rgba(212,175,55,0.14) 0%, transparent 65%);
+      border-bottom: 1px solid var(--border);
+    }
+    .raag-badge {
+      display: inline-block;
+      background: rgba(212,175,55,0.12);
+      border: 1px solid rgba(212,175,55,0.3);
+      color: var(--accent-gold);
+      border-radius: 999px;
+      padding: 6px 18px;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      margin-bottom: 20px;
+    }
+    .raag-hero h1 { margin-bottom: 16px; }
+    .raag-hero .lead { max-width: 620px; margin: 0 auto 32px; }
+    .raag-meta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .meta-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(15,23,42,0.6);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 6px 16px;
+      font-size: 13px;
+      color: var(--text-secondary);
+    }
+    .meta-pill strong { color: var(--text-primary); }
+    .raag-content {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 60px clamp(16px,5vw,40px);
+    }
+    .raag-notes-display {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      margin: 32px 0;
+    }
+    .raag-note-pill {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 60px;
+      height: 60px;
+      background: linear-gradient(135deg, var(--accent-gold), #B8943F);
+      color: var(--primary);
+      border-radius: 50%;
+      font-family: var(--font-heading);
+      font-size: 13px;
+      font-weight: 800;
+      box-shadow: 0 4px 16px rgba(212,175,55,0.35);
+    }
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 16px;
+      margin: 40px 0;
+    }
+    .info-card {
+      background: var(--glass-bg);
+      border: 1px solid var(--glass-border);
+      border-radius: var(--radius-md);
+      padding: 20px;
+      text-align: center;
+    }
+    .info-card .label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-secondary); margin-bottom: 8px; }
+    .info-card .value { font-family: var(--font-heading); font-size: 18px; font-weight: 700; color: var(--accent-gold); }
+    .section-title {
+      font-family: var(--font-heading);
+      font-size: 22px;
+      font-weight: 700;
+      margin: 48px 0 20px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border);
+    }
+    /* Aaroh / Avaroh autoplay panel */
+    .sequence-panel {
+      background: var(--glass-bg);
+      border: 1px solid var(--glass-border);
+      border-radius: var(--radius-md);
+      padding: 24px;
+      margin: 20px 0;
+    }
+    .sequence-label {
+      font-family: var(--font-heading);
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent-gold);
+      margin-bottom: 10px;
+    }
+    .sequence-notes {
+      font-family: var(--font-heading);
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-bottom: 16px;
+      letter-spacing: 0.03em;
+    }
+    .play-seq-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: linear-gradient(135deg, var(--accent-gold), #B8943F);
+      color: var(--primary);
+      border: none;
+      border-radius: var(--radius-sm);
+      padding: 10px 22px;
+      font-family: var(--font-heading);
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: var(--transition);
+      box-shadow: 0 3px 14px rgba(212,175,55,0.35);
+    }
+    .play-seq-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 22px rgba(212,175,55,0.5); }
+    .play-seq-btn:disabled { opacity: 0.5; cursor: not-allowed; transform: none; }
+    .play-seq-btn .btn-icon { font-size: 16px; }
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      transition: var(--transition);
+      margin-bottom: 40px;
+    }
+    .back-link:hover { color: var(--accent-gold); }
+    .difficulty-tag {
+      display: inline-block;
+      padding: 4px 14px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+    }
+    .diff-beginner  { background: rgba(34,197,94,0.15); color: var(--cta); border: 1px solid rgba(34,197,94,0.3); }
+    .diff-intermediate { background: rgba(212,175,55,0.12); color: var(--accent-gold); border: 1px solid rgba(212,175,55,0.3); }
+    .diff-advanced  { background: rgba(239,68,68,0.12); color: #F87171; border: 1px solid rgba(239,68,68,0.25); }
+    .page-footer {
+      text-align: center;
+      padding: 40px 24px;
+      border-top: 1px solid var(--border);
+      color: var(--text-secondary);
+      font-size: 14px;
+    }
+    .page-footer a { color: var(--accent-gold); text-decoration: none; }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <a href="../index.html" class="logo">
+      <span class="logo-icon">🎵</span>
+      <span class="text-gold">WebHarmonium</span>
+    </a>
+    <nav style="margin-left:auto;display:flex;gap:8px;align-items:center;">
+      <a href="../index.html"           class="nav-link">Home</a>
+      <a href="../index.html#harmonium" class="nav-link">Play</a>
+      <a href="../index.html#articles"  class="nav-link">Learn</a>
+      <a href="../about.html"           class="nav-link">About</a>
+    </nav>
+  </nav>
+
+  <!-- HERO -->
+  <div class="raag-hero">
+    <div class="raag-badge">🎵 Indian Classical Raag</div>
+    <h1>{{RAAG_NAME}} <span class="text-gold">on Harmonium</span></h1>
+    <p class="lead">{{DESCRIPTION}}</p>
+    <!-- Notes pills -->
+    <div class="raag-notes-display" aria-label="Raag notes">
+      {{NOTE_PILLS}}
+    </div>
+    <!-- Meta row -->
+    <div class="raag-meta-row">
+      <div class="meta-pill">🕐 <strong>{{TIME}}</strong></div>
+      <div class="meta-pill">🎭 <strong>{{MOOD}}</strong></div>
+      <div class="meta-pill">🏷️ Thaat: <strong>{{THAAT}}</strong></div>
+      <div class="meta-pill">{{DIFFICULTY_TAG}}</div>
+    </div>
+  </div>
+
+  <!-- HARMONIUM (highlights raag notes) -->
+  <div id="harmoniumMount"></div>
+
+  <!-- CONTENT -->
+  <div class="raag-content">
+    <a href="../index.html" class="back-link">← Back to WebHarmonium</a>
+
+    <div class="info-grid">
+      <div class="info-card">
+        <div class="label">Thaat</div>
+        <div class="value">{{THAAT}}</div>
+      </div>
+      <div class="info-card">
+        <div class="label">Vadi (King Note)</div>
+        <div class="value">{{VADI}}</div>
+      </div>
+      <div class="info-card">
+        <div class="label">Samvadi (Queen)</div>
+        <div class="value">{{SAMVADI}}</div>
+      </div>
+      <div class="info-card">
+        <div class="label">Playing Time</div>
+        <div class="value" style="font-size:14px;">{{TIME}}</div>
+      </div>
+    </div>
+
+    <h2 class="section-title">🎵 Aaroh &amp; Avaroh (Ascending &amp; Descending)</h2>
+
+    <!-- Aaroh Panel -->
+    <div class="sequence-panel">
+      <div class="sequence-label">↑ Aaroh (Ascending)</div>
+      <div class="sequence-notes" id="aarohNotes">{{AAROH}}</div>
+      <button class="play-seq-btn" id="playAaroh" aria-label="Play Aaroh sequence">
+        <span class="btn-icon">▶</span> Play Aaroh
+      </button>
+    </div>
+
+    <!-- Avaroh Panel -->
+    <div class="sequence-panel">
+      <div class="sequence-label">↓ Avaroh (Descending)</div>
+      <div class="sequence-notes" id="avarohNotes">{{AVAROH}}</div>
+      <button class="play-seq-btn" id="playAvaroh" aria-label="Play Avaroh sequence">
+        <span class="btn-icon">▶</span> Play Avaroh
+      </button>
+    </div>
+
+    <h2 class="section-title">📚 About {{RAAG_NAME}}</h2>
+    <p>{{LONG_DESCRIPTION}}</p>
+
+    <h2 class="section-title">🎼 Notes in {{RAAG_NAME}}</h2>
+    <p style="color:var(--text-secondary);margin-bottom:20px;">The {{RAAG_NAME}} uses the following sargam notes. Golden keys on the harmonium above are highlighted for you to follow along:</p>
+    <div style="display:flex;flex-wrap:wrap;gap:10px;margin-bottom:32px;">
+      {{RAAG_NOTE_CHIPS}}
+    </div>
+
+    <div style="margin-top:48px;text-align:center;">
+      <a href="../index.html#harmonium" class="btn btn-gold btn-lg">🎵 Play Full Harmonium</a>
+    </div>
+  </div>
+
+  <footer class="page-footer">
+    <p>© 2024 <a href="../index.html">WebHarmonium</a> &nbsp;|&nbsp;
+       <a href="../privacy.html">Privacy Policy</a> &nbsp;|&nbsp;
+       <a href="../terms.html">Terms</a></p>
+    <p style="margin-top:8px;">Free Virtual Harmonium — Learn Indian Classical Music Online</p>
+  </footer>
+
+  <!-- MVC Scripts -->
+  <script src="../js/engine/AudioEngine.js"></script>
+  <script src="../js/models/AppModel.js"></script>
+  <script src="../js/models/NoteModel.js"></script>
+  <script src="../js/models/ArticleModel.js"></script>
+  <script src="../js/models/RaagModel.js"></script>
+  <script src="../js/views/NavView.js"></script>
+  <script src="../js/views/HeroView.js"></script>
+  <script src="../js/views/StatsView.js"></script>
+  <script src="../js/views/HarmoniumView.js"></script>
+  <script src="../js/views/FeaturesView.js"></script>
+  <script src="../js/views/RaagView.js"></script>
+  <script src="../js/views/ArticleView.js"></script>
+  <script src="../js/views/FooterView.js"></script>
+  <script src="../js/controllers/HarmoniumController.js"></script>
+  <script src="../js/controllers/ArticleController.js"></script>
+  <script src="../js/controllers/AppController.js"></script>
+
+  <script>
+    // ── Raag page bootstrap ────────────────────────────────────────────────
+    // Note IDs to highlight (base notes, e.g. "C", "Gb")
+    const RAAG_NOTE_IDS = JSON.parse('{{RAAG_NOTE_IDS_JSON}}');
+    const SARGAM_TO_NOTE = JSON.parse('{{SARGAM_TO_NOTE_JSON}}');
+    const AAROH_SARGAM  = JSON.parse('{{AAROH_JSON}}');
+    const AVAROH_SARGAM = JSON.parse('{{AVAROH_JSON}}');
+
+    let harmoniumView, audioEngine, noteModel, harmoniumCtrl;
+    let isPlaying = false;
+
+    document.addEventListener('DOMContentLoaded', async () => {
+      const appModel = new AppModel();
+      noteModel      = new NoteModel();
+
+      await Promise.all([
+        appModel.load('../'),
+        noteModel.load('../'),
+      ]);
+
+      harmoniumView = new HarmoniumView();
+      const mount   = document.getElementById('harmoniumMount');
+      if (mount) {
+        mount.innerHTML = harmoniumView.render(appModel.harmonium, noteModel);
+      }
+      harmoniumView.positionBlackKeys();
+      harmoniumView.highlightKeys(RAAG_NOTE_IDS);
+
+      audioEngine   = new AudioEngine();
+      harmoniumCtrl = new HarmoniumController(
+        harmoniumView, audioEngine, noteModel, appModel.harmonium
+      );
+      harmoniumCtrl.bindEvents();
+
+      // Bind autoplay buttons
+      document.getElementById('playAaroh')?.addEventListener('click', () => {
+        playSequence(AAROH_SARGAM, document.getElementById('playAaroh'));
+      });
+      document.getElementById('playAvaroh')?.addEventListener('click', () => {
+        playSequence(AVAROH_SARGAM, document.getElementById('playAvaroh'));
+      });
+    });
+
+    /**
+     * Plays a sargam sequence one note at a time.
+     * Each note plays for 600ms, with a 100ms gap.
+     */
+    async function playSequence(sargamArr, btn) {
+      if (isPlaying) return;
+      isPlaying = true;
+      btn.disabled = true;
+      btn.innerHTML = '<span class="btn-icon">⏸</span> Playing...';
+
+      const octave = 4; // Default octave
+
+      for (const sargam of sargamArr) {
+        const cleanSargam = sargam.replace('Ṡ', 'S').trim(); // handle upper-octave Sa
+        const baseNote = SARGAM_TO_NOTE[cleanSargam];
+        if (!baseNote) continue;
+
+        const noteName = baseNote + octave;
+        harmoniumView.setKeyActive(noteName, true);
+
+        // Resume AudioContext if suspended
+        if (audioEngine._ctx && audioEngine._ctx.state === 'suspended') {
+          await audioEngine._ctx.resume();
+        }
+        try {
+          audioEngine.noteOn(noteName, noteModel.getFrequency(noteName), 0.72);
+        } catch(e) { /* may not have been initialised yet */ }
+
+        await sleep(580);
+
+        harmoniumView.setKeyActive(noteName, false);
+        try {
+          audioEngine.noteOff(noteName);
+        } catch(e) {}
+
+        await sleep(100);
+      }
+
+      isPlaying = false;
+      btn.disabled = false;
+      btn.innerHTML = '<span class="btn-icon">▶</span> Play ' + (btn.id === 'playAaroh' ? 'Aaroh' : 'Avaroh');
+    }
+
+    function sleep(ms) {
+      return new Promise(resolve => setTimeout(resolve, ms));
+    }
+  </script>
+</body>
+</html>

@@ -28,6 +28,11 @@ class AppController {
     // Sub-controllers (created after data is loaded)
     this._harmoniumCtrl = null;
     this._articleCtrl   = null;
+    this._aiCtrl        = null;
+
+    // AI Components
+    this._aiModel = new AIModel();
+    this._aiView  = new AIView();
   }
 
   /** Entry point — load all data, then render. */
@@ -60,6 +65,15 @@ class AppController {
 
     this._articleCtrl = new ArticleController(this._articleView, this._articleModel);
     this._articleCtrl.init();
+
+    this._aiCtrl = new AIController(
+      this._aiModel,
+      this._aiView,
+      this._noteModel,
+      this._audioEngine,
+      this._harmoniumView
+    );
+    this._aiCtrl.init(document.getElementById('aiMount'));
 
     // 6. Page-level UX
     this._bindNav();

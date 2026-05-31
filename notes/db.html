@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO Meta — injected by generator -->
+  <title>Learn Db (Re♭) Note on Harmonium | WebHarmonium</title>
+  <meta name="description" content="Learn how to play Db (Re♭) note on the virtual harmonium. See frequencies for C3, C4, C5, Western vs Indian names, and raags that use it." />
+  <meta name="keywords" content="Db, Re♭, harmonium notes, play Db, learn Re♭" />
+  <link rel="canonical" href="https://webharmonium.netlify.app/notes/db.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="article" />
+  <meta property="og:title"       content="Learn Db (Re♭) Note on Harmonium" />
+  <meta property="og:description" content="Learn how to play Db (Re♭) note on the virtual harmonium. See frequencies for C3, C4, C5, Western vs Indian names, and raags that use it." />
+  <meta property="og:url"         content="https://webharmonium.netlify.app/notes/db.html" />
+  <meta property="og:site_name"   content="WebHarmonium" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="Learn Db (Re♭) Note on Harmonium" />
+  <meta name="twitter:description" content="Learn how to play Db (Re♭) note on the virtual harmonium. See frequencies for C3, C4, C5, Western vs Indian names, and raags that use it." />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Learn the Db (Re♭) Note",
+    "description": "Learn how to play Db (Re♭) note on the virtual harmonium. See frequencies for C3, C4, C5, Western vs Indian names, and raags that use it.",
+    "url": "https://webharmonium.netlify.app/notes/db.html",
+    "publisher": {
+      "@type": "Organization",
+      "name": "WebHarmonium",
+      "url": "https://webharmonium.netlify.app"
+    },
+    "mainEntity": {
+      "@type": "MusicComposition",
+      "name": "Db — Re♭ on Harmonium"
+    }
+  }
+  </script>
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎵</text></svg>" />
+
+  <!-- Design System (one level up) -->
+  <link rel="stylesheet" href="../index.css" />
+
+  <style>
+    /* Note page specific styles */
+    .note-hero {
+      padding: 120px clamp(16px,5vw,64px) 60px;
+      text-align: center;
+      background: radial-gradient(ellipse at top, rgba(212,175,55,0.12) 0%, transparent 65%);
+      border-bottom: 1px solid var(--border);
+    }
+    .note-badge {
+      display: inline-block;
+      background: rgba(212,175,55,0.12);
+      border: 1px solid rgba(212,175,55,0.3);
+      color: var(--accent-gold);
+      border-radius: 999px;
+      padding: 6px 18px;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      margin-bottom: 20px;
+    }
+    .note-hero h1 { margin-bottom: 16px; }
+    .note-hero .lead { max-width: 600px; margin: 0 auto 32px; }
+    .freq-badge {
+      display: inline-block;
+      background: rgba(34,197,94,0.1);
+      border: 1px solid rgba(34,197,94,0.25);
+      color: var(--cta);
+      border-radius: var(--radius-sm);
+      padding: 8px 22px;
+      font-family: var(--font-heading);
+      font-size: 15px;
+      font-weight: 700;
+    }
+    .note-content {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 60px clamp(16px,5vw,40px);
+    }
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 16px;
+      margin: 40px 0;
+    }
+    .info-card {
+      background: var(--glass-bg);
+      border: 1px solid var(--glass-border);
+      border-radius: var(--radius-md);
+      padding: 20px;
+      text-align: center;
+    }
+    .info-card .label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-secondary); margin-bottom: 8px; }
+    .info-card .value { font-family: var(--font-heading); font-size: 22px; font-weight: 700; color: var(--accent-gold); }
+    .section-title {
+      font-family: var(--font-heading);
+      font-size: 22px;
+      font-weight: 700;
+      margin: 48px 0 20px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border);
+    }
+    .freq-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+    .freq-table th {
+      background: rgba(212,175,55,0.08);
+      color: var(--accent-gold);
+      font-family: var(--font-heading);
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      padding: 12px 16px;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+    }
+    .freq-table td {
+      padding: 10px 16px;
+      border-bottom: 1px solid rgba(212,175,55,0.07);
+      color: var(--text-secondary);
+    }
+    .freq-table tr:hover td { background: rgba(212,175,55,0.04); color: var(--text-primary); }
+    .raags-using {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 16px;
+    }
+    .raag-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(212,175,55,0.08);
+      border: 1px solid rgba(212,175,55,0.22);
+      color: var(--accent-gold);
+      border-radius: 999px;
+      padding: 6px 16px;
+      font-size: 13px;
+      font-weight: 500;
+      text-decoration: none;
+      transition: var(--transition);
+    }
+    .raag-chip:hover { background: rgba(212,175,55,0.18); transform: translateY(-1px); }
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      transition: var(--transition);
+      margin-bottom: 40px;
+    }
+    .back-link:hover { color: var(--accent-gold); }
+    .page-footer {
+      text-align: center;
+      padding: 40px 24px;
+      border-top: 1px solid var(--border);
+      color: var(--text-secondary);
+      font-size: 14px;
+    }
+    .page-footer a { color: var(--accent-gold); text-decoration: none; }
+  </style>
+</head>
+<body>
+
+  <!-- NAV (simplified for inner pages) -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <a href="../index.html" class="logo">
+      <span class="logo-icon">🎵</span>
+      <span class="text-gold">WebHarmonium</span>
+    </a>
+    <nav style="margin-left:auto;display:flex;gap:8px;align-items:center;">
+      <a href="../index.html"         class="nav-link">Home</a>
+      <a href="../index.html#harmonium" class="nav-link">Play</a>
+      <a href="../index.html#articles"  class="nav-link">Learn</a>
+      <a href="../about.html"         class="nav-link">About</a>
+    </nav>
+  </nav>
+
+  <!-- HERO -->
+  <div class="note-hero">
+    <div class="note-badge">🎵 Harmonium Note</div>
+    <h1>Db <span class="text-gold">(Re♭)</span></h1>
+    <p class="lead">Komal Rishabh — the flattened second. Used in Raag Bhairav and Raag Todi.</p>
+    <div class="freq-badge">♪ Frequency: 277.18 Hz (C4)</div>
+  </div>
+
+  <!-- HARMONIUM (auto-highlights this note) -->
+  <div id="navMount" style="display:none"></div>
+  <div id="harmoniumMount"></div>
+
+  <!-- CONTENT -->
+  <div class="note-content">
+    <a href="../index.html" class="back-link">← Back to WebHarmonium</a>
+
+    <div class="info-grid">
+      <div class="info-card">
+        <div class="label">Note (Western)</div>
+        <div class="value">Db</div>
+      </div>
+      <div class="info-card">
+        <div class="label">Sargam (Indian)</div>
+        <div class="value">Re♭</div>
+      </div>
+      <div class="info-card">
+        <div class="label">Type</div>
+        <div class="value">Komal (Flat)</div>
+      </div>
+      <div class="info-card">
+        <div class="label">Base Frequency</div>
+        <div class="value">277.18 Hz</div>
+      </div>
+    </div>
+
+    <h2 class="section-title">📊 Frequencies Across Octaves</h2>
+    <table class="freq-table" aria-label="Note frequencies across octaves">
+      <thead>
+        <tr>
+          <th>Octave</th>
+          <th>Note Name</th>
+          <th>Frequency (Hz)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Octave 3</td><td>Db3</td><td>138.59 Hz</td></tr>
+<tr><td>Octave 4</td><td>Db4</td><td>277.18 Hz</td></tr>
+<tr><td>Octave 5</td><td>Db5</td><td>554.37 Hz</td></tr>
+
+      </tbody>
+    </table>
+
+    <h2 class="section-title">🎼 Raags That Use Db</h2>
+    <p style="color:var(--text-secondary);margin-bottom:16px;">The following raags in Indian classical music include the Re♭ (Db) note:</p>
+    <div class="raags-using">
+      <a href="../raags/raag-bhairav.html" class="raag-chip">🎵 Raag Bhairav</a>
+<a href="../raags/raag-marwa.html" class="raag-chip">🎵 Raag Marwa</a>
+<a href="../raags/raag-todi.html" class="raag-chip">🎵 Raag Todi</a>
+
+    </div>
+
+    <h2 class="section-title">📚 Understanding Re♭ in Indian Classical Music</h2>
+    <p>In Indian classical music (Hindustani and Carnatic), Re♭ is the standard designation for this frequency range. As a Komal (Flat) note, it plays a vital role in constructing various raags. Western music refers to this note as Db.</p>
+
+    <div style="margin-top:48px;text-align:center;">
+      <a href="../index.html#harmonium" class="btn btn-gold btn-lg">🎵 Play Full Harmonium</a>
+    </div>
+  </div>
+
+  <footer class="page-footer">
+    <p>© 2024 <a href="../index.html">WebHarmonium</a> &nbsp;|&nbsp;
+       <a href="../privacy.html">Privacy Policy</a> &nbsp;|&nbsp;
+       <a href="../terms.html">Terms</a></p>
+    <p style="margin-top:8px;">Free Virtual Harmonium — Learn Indian Classical Music Online</p>
+  </footer>
+
+  <!-- MVC Scripts (relative paths for sub-directory) -->
+  <script src="../js/engine/AudioEngine.js"></script>
+  <script src="../js/models/AppModel.js"></script>
+  <script src="../js/models/NoteModel.js"></script>
+  <script src="../js/models/ArticleModel.js"></script>
+  <script src="../js/models/RaagModel.js"></script>
+  <script src="../js/views/NavView.js"></script>
+  <script src="../js/views/HeroView.js"></script>
+  <script src="../js/views/StatsView.js"></script>
+  <script src="../js/views/HarmoniumView.js"></script>
+  <script src="../js/views/FeaturesView.js"></script>
+  <script src="../js/views/RaagView.js"></script>
+  <script src="../js/views/ArticleView.js"></script>
+  <script src="../js/views/FooterView.js"></script>
+  <script src="../js/controllers/HarmoniumController.js"></script>
+  <script src="../js/controllers/ArticleController.js"></script>
+  <script src="../js/controllers/AppController.js"></script>
+
+  <script>
+    // Note page bootstrap — loads harmonium with key highlighting
+    const NOTE_IDS = JSON.parse('["Db"]'); // e.g. ["C"]
+
+    document.addEventListener('DOMContentLoaded', async () => {
+      const appModel  = new AppModel();
+      const noteModel = new NoteModel();
+
+      await Promise.all([
+        appModel.load('../'),
+        noteModel.load('../'),
+      ]);
+
+      const harmoniumView = new HarmoniumView();
+      const mount = document.getElementById('harmoniumMount');
+      if (mount) {
+        mount.innerHTML = harmoniumView.render(appModel.harmonium, noteModel);
+      }
+      harmoniumView.positionBlackKeys();
+
+      // Highlight this note across all octaves
+      harmoniumView.highlightKeys(NOTE_IDS);
+
+      const audioEngine = new AudioEngine();
+      const harmoniumCtrl = new HarmoniumController(
+        harmoniumView, audioEngine, noteModel, appModel.harmonium
+      );
+      harmoniumCtrl.bindEvents();
+    });
+  </script>
+</body>
+</html>

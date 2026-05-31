@@ -1,0 +1,74 @@
+{
+  "scales": [
+    {
+      "id": "c-major",
+      "name": "C Major",
+      "slug": "c-major-scale",
+      "key": "C",
+      "type": "Major (Diatonic)",
+      "difficulty": "Beginner",
+      "notes": ["C", "D", "E", "F", "G", "A", "B"],
+      "ascending": ["C", "D", "E", "F", "G", "A", "B", "C"],
+      "descending": ["C", "B", "A", "G", "F", "E", "D", "C"],
+      "description": "The fundamental scale in Western music, containing no sharps or flats. It is equivalent to Bilawal Thaat (Alhaiya Bilawal) in Indian classical music.",
+      "longDescription": "The C Major scale consists of seven notes: C, D, E, F, G, A, and B. Since it has no sharps or flats, it is the easiest scale to learn and play on the piano or virtual harmonium. Practicing C Major helps build finger strength, dexterity, and a clean mental model of interval spacing.",
+      "intervalsDesc": "The step pattern for a Major scale is: Tone - Tone - Semitone - Tone - Tone - Tone - Semitone (W-W-H-W-W-W-H)."
+    },
+    {
+      "id": "d-major",
+      "name": "D Major",
+      "slug": "d-major-scale",
+      "key": "D",
+      "type": "Major (Diatonic)",
+      "difficulty": "Beginner",
+      "notes": ["D", "E", "Gb", "G", "A", "B", "Db"],
+      "ascending": ["D", "E", "Gb", "G", "A", "B", "Db", "D"],
+      "descending": ["D", "Db", "B", "A", "G", "Gb", "E", "D"],
+      "description": "A bright, triumphant scale containing two sharps (F# and C#, shown here as Gb and Db). Very common in folk, classical, and pop music.",
+      "longDescription": "D Major is widely regarded as a highly resonant, bright, and cheerful key. On the harmonium, it requires transitioning between white and black keys (Gb/F# and Db/C#), making it an excellent step up from C Major to practice hand positioning.",
+      "intervalsDesc": "Follows the standard Major scale step pattern (Tone - Tone - Semitone - Tone - Tone - Tone - Semitone) starting on D."
+    },
+    {
+      "id": "g-major",
+      "name": "G Major",
+      "slug": "g-major-scale",
+      "key": "G",
+      "type": "Major (Diatonic)",
+      "difficulty": "Beginner",
+      "notes": ["G", "A", "B", "C", "D", "E", "Gb"],
+      "ascending": ["G", "A", "B", "C", "D", "E", "Gb", "G"],
+      "descending": ["G", "Gb", "E", "D", "C", "B", "A", "G"],
+      "description": "A warm, natural scale with one sharp (F#, shown here as Gb). Frequently used in classical compositions and acoustic songs.",
+      "longDescription": "G Major contains only one sharp/black key (Gb), which makes it a very friendly scale for beginners. It has a warm, grounded sound and is highly popular in folk music, devotional songs, and traditional hymns.",
+      "intervalsDesc": "Follows the standard Major scale step pattern starting on G, introducing Gb as the leading note."
+    },
+    {
+      "id": "a-minor",
+      "name": "A Minor",
+      "slug": "a-minor-scale",
+      "key": "A",
+      "type": "Natural Minor",
+      "difficulty": "Intermediate",
+      "notes": ["A", "B", "C", "D", "E", "F", "G"],
+      "ascending": ["A", "B", "C", "D", "E", "F", "G", "A"],
+      "descending": ["A", "G", "F", "E", "D", "C", "B", "A"],
+      "description": "The relative minor of C Major, containing no sharps or flats. It has a sad, introspective, and hauntingly beautiful mood.",
+      "longDescription": "A Natural Minor shares the exact same notes as C Major but starts and resolves on A. This shift in the root note completely changes the emotional color of the music, turning it from bright and cheerful to melancholic and contemplative (equivalent to Asavari Thaat notes).",
+      "intervalsDesc": "The step pattern for a Natural Minor scale is: Tone - Semitone - Tone - Tone - Semitone - Tone - Tone (W-H-W-W-H-W-W)."
+    },
+    {
+      "id": "pentatonic",
+      "name": "C Pentatonic",
+      "slug": "pentatonic-scale",
+      "key": "C",
+      "type": "Pentatonic (5-Note)",
+      "difficulty": "Beginner",
+      "notes": ["C", "D", "E", "G", "A"],
+      "ascending": ["C", "D", "E", "G", "A", "C"],
+      "descending": ["C", "A", "G", "E", "D", "C"],
+      "description": "A five-note scale with a universal, organic sound. Commonly found in traditional folk music worldwide, including Chinese, Celtic, and African melodies.",
+      "longDescription": "The Major Pentatonic scale omits the 4th (F) and 7th (B) degrees of the major scale. Because it has no semitones, it sounds pleasant no matter what order the notes are played in, making it a wonderful tool for improvisation and creative melody writing.",
+      "intervalsDesc": "Follows the 5-note pattern of intervals: Root, Major 2nd, Major 3rd, Perfect 5th, Major 6th."
+    }
+  ]
+}

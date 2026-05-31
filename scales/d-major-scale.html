@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO Meta — injected by generator -->
+  <title>D Major Scale on Harmonium | Notes, Practice & Keyboard Layout</title>
+  <meta name="description" content="Master the D Major scale on the harmonium. Study keyboard positions, ascending and descending note sequences, and practice with the interactive virtual harmonium." />
+  <meta name="keywords" content="D Major scale, harmonium keys, play D Major, scale practice" />
+  <link rel="canonical" href="https://webharmonium.netlify.app/scales/d-major-scale.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="article" />
+  <meta property="og:title"       content="D Major Scale on Harmonium" />
+  <meta property="og:description" content="Master the D Major scale on the harmonium. Study keyboard positions, ascending and descending note sequences, and practice with the interactive virtual harmonium." />
+  <meta property="og:url"         content="https://webharmonium.netlify.app/scales/d-major-scale.html" />
+  <meta property="og:site_name"   content="WebHarmonium" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="D Major Scale on Harmonium" />
+  <meta name="twitter:description" content="Master the D Major scale on the harmonium. Study keyboard positions, ascending and descending note sequences, and practice with the interactive virtual harmonium." />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Guide to the D Major Harmonium Scale",
+    "description": "Master the D Major scale on the harmonium. Study keyboard positions, ascending and descending note sequences, and practice with the interactive virtual harmonium.",
+    "url": "https://webharmonium.netlify.app/scales/d-major-scale.html",
+    "publisher": {
+      "@type": "Organization",
+      "name": "WebHarmonium",
+      "url": "https://webharmonium.netlify.app"
+    },
+    "mainEntity": {
+      "@type": "MusicComposition",
+      "name": "D Major — Harmonium Scale",
+      "musicalKey": "D"
+    }
+  }
+  </script>
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎵</text></svg>" />
+
+  <!-- Design System -->
+  <link rel="stylesheet" href="../index.css" />
+
+  <style>
+    .scale-hero {
+      padding: 120px clamp(16px,5vw,64px) 60px;
+      text-align: center;
+      background: radial-gradient(ellipse at top, rgba(34,197,94,0.10) 0%, transparent 60%);
+      border-bottom: 1px solid var(--border);
+    }
+    .scale-badge {
+      display: inline-block;
+      background: rgba(34,197,94,0.1);
+      border: 1px solid rgba(34,197,94,0.25);
+      color: var(--cta);
+      border-radius: 999px;
+      padding: 6px 18px;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      margin-bottom: 20px;
+    }
+    .scale-hero h1 { margin-bottom: 16px; }
+    .scale-hero .lead { max-width: 600px; margin: 0 auto 32px; }
+    .scale-content {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 60px clamp(16px,5vw,40px);
+    }
+    .scale-notes-display {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      margin: 32px 0;
+    }
+    .scale-note-pill {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 64px;
+      height: 64px;
+      background: linear-gradient(135deg, var(--accent-gold), #B8943F);
+      color: var(--primary);
+      border-radius: 50%;
+      font-family: var(--font-heading);
+      font-size: 14px;
+      font-weight: 800;
+      box-shadow: 0 4px 16px rgba(212,175,55,0.35);
+      flex-direction: column;
+      gap: 0;
+    }
+    .scale-note-pill small {
+      font-size: 9px;
+      font-weight: 500;
+      opacity: 0.8;
+    }
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 16px;
+      margin: 40px 0;
+    }
+    .info-card {
+      background: var(--glass-bg);
+      border: 1px solid var(--glass-border);
+      border-radius: var(--radius-md);
+      padding: 20px;
+      text-align: center;
+    }
+    .info-card .label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-secondary); margin-bottom: 8px; }
+    .info-card .value { font-family: var(--font-heading); font-size: 20px; font-weight: 700; color: var(--accent-gold); }
+    .section-title {
+      font-family: var(--font-heading);
+      font-size: 22px;
+      font-weight: 700;
+      margin: 48px 0 20px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border);
+    }
+    .note-sequence {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin: 16px 0;
+      font-family: var(--font-heading);
+      font-size: 15px;
+      font-weight: 600;
+    }
+    .note-sequence .note-step {
+      background: rgba(212,175,55,0.1);
+      border: 1px solid rgba(212,175,55,0.25);
+      color: var(--accent-gold);
+      padding: 5px 12px;
+      border-radius: var(--radius-sm);
+    }
+    .note-sequence .arrow {
+      color: var(--text-secondary);
+      font-size: 14px;
+    }
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      transition: var(--transition);
+      margin-bottom: 40px;
+    }
+    .back-link:hover { color: var(--accent-gold); }
+    .page-footer {
+      text-align: center;
+      padding: 40px 24px;
+      border-top: 1px solid var(--border);
+      color: var(--text-secondary);
+      font-size: 14px;
+    }
+    .page-footer a { color: var(--accent-gold); text-decoration: none; }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <a href="../index.html" class="logo">
+      <span class="logo-icon">🎵</span>
+      <span class="text-gold">WebHarmonium</span>
+    </a>
+    <nav style="margin-left:auto;display:flex;gap:8px;align-items:center;">
+      <a href="../index.html"           class="nav-link">Home</a>
+      <a href="../index.html#harmonium" class="nav-link">Play</a>
+      <a href="../index.html#articles"  class="nav-link">Learn</a>
+      <a href="../about.html"           class="nav-link">About</a>
+    </nav>
+  </nav>
+
+  <!-- HERO -->
+  <div class="scale-hero">
+    <div class="scale-badge">🎹 Harmonium Scale</div>
+    <h1>D Major <span class="text-gold">Scale</span></h1>
+    <p class="lead">A bright, triumphant scale containing two sharps (F# and C#, shown here as Gb and Db). Very common in folk, classical, and pop music.</p>
+    <!-- Notes display -->
+    <div class="scale-notes-display">
+      <div class="scale-note-pill">D</div>
+<div class="scale-note-pill">E</div>
+<div class="scale-note-pill">Gb</div>
+<div class="scale-note-pill">G</div>
+<div class="scale-note-pill">A</div>
+<div class="scale-note-pill">B</div>
+<div class="scale-note-pill">Db</div>
+
+    </div>
+  </div>
+
+  <!-- HARMONIUM (highlights scale notes) -->
+  <div id="harmoniumMount"></div>
+
+  <!-- CONTENT -->
+  <div class="scale-content">
+    <a href="../index.html" class="back-link">← Back to WebHarmonium</a>
+
+    <div class="info-grid">
+      <div class="info-card">
+        <div class="label">Scale Key</div>
+        <div class="value">D</div>
+      </div>
+      <div class="info-card">
+        <div class="label">Total Notes</div>
+        <div class="value">7</div>
+      </div>
+      <div class="info-card">
+        <div class="label">Scale Type</div>
+        <div class="value">Major (Diatonic)</div>
+      </div>
+      <div class="info-card">
+        <div class="label">Difficulty</div>
+        <div class="value">Beginner</div>
+      </div>
+    </div>
+
+    <h2 class="section-title">🎵 Ascending Scale (D Major)</h2>
+    <div class="note-sequence" aria-label="Ascending scale notes">
+      <span class="note-step">D</span><span class="arrow">→</span><span class="note-step">E</span><span class="arrow">→</span><span class="note-step">Gb</span><span class="arrow">→</span><span class="note-step">G</span><span class="arrow">→</span><span class="note-step">A</span><span class="arrow">→</span><span class="note-step">B</span><span class="arrow">→</span><span class="note-step">Db</span><span class="arrow">→</span><span class="note-step">D</span>
+    </div>
+
+    <h2 class="section-title">🎵 Descending Scale</h2>
+    <div class="note-sequence" aria-label="Descending scale notes">
+      <span class="note-step">D</span><span class="arrow">→</span><span class="note-step">Db</span><span class="arrow">→</span><span class="note-step">B</span><span class="arrow">→</span><span class="note-step">A</span><span class="arrow">→</span><span class="note-step">G</span><span class="arrow">→</span><span class="note-step">Gb</span><span class="arrow">→</span><span class="note-step">E</span><span class="arrow">→</span><span class="note-step">D</span>
+    </div>
+
+    <h2 class="section-title">📚 About D Major Scale</h2>
+    <p>D Major is widely regarded as a highly resonant, bright, and cheerful key. On the harmonium, it requires transitioning between white and black keys (Gb/F# and Db/C#), making it an excellent step up from C Major to practice hand positioning.</p>
+
+    <h2 class="section-title" style="margin-top:48px;">🎼 Scale Intervals</h2>
+    <p style="color:var(--text-secondary);margin-bottom:16px;">Follows the standard Major scale step pattern (Tone - Tone - Semitone - Tone - Tone - Tone - Semitone) starting on D.</p>
+
+    <div style="margin-top:48px;text-align:center;">
+      <a href="../index.html#harmonium" class="btn btn-gold btn-lg">🎵 Play Full Harmonium</a>
+    </div>
+  </div>
+
+  <footer class="page-footer">
+    <p>© 2024 <a href="../index.html">WebHarmonium</a> &nbsp;|&nbsp;
+       <a href="../privacy.html">Privacy Policy</a> &nbsp;|&nbsp;
+       <a href="../terms.html">Terms</a></p>
+    <p style="margin-top:8px;">Free Virtual Harmonium — Learn Indian Classical Music Online</p>
+  </footer>
+
+  <!-- MVC Scripts -->
+  <script src="../js/engine/AudioEngine.js"></script>
+  <script src="../js/models/AppModel.js"></script>
+  <script src="../js/models/NoteModel.js"></script>
+  <script src="../js/models/ArticleModel.js"></script>
+  <script src="../js/models/RaagModel.js"></script>
+  <script src="../js/views/NavView.js"></script>
+  <script src="../js/views/HeroView.js"></script>
+  <script src="../js/views/StatsView.js"></script>
+  <script src="../js/views/HarmoniumView.js"></script>
+  <script src="../js/views/FeaturesView.js"></script>
+  <script src="../js/views/RaagView.js"></script>
+  <script src="../js/views/ArticleView.js"></script>
+  <script src="../js/views/FooterView.js"></script>
+  <script src="../js/controllers/HarmoniumController.js"></script>
+  <script src="../js/controllers/ArticleController.js"></script>
+  <script src="../js/controllers/AppController.js"></script>
+
+  <script>
+    // Scale page bootstrap — highlights all scale notes
+    const SCALE_NOTE_IDS = JSON.parse('["D", "E", "Gb", "G", "A", "B", "Db"]'); // e.g. ["C","D","E","F","G","A","B"]
+
+    document.addEventListener('DOMContentLoaded', async () => {
+      const appModel  = new AppModel();
+      const noteModel = new NoteModel();
+
+      await Promise.all([
+        appModel.load('../'),
+        noteModel.load('../'),
+      ]);
+
+      const harmoniumView = new HarmoniumView();
+      const mount = document.getElementById('harmoniumMount');
+      if (mount) {
+        mount.innerHTML = harmoniumView.render(appModel.harmonium, noteModel);
+      }
+      harmoniumView.positionBlackKeys();
+
+      // Highlight all notes of this scale
+      harmoniumView.highlightKeys(SCALE_NOTE_IDS);
+
+      const audioEngine   = new AudioEngine();
+      const harmoniumCtrl = new HarmoniumController(
+        harmoniumView, audioEngine, noteModel, appModel.harmonium
+      );
+      harmoniumCtrl.bindEvents();
+    });
+  </script>
+</body>
+</html>

@@ -10,8 +10,8 @@ class AppModel {
     this._data = null;
   }
 
-  async load() {
-    const res  = await fetch('data/site.json');
+  async load(basePath = '') {
+    const res  = await fetch(`${basePath}data/site.json`);
     this._data = await res.json();
     return this;
   }

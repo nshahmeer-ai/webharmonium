@@ -9,8 +9,8 @@ class NoteModel {
     this._data = null;
   }
 
-  async load() {
-    const res  = await fetch('data/notes.json');
+  async load(basePath = '') {
+    const res  = await fetch(`${basePath}data/notes.json`);
     this._data = await res.json();
     return this;
   }
