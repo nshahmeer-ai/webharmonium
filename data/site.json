@@ -1,9 +1,9 @@
 {
   "site": {
-    "name": "WebHarmonium",
+    "name": "LearnHarmonium",
     "tagline": "South Asia's #1 Free Harmonium Platform",
     "description": "South Asia's best free online harmonium platform. Learn, play, and master the harmonium at zero cost.",
-    "url": "https://webharmonium.netlify.app",
+    "url": "https://learnharmonium.netlify.app",
     "year": "2024",
     "madeWith": "Made with \ud83c\udfb5 for music lovers of South Asia"
   },
@@ -129,7 +129,7 @@
     }
   ],
   "harmonium": {
-    "brand": "WebHarmonium",
+    "brand": "LearnHarmonium",
     "stops": [
       {
         "id": "bass",
@@ -311,12 +311,12 @@
   },
   "seo": {
     "home": {
-      "title": "WebHarmonium \u2014 Free Online Virtual Harmonium | Learn & Play",
+      "title": "LearnHarmonium \u2014 Free Online Virtual Harmonium | Learn & Play",
       "description": "Play a free virtual harmonium online. Learn harmonium notes, scales, and raags. Interactive keyboard with real reed sounds. Perfect for beginners and professionals.",
       "keywords": "virtual harmonium, harmonium online, learn harmonium, harmonium notes, sa re ga ma, harmonium for beginners, Indian classical music",
       "og": {
         "type": "website",
-        "title": "WebHarmonium \u2014 Free Online Virtual Harmonium",
+        "title": "LearnHarmonium \u2014 Free Online Virtual Harmonium",
         "description": "Play a free virtual harmonium online. Learn notes, scales, and raags. Real reed sound synthesis."
       }
     }

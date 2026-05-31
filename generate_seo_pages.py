@@ -118,10 +118,10 @@ def main():
 
         # Template Substitution
         html = note_template
-        html = html.replace("{{META_TITLE}}", f"Learn {note_id} ({sargam}) Note on Harmonium | WebHarmonium")
+        html = html.replace("{{META_TITLE}}", f"Learn {note_id} ({sargam}) Note on Harmonium | LearnHarmonium")
         html = html.replace("{{META_DESCRIPTION}}", f"Learn how to play {note_id} ({sargam}) note on the virtual harmonium. See frequencies for C3, C4, C5, Western vs Indian names, and raags that use it.")
         html = html.replace("{{META_KEYWORDS}}", f"{note_id}, {sargam}, harmonium notes, play {note_id}, learn {sargam}")
-        html = html.replace("{{CANONICAL_URL}}", f"https://webharmonium.netlify.app/notes/{note_lower}.html")
+        html = html.replace("{{CANONICAL_URL}}", f"https://learnharmonium.netlify.app/notes/{note_lower}.html")
         html = html.replace("{{OG_TITLE}}", f"Learn {note_id} ({sargam}) Note on Harmonium")
         html = html.replace("{{HEADLINE}}", f"Learn the {note_id} ({sargam}) Note")
         html = html.replace("{{NOTE_NAME}}", note_id)
@@ -180,7 +180,7 @@ def main():
         html = html.replace("{{META_TITLE}}", f"{name} Scale on Harmonium | Notes, Practice & Keyboard Layout")
         html = html.replace("{{META_DESCRIPTION}}", f"Master the {name} scale on the harmonium. Study keyboard positions, ascending and descending note sequences, and practice with the interactive virtual harmonium.")
         html = html.replace("{{META_KEYWORDS}}", f"{name} scale, harmonium keys, play {name}, scale practice")
-        html = html.replace("{{CANONICAL_URL}}", f"https://webharmonium.netlify.app/scales/{slug}.html")
+        html = html.replace("{{CANONICAL_URL}}", f"https://learnharmonium.netlify.app/scales/{slug}.html")
         html = html.replace("{{OG_TITLE}}", f"{name} Scale on Harmonium")
         html = html.replace("{{HEADLINE}}", f"Guide to the {name} Harmonium Scale")
         html = html.replace("{{SCALE_NAME}}", name)
@@ -261,7 +261,7 @@ def main():
         html = html.replace("{{META_TITLE}}", f"{raag_name} Notes on Harmonium | Aaroh, Avaroh & Play Along Guide")
         html = html.replace("{{META_DESCRIPTION}}", f"Learn how to play {raag_name} on harmonium. Watch key highlights, autoplay Aaroh/Avaroh, view Vadi and Samvadi, and master the {thaat} Thaat scale.")
         html = html.replace("{{META_KEYWORDS}}", f"{raag_name} notes, learn {raag_name}, play {raag_name} harmonium, aaroh avaroh")
-        html = html.replace("{{CANONICAL_URL}}", f"https://webharmonium.netlify.app/raags/{slug}.html")
+        html = html.replace("{{CANONICAL_URL}}", f"https://learnharmonium.netlify.app/raags/{slug}.html")
         html = html.replace("{{OG_TITLE}}", f"{raag_name} Notes & Play Along on Harmonium")
         html = html.replace("{{HEADLINE}}", f"Guide to Playing {raag_name} on Harmonium")
         html = html.replace("{{RAAG_NAME}}", raag_name)
@@ -369,7 +369,7 @@ def main():
         freq = changefreq[0] if changefreq else "monthly"
         url_node = ET.SubElement(root, "url")
         loc = ET.SubElement(url_node, "loc")
-        loc.text = f"https://webharmonium.netlify.app/{path if path != '/' else ''}"
+        loc.text = f"https://learnharmonium.netlify.app/{path if path != '/' else ''}"
         lastmod = ET.SubElement(url_node, "lastmod")
         lastmod.text = "2024-01-01"
         cf = ET.SubElement(url_node, "changefreq")
@@ -381,7 +381,7 @@ def main():
     for path, priority in generated_urls:
         url_node = ET.SubElement(root, "url")
         loc = ET.SubElement(url_node, "loc")
-        loc.text = f"https://webharmonium.netlify.app/{path}"
+        loc.text = f"https://learnharmonium.netlify.app/{path}"
         lastmod = ET.SubElement(url_node, "lastmod")
         lastmod.text = "2024-01-01"
         cf = ET.SubElement(url_node, "changefreq")
