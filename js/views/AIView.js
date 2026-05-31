@@ -10,7 +10,50 @@ class AIView {
   /** Main rendering method for the AI Section container */
   render(hasKey, savedKey = '') {
     const keyMasked = savedKey ? `${savedKey.slice(0, 6)}...${savedKey.slice(-4)}` : '';
-    
+    const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+
+    if (!isLocal) {
+      // Production View: Professional "Coming Soon" Teaser Card
+      return `
+        <section class="ai-section" id="ai-assistant-section">
+          <div class="container">
+            <div class="section-header" style="text-align: center; margin-bottom: 40px;">
+              <span class="badge" style="background:rgba(212,175,55,0.12); border:1px solid rgba(212,175,55,0.3); color:var(--accent-gold); display:inline-flex; align-items:center; gap:4px;">
+                <i data-lucide="sparkles" style="width:12px; height:12px;"></i> Phase 3 Preview
+              </span>
+              <h2 style="margin-top: 10px;">AI Music <span class="text-gold">Assistant</span></h2>
+              <p class="lead" style="max-width: 600px; margin: 10px auto 0;">Auto-generate harmonium notes and playing guides for any song or melody globally using advanced AI.</p>
+            </div>
+
+            <div class="glass-card" style="text-align: center; padding: 60px 40px; max-width: 720px; margin: 0 auto; border-color: rgba(212,175,55,0.22);">
+              <div style="display: inline-flex; align-items: center; justify-content: center; width: 64px; height: 64px; background: rgba(212,175,55,0.08); border: 1px solid rgba(212,175,55,0.22); border-radius: 50%; margin-bottom: 24px; color: var(--accent-gold);">
+                <i data-lucide="sparkles" style="width: 32px; height: 32px;"></i>
+              </div>
+              <div style="margin-bottom:16px;">
+                <span class="badge" style="background: rgba(34,197,94,0.15); border: 1px solid rgba(34,197,94,0.3); color: var(--cta);">✨ AI Assistant — Coming Soon</span>
+              </div>
+              <h3 style="font-family: var(--font-heading); font-size: 24px; font-weight: 800; color: var(--text-primary); margin-bottom: 12px;">AI Harmonium Song Transcriber</h3>
+              <p style="color: var(--text-secondary); line-height: 1.6; max-width: 540px; margin: 0 auto 32px; font-size: 15px;">
+                Get instant harmonium notes (Sargam and Western) for any song, lyrics, or melody on demand. Listen to generated previews played note-by-note and follow along with visual keys highlighting in real-time.
+              </p>
+              
+              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); text-align: left; max-width: 520px; margin: 0 auto 40px; gap: 16px;">
+                <div style="display: flex; gap: 10px; align-items: flex-start; font-size: 13px; color: var(--text-secondary);"><i data-lucide="check-circle" style="width: 16px; height: 16px; color: var(--cta); flex-shrink: 0; margin-top: 1px;"></i> <span>Sargam &amp; Western notations for any lyrics</span></div>
+                <div style="display: flex; gap: 10px; align-items: flex-start; font-size: 13px; color: var(--text-secondary);"><i data-lucide="check-circle" style="width: 16px; height: 16px; color: var(--cta); flex-shrink: 0; margin-top: 1px;"></i> <span>Note-by-note visual keyboard walkthroughs</span></div>
+                <div style="display: flex; gap: 10px; align-items: flex-start; font-size: 13px; color: var(--text-secondary);"><i data-lucide="check-circle" style="width: 16px; height: 16px; color: var(--cta); flex-shrink: 0; margin-top: 1px;"></i> <span>Zero-latency playback synth rendering</span></div>
+                <div style="display: flex; gap: 10px; align-items: flex-start; font-size: 13px; color: var(--text-secondary);"><i data-lucide="check-circle" style="width: 16px; height: 16px; color: var(--cta); flex-shrink: 0; margin-top: 1px;"></i> <span>Powered by Google Gemini 2.5 Flash</span></div>
+              </div>
+
+              <div style="font-size: 12px; color: var(--text-secondary); border-top: 1px solid var(--border); padding-top: 20px;">
+                🛡️ Stored 100% locally on your browser. Zero backend data sharing.
+              </div>
+            </div>
+          </div>
+        </section>
+      `;
+    }
+
+    // Localhost View: Active AI Assistant Panel (For Local Testing/Admin)
     return `
       <section class="ai-section" id="ai-assistant-section">
         <div class="container">
