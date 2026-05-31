@@ -1,0 +1,36 @@
+{
+  "notes": [
+    { "id": "C",  "sargam": "Sa",   "komal": false, "tivra": false, "description": "The root note (Shadja). Always fixed; the foundation of all Indian classical music." },
+    { "id": "Db", "sargam": "Re♭",  "komal": true,  "tivra": false, "description": "Komal Rishabh — the flattened second. Used in Raag Bhairav and Raag Todi." },
+    { "id": "D",  "sargam": "Re",   "komal": false, "tivra": false, "description": "Shuddha Rishabh — the natural second. Common in most raags." },
+    { "id": "Eb", "sargam": "Ga♭",  "komal": true,  "tivra": false, "description": "Komal Gandhar — the flattened third. Used in Raag Kafi and Raag Asavari." },
+    { "id": "E",  "sargam": "Ga",   "komal": false, "tivra": false, "description": "Shuddha Gandhar — the natural third. Used in Bilawal Thaat raags." },
+    { "id": "F",  "sargam": "Ma",   "komal": false, "tivra": false, "description": "Shuddha Madhyam — the perfect fourth. Common in most raags." },
+    { "id": "Gb", "sargam": "Ma#",  "komal": false, "tivra": true,  "description": "Tivra Madhyam — the sharp/augmented fourth. Used in Raag Yaman (Kalyan Thaat)." },
+    { "id": "G",  "sargam": "Pa",   "komal": false, "tivra": false, "description": "Pancham — the perfect fifth. Almost always present; said to be 'achal' (immovable)." },
+    { "id": "Ab", "sargam": "Dha♭", "komal": true,  "tivra": false, "description": "Komal Dhaivat — the flattened sixth. Used in Raag Bhairav and Bhairavi." },
+    { "id": "A",  "sargam": "Dha",  "komal": false, "tivra": false, "description": "Shuddha Dhaivat — the natural sixth. Common in Kafi and Bilawal raags." },
+    { "id": "Bb", "sargam": "Ni♭",  "komal": true,  "tivra": false, "description": "Komal Nishad — the flattened seventh. Used in Raag Kafi, Asavari, Bhairavi." },
+    { "id": "B",  "sargam": "Ni",   "komal": false, "tivra": false, "description": "Shuddha Nishad — the natural seventh. Used in Bilawal and Kalyan Thaat raags." }
+  ],
+  "frequencies": {
+    "C3": 130.81, "Db3": 138.59, "D3": 146.83, "Eb3": 155.56,
+    "E3": 164.81, "F3": 174.61, "Gb3": 185.00, "G3": 196.00,
+    "Ab3": 207.65, "A3": 220.00, "Bb3": 233.08, "B3": 246.94,
+    "C4": 261.63, "Db4": 277.18, "D4": 293.66, "Eb4": 311.13,
+    "E4": 329.63, "F4": 349.23, "Gb4": 369.99, "G4": 392.00,
+    "Ab4": 415.30, "A4": 440.00, "Bb4": 466.16, "B4": 493.88,
+    "C5": 523.25, "Db5": 554.37, "D5": 587.33, "Eb5": 622.25,
+    "E5": 659.25, "F5": 698.46, "Gb5": 739.99, "G5": 783.99,
+    "Ab5": 830.61, "A5": 880.00, "Bb5": 932.33, "B5": 987.77
+  },
+  "keyboardMap": {
+    "a": "C",  "w": "Db", "s": "D",  "e": "Eb", "d": "E",
+    "f": "F",  "t": "Gb", "g": "G",  "y": "Ab", "h": "A",
+    "u": "Bb", "j": "B",
+    "k": "C+1", "o": "Db+1", "l": "D+1", "p": "Eb+1", ";": "E+1"
+  },
+  "whiteNotes": ["C","D","E","F","G","A","B"],
+  "blackNotes": { "C": "Db", "D": "Eb", "F": "Gb", "G": "Ab", "A": "Bb" },
+  "octaves": [3, 4, 5]
+}

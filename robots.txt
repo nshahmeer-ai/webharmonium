@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Disallow admin/config paths (if any in future)
+Disallow: /.git/
+
+# Sitemap location
+Sitemap: https://webharmonium.netlify.app/sitemap.xml
+
+# Crawl-delay (optional, helps prevent server overload)
+Crawl-delay: 1

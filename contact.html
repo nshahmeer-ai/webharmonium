@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us — WebHarmonium</title>
+  <meta name="description" content="Get in touch with WebHarmonium. Send us your feedback, content suggestions, or report any issues." />
+  <link rel="canonical" href="https://webharmonium.netlify.app/contact.html" />
+  <link rel="stylesheet" href="index.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎵</text></svg>" />
+  <style>
+    .footer-badge { font-size:12px;padding:4px 10px;border-radius:999px; }
+    .footer-badge.badge-green { background:rgba(34,197,94,0.1);border:1px solid rgba(34,197,94,0.2);color:var(--cta); }
+    .footer-badge.badge-gold  { background:rgba(212,175,55,0.1);border:1px solid rgba(212,175,55,0.2);color:var(--accent-gold); }
+  </style>
+</head>
+<body>
+
+  <div id="navMount"></div>
+
+  <main>
+    <div class="page-header">
+      <span class="label" style="font-family:var(--font-heading);font-size:12px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--accent-gold);display:block;margin-bottom:12px">Get In Touch</span>
+      <h1>Contact <span class="text-gold">WebHarmonium</span></h1>
+      <p class="lead" style="max-width:540px;margin:16px auto 0">Have feedback, a content request, or found a bug? We'd love to hear from you.</p>
+    </div>
+
+    <div class="section">
+      <div class="grid-2" style="gap:60px;align-items:start;max-width:1000px;margin:0 auto">
+        <div class="card" style="padding:36px">
+          <h2 style="margin-bottom:8px">Send a <span class="text-gold">Message</span></h2>
+          <p style="margin-bottom:28px;font-size:14px">We aim to respond within 24–48 hours.</p>
+          <form id="contactForm" onsubmit="handleSubmit(event)" novalidate>
+            <div class="form-group">
+              <label for="contactName">Your Name</label>
+              <input type="text" id="contactName" name="name" placeholder="Your full name" required autocomplete="name" />
+            </div>
+            <div class="form-group">
+              <label for="contactEmail">Email Address</label>
+              <input type="email" id="contactEmail" name="email" placeholder="your@email.com" required autocomplete="email" />
+            </div>
+            <div class="form-group">
+              <label for="contactSubject">Subject</label>
+              <select id="contactSubject" name="subject">
+                <option value="">Select a topic...</option>
+                <option value="feedback">General Feedback</option>
+                <option value="content">Content Request (Song/Raag Notes)</option>
+                <option value="bug">Bug Report</option>
+                <option value="partnership">Partnership / Collaboration</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="contactMessage">Message</label>
+              <textarea id="contactMessage" name="message" placeholder="Tell us what you think..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-gold" style="width:100%;justify-content:center">Send Message →</button>
+            <p id="formStatus" style="text-align:center;margin-top:14px;font-size:13px;display:none"></p>
+          </form>
+        </div>
+
+        <div>
+          <h2 style="margin-bottom:24px">How Can We <span class="text-gold">Help?</span></h2>
+          <div style="display:flex;flex-direction:column;gap:20px">
+            <div class="card" style="padding:24px;display:flex;align-items:flex-start;gap:16px"><div style="font-size:28px;flex-shrink:0">🎵</div><div><h4 style="margin-bottom:6px">Content Requests</h4><p style="font-size:14px">Want harmonium notes for a specific song, raag, or scale? Request it and we'll create a guide.</p></div></div>
+            <div class="card" style="padding:24px;display:flex;align-items:flex-start;gap:16px"><div style="font-size:28px;flex-shrink:0">🐛</div><div><h4 style="margin-bottom:6px">Bug Reports</h4><p style="font-size:14px">Found a problem? Let us know your device/browser and we'll fix it.</p></div></div>
+            <div class="card" style="padding:24px;display:flex;align-items:flex-start;gap:16px"><div style="font-size:28px;flex-shrink:0">🤝</div><div><h4 style="margin-bottom:6px">Partnerships</h4><p style="font-size:14px">Music teachers, schools, or content creators — reach out and let's talk.</p></div></div>
+            <div class="card" style="padding:24px;background:linear-gradient(135deg,rgba(212,175,55,0.08),rgba(212,175,55,0.03))"><p style="font-size:13px;color:var(--text-secondary)"><strong style="color:var(--accent-gold)">Response Time:</strong> We typically respond within 1–2 business days.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div id="footerMount"></div>
+
+  <script>
+    function handleSubmit(e) {
+      e.preventDefault();
+      const status = document.getElementById('formStatus');
+      const btn = e.target.querySelector('button[type=submit]');
+      btn.textContent = 'Sending...';
+      btn.disabled = true;
+      setTimeout(() => {
+        status.style.display = 'block';
+        status.style.color = 'var(--cta)';
+        status.innerHTML = '✓ Message sent! We\'ll get back to you within 1–2 business days.';
+        e.target.reset();
+        btn.textContent = 'Send Message →';
+        btn.disabled = false;
+      }, 1200);
+    }
+  </script>
+
+  <script src="js/models/AppModel.js"></script>
+  <script src="js/views/NavView.js"></script>
+  <script src="js/views/FooterView.js"></script>
+  <script src="js/inner-page.js"></script>
+</body>
+</html>

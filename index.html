@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!--
+    SEO meta tags are injected dynamically by AppController._applySEO()
+    using values from data/site.json — no hardcoding here.
+  -->
+  <title>WebHarmonium</title>
+
+  <!-- Canonical (static — URL never changes for homepage) -->
+  <link rel="canonical" href="https://webharmonium.netlify.app/" />
+
+  <!-- Structured Data: injected from data in AppController (Phase 2) -->
+  <script type="application/ld+json" id="structuredData"></script>
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎵</text></svg>" />
+
+  <!-- Design System -->
+  <link rel="stylesheet" href="index.css" />
+
+  <!-- Footer badge helpers (small style additions only) -->
+  <style>
+    .footer-badge {
+      font-size: 12px;
+      padding: 4px 10px;
+      border-radius: 999px;
+    }
+    .footer-badge.badge-green {
+      background: rgba(34,197,94,0.1);
+      border: 1px solid rgba(34,197,94,0.2);
+      color: var(--cta);
+    }
+    .footer-badge.badge-gold {
+      background: rgba(212,175,55,0.1);
+      border: 1px solid rgba(212,175,55,0.2);
+      color: var(--accent-gold);
+    }
+  </style>
+
+  <!-- Google Analytics — replace G-XXXXXXXXXX with real ID -->
+  <!--
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  -->
+</head>
+<body>
+
+  <!--
+    ═══════════════════════════════════════════════════════
+    MVC MOUNT POINTS
+    All content is injected by AppController via Views.
+    No hardcoded text or links below this comment.
+    ═══════════════════════════════════════════════════════
+  -->
+
+  <!-- NAV: NavView → renders navbar + mobile drawer -->
+  <div id="navMount"></div>
+
+  <main id="mainContent">
+    <!-- HERO: HeroView -->
+    <div id="heroMount"></div>
+
+    <!-- STATS: StatsView -->
+    <div id="statsMount"></div>
+
+    <!-- HARMONIUM: HarmoniumView -->
+    <div id="harmoniumMount"></div>
+
+    <!-- FEATURES: FeaturesView -->
+    <div id="featuresMount"></div>
+
+    <!-- RAAGS: RaagView -->
+    <div id="raagMount"></div>
+
+    <!-- ARTICLES: ArticleView -->
+    <div id="articlesMount"></div>
+
+    <!-- CTA: AppController._renderCTA() -->
+    <div id="ctaMount"></div>
+  </main>
+
+  <!-- FOOTER: FooterView -->
+  <div id="footerMount"></div>
+
+  <!-- ═══════════════════════════════════════════════════
+       MVC SCRIPTS — loaded in dependency order
+       ═══════════════════════════════════════════════════ -->
+
+  <!-- Engine (no dependencies) -->
+  <script src="js/engine/AudioEngine.js"></script>
+
+  <!-- Models (no dependencies) -->
+  <script src="js/models/AppModel.js"></script>
+  <script src="js/models/NoteModel.js"></script>
+  <script src="js/models/ArticleModel.js"></script>
+  <script src="js/models/RaagModel.js"></script>
+
+  <!-- Views (no dependencies) -->
+  <script src="js/views/NavView.js"></script>
+  <script src="js/views/HeroView.js"></script>
+  <script src="js/views/StatsView.js"></script>
+  <script src="js/views/HarmoniumView.js"></script>
+  <script src="js/views/FeaturesView.js"></script>
+  <script src="js/views/RaagView.js"></script>
+  <script src="js/views/ArticleView.js"></script>
+  <script src="js/views/FooterView.js"></script>
+
+  <!-- Controllers (depend on Models + Views) -->
+  <script src="js/controllers/HarmoniumController.js"></script>
+  <script src="js/controllers/ArticleController.js"></script>
+  <script src="js/controllers/AppController.js"></script>
+
+  <!-- Entry Point -->
+  <script src="js/app.js"></script>
+
+</body>
+</html>
