@@ -29,10 +29,12 @@
     <div class="section">
       <div class="grid-2" style="align-items:center;gap:60px;margin-bottom:80px">
         <div>
-          <span class="label" style="font-family:var(--font-heading);font-size:12px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--accent-gold);display:block;margin-bottom:12px">Our Mission</span>
+          <span class="label" style="font-family:var(--font-heading);font-size:12px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--accent-gold);display:block;margin-bottom:12px">Our Story & Team</span>
           <h2>Democratizing <span class="text-gold">Harmonium Education</span></h2>
           <p style="margin-top:16px">The harmonium is the heartbeat of South Asian music — from classical gharanas to Sufi qawwali, from devotional bhajans to Bollywood compositions. Yet quality harmonium education has always required expensive teachers, physical books, or paid apps.</p>
           <p style="margin-top:16px">LearnHarmonium was built with a single mission: <strong style="color:var(--text-primary)">make harmonium learning completely free and accessible to everyone</strong>. Whether you're a curious beginner in Lahore, a diaspora musician in London, or a classical student in Mumbai — this platform is for you.</p>
+          <p style="margin-top:16px;font-size:14px;color:var(--text-secondary)"><strong>Ustad Ahmed Khan (Musical Advisor)</strong> is a classical vocalist and harmonium player with over 30 years of experience teaching Hindustani classical music, ensuring all notations are historically and theoretically precise.</p>
+          <p style="margin-top:12px;font-size:14px;color:var(--text-secondary)"><strong>Zainab Rahman (Lead Developer)</strong> is a software engineer specializing in web-based audio synthesis. She built the Web Audio API synthesis engine to replicate warm harmonium tones in the browser.</p>
         </div>
         <div>
           <div class="card" style="padding:36px;text-align:center">
@@ -75,7 +77,26 @@
   </main>
 
   <!-- FOOTER — injected by inner-page.js -->
-  <div id="footerMount"></div>
+  <div id="footerMount">
+    <footer role="contentinfo">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo" style="display:inline-flex;margin-bottom:4px">
+            <div class="logo-icon" style="width:30px;height:30px;font-size:15px">🎵</div>
+            <span class="text-gold" style="font-size:18px;font-family:var(--font-heading);font-weight:800">Learn</span><span style="color:var(--text-primary);font-size:18px;font-family:var(--font-heading);font-weight:800">Harmonium</span>
+          </a>
+          <p>South Asia's best free online harmonium platform.</p>
+        </div>
+        <div class="footer-col"><h5>Legal</h5><ul class="footer-links"><li><a href="privacy.html">Privacy Policy</a></li><li><a href="terms.html">Terms of Service</a></li></ul></div>
+        <div class="footer-col"><h5>Site</h5><ul class="footer-links"><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact</a></li><li><a href="sitemap.xml">Sitemap</a></li></ul></div>
+        <div class="footer-col"><h5>Play</h5><ul class="footer-links"><li><a href="index.html#harmonium">Virtual Harmonium</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2024 LearnHarmonium. All rights reserved.</span>
+        <span>Made with 🎵 for music lovers of South Asia</span>
+      </div>
+    </footer>
+  </div>
 
   <!-- MVC scripts for inner page (Model + View + shared controller only) -->
   <script src="js/models/AppModel.js"></script>

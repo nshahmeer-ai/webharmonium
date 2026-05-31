@@ -44,8 +44,9 @@ class AIView {
                 <div style="display: flex; gap: 10px; align-items: flex-start; font-size: 13px; color: var(--text-secondary);"><i data-lucide="check-circle" style="width: 16px; height: 16px; color: var(--cta); flex-shrink: 0; margin-top: 1px;"></i> <span>Powered by Google Gemini 2.5 Flash</span></div>
               </div>
 
-              <div style="font-size: 12px; color: var(--text-secondary); border-top: 1px solid var(--border); padding-top: 20px;">
-                🛡️ Stored 100% locally on your browser. Zero backend data sharing.
+              <div style="font-size: 12px; color: var(--text-secondary); border-top: 1px solid var(--border); padding-top: 20px; display: flex; flex-direction: column; gap: 8px;">
+                <span>🛡️ Stored 100% locally on your browser. Zero backend data sharing.</span>
+                <span style="color: var(--accent-gold); opacity: 0.85;">⚠️ <strong>AI Content Disclosure</strong>: All notes are synthesized using AI. We recommend human curation and validation of notations before professional performance.</span>
               </div>
             </div>
           </div>
@@ -207,9 +208,14 @@ class AIView {
           ${linesHtml}
         </div>
         
-        <div class="results-success-footer" style="display:inline-flex; align-items:center; gap:6px;">
-          <i data-lucide="info" style="width:14px; height:14px; color:var(--accent-gold); flex-shrink:0;"></i>
-          <p style="margin:0;">Click the play icon (▶) on any row to hear the sequence played step-by-step and watch the keys highlight above.</p>
+        <div class="results-success-footer" style="display:flex; flex-direction:column; gap:8px;">
+          <div style="display:inline-flex; align-items:center; gap:6px;">
+            <i data-lucide="info" style="width:14px; height:14px; color:var(--accent-gold); flex-shrink:0;"></i>
+            <p style="margin:0;">Click the play icon (▶) on any row to hear the sequence played step-by-step and watch the keys highlight above.</p>
+          </div>
+          <div style="font-size:12px; color:var(--text-secondary); border-top:1px solid var(--border); padding-top:8px; margin-top:8px;">
+            ⚠️ <strong>AI Disclosure</strong>: Generated sargam and notes are algorithmic guides. We recommend user review and manual refinement for precision performance.
+          </div>
         </div>
       </div>
     `;
