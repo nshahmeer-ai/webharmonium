@@ -21,7 +21,33 @@
   <meta name="theme-color" content="#141414">
 
   <!-- Favicon -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎵</text></svg>" />
+  <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+
+  <!-- Open Graph / Social Media Meta -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="LearnHarmonium — Free Online Virtual Harmonium | Learn & Play" />
+  <meta property="og:description" content="Play a free virtual harmonium online. Learn harmonium notes, scales, and raags. Interactive keyboard with real reed sounds. Perfect for beginners and professionals." />
+  <meta property="og:url" content="https://learnharmonium.netlify.app/" />
+  <meta property="og:image" content="https://learnharmonium.netlify.app/icon.svg" />
+
+  <!-- Structured Data: WebSite & Organization Identity for Search Engine Snippets -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "LearnHarmonium",
+    "url": "https://learnharmonium.netlify.app/",
+    "description": "Play a free virtual harmonium online. Learn harmonium notes, scales, and raags.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "LearnHarmonium",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://learnharmonium.netlify.app/icon.svg"
+      }
+    }
+  }
+  </script>
 
   <!-- Design System -->
   <link rel="stylesheet" href="index.css" />
@@ -167,37 +193,37 @@
        ═══════════════════════════════════════════════════ -->
 
   <!-- Engine (no dependencies) -->
-  <script src="js/engine/AudioEngine.js"></script>
+  <script src="js/engine/AudioEngine.js" defer></script>
 
   <!-- Models (no dependencies) -->
-  <script src="js/models/AppModel.js"></script>
-  <script src="js/models/NoteModel.js"></script>
-  <script src="js/models/ArticleModel.js"></script>
-  <script src="js/models/RaagModel.js"></script>
-  <script src="js/models/AIModel.js"></script>
+  <script src="js/models/AppModel.js" defer></script>
+  <script src="js/models/NoteModel.js" defer></script>
+  <script src="js/models/ArticleModel.js" defer></script>
+  <script src="js/models/RaagModel.js" defer></script>
+  <script src="js/models/AIModel.js" defer></script>
 
   <!-- Views (no dependencies) -->
-  <script src="js/views/NavView.js"></script>
-  <script src="js/views/HeroView.js"></script>
-  <script src="js/views/StatsView.js"></script>
-  <script src="js/views/HarmoniumView.js"></script>
-  <script src="js/views/FeaturesView.js"></script>
-  <script src="js/views/RaagView.js"></script>
-  <script src="js/views/ArticleView.js"></script>
-  <script src="js/views/AIView.js"></script>
-  <script src="js/views/FooterView.js"></script>
+  <script src="js/views/NavView.js" defer></script>
+  <script src="js/views/HeroView.js" defer></script>
+  <script src="js/views/StatsView.js" defer></script>
+  <script src="js/views/HarmoniumView.js" defer></script>
+  <script src="js/views/FeaturesView.js" defer></script>
+  <script src="js/views/RaagView.js" defer></script>
+  <script src="js/views/ArticleView.js" defer></script>
+  <script src="js/views/AIView.js" defer></script>
+  <script src="js/views/FooterView.js" defer></script>
 
   <!-- Controllers (depend on Models + Views) -->
-  <script src="js/controllers/HarmoniumController.js"></script>
-  <script src="js/controllers/ArticleController.js"></script>
-  <script src="js/controllers/AIController.js"></script>
-  <script src="js/controllers/AppController.js"></script>
+  <script src="js/controllers/HarmoniumController.js" defer></script>
+  <script src="js/controllers/ArticleController.js" defer></script>
+  <script src="js/controllers/AIController.js" defer></script>
+  <script src="js/controllers/AppController.js" defer></script>
 
   <!-- Lucide Icons -->
-  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://unpkg.com/lucide@0.400.0/dist/umd/lucide.min.js" defer></script>
 
   <!-- Entry Point -->
-  <script src="js/app.js"></script>
+  <script src="js/app.js" defer></script>
 
 </body>
 </html>

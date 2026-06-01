@@ -1,10 +1,16 @@
-const CACHE_NAME = 'learnharmonium-v1';
+const CACHE_NAME = 'learnharmonium-v2';
 const ASSETS_TO_CACHE = [
   '/',
   '/index.html',
   '/index.css',
   '/icon.svg',
   '/manifest.json',
+  '/data/site.json',
+  '/data/articles.json',
+  '/data/raags.json',
+  '/data/scales.json',
+  '/data/notes.json',
+  '/data/songs.json',
   '/js/app.js',
   '/js/engine/AudioEngine.js',
   '/js/models/AppModel.js',
@@ -25,7 +31,7 @@ const ASSETS_TO_CACHE = [
   '/js/controllers/ArticleController.js',
   '/js/controllers/AIController.js',
   '/js/controllers/AppController.js',
-  'https://unpkg.com/lucide@latest'
+  'https://unpkg.com/lucide@0.400.0/dist/umd/lucide.min.js'
 ];
 
 self.addEventListener('install', (event) => {

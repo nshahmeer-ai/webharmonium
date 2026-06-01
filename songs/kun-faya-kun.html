@@ -16,7 +16,7 @@
   <link rel="manifest" href="/manifest.json">
   <meta name="theme-color" content="#0F172A">
 
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎵</text></svg>" />
+  <link rel="icon" type="image/svg+xml" href="/icon.svg" />
   <link rel="stylesheet" href="../index.css" />
   
   <!-- Social Share — uses global .social-share-bar styles from index.css -->
@@ -128,13 +128,13 @@
   <div id="footerMount"></div>
 
   <!-- Scripts -->
-  <script src="../js/engine/AudioEngine.js"></script>
-  <script src="../js/models/AppModel.js"></script>
-  <script src="../js/models/NoteModel.js"></script>
-  <script src="../js/views/NavView.js"></script>
-  <script src="../js/views/HarmoniumView.js"></script>
-  <script src="../js/views/FooterView.js"></script>
-  <script src="../js/controllers/HarmoniumController.js"></script>
+  <script src="../js/engine/AudioEngine.js" defer></script>
+  <script src="../js/models/AppModel.js" defer></script>
+  <script src="../js/models/NoteModel.js" defer></script>
+  <script src="../js/views/NavView.js" defer></script>
+  <script src="../js/views/HarmoniumView.js" defer></script>
+  <script src="../js/views/FooterView.js" defer></script>
+  <script src="../js/controllers/HarmoniumController.js" defer></script>
   
   <script>
     document.addEventListener('DOMContentLoaded', () => {
@@ -208,6 +208,6 @@
     }
   </script>
   
-  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://unpkg.com/lucide@0.400.0/dist/umd/lucide.min.js" defer></script>
 </body>
 </html>
