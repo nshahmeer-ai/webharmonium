@@ -11,6 +11,11 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (typeof lucide !== 'undefined') {
       lucide.createIcons();
     }
+    const loader = document.getElementById('app-loader');
+    if (loader) {
+      loader.style.opacity = '0';
+      setTimeout(() => loader.style.visibility = 'hidden', 500);
+    }
     // Register Service Worker for PWA
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('/sw.js').catch(err => {
@@ -24,7 +29,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (main) {
       main.innerHTML = `
         <div style="padding:80px 24px;text-align:center;color:var(--text-secondary)">
-          <div style="font-size:48px;margin-bottom:16px">🎵</div>
+          <div style="font-size:48px;margin-bottom:16px"><i data-lucide="music" style="width:1em;height:1em;vertical-align:middle;"></i></div>
           <h2 style="color:var(--text-primary);margin-bottom:12px">Loading WebHarmonium...</h2>
           <p>Please refresh the page. If the issue persists, ensure you're running the site on a local server (not as a file://).</p>
           <button onclick="location.reload()" class="btn btn-gold" style="margin-top:24px">Refresh</button>

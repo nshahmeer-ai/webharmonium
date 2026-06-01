@@ -55,6 +55,26 @@ body {
   overflow-x: hidden;
 }
 
+/* ── Loader ── */
+#app-loader {
+  position: fixed;
+  inset: 0;
+  background: var(--primary);
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.5s ease, visibility 0.5s;
+}
+.loader-spinner {
+  width: 48px; height: 48px;
+  border: 4px solid var(--surface, #1E293B);
+  border-top-color: var(--accent-gold);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin { 100% { transform: rotate(360deg); } }
+
 /* ── Typography Scale ── */
 h1, .h1 {
   font-family: var(--font-heading);
@@ -327,6 +347,7 @@ p, .body-text {
   padding: clamp(60px, 8vw, 100px) clamp(16px, 5vw, 64px);
   max-width: 1280px;
   margin: 0 auto;
+  scroll-margin-top: 80px;
 }
 .section-header {
   text-align: center;

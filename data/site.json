@@ -5,7 +5,7 @@
     "description": "South Asia's best free online harmonium platform. Learn, play, and master the harmonium at zero cost.",
     "url": "https://learnharmonium.netlify.app",
     "year": "2024",
-    "madeWith": "Made with \ud83c\udfb5 for music lovers of South Asia"
+    "madeWith": "Made with <i data-lucide=\"music\" style=\"width:1em;height:1em;vertical-align:middle;\"></i> for music lovers of South Asia"
   },
   "nav": {
     "links": [
