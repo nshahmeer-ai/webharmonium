@@ -5,7 +5,7 @@ Allow: /
 Disallow: /.git/
 
 # Sitemap location
-Sitemap: https://webharmonium.netlify.app/sitemap.xml
+Sitemap: https://learnharmonium.netlify.app/sitemap.xml
 
 # Crawl-delay (optional, helps prevent server overload)
 Crawl-delay: 1
