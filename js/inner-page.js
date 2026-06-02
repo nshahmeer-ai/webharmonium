@@ -25,6 +25,27 @@ document.addEventListener('DOMContentLoaded', async () => {
     const footerMount = document.getElementById('footerMount');
     if (footerMount) footerMount.innerHTML = footerView.render(footer, site);
 
+    // Inject Structured Data
+    const sdMount = document.getElementById('structuredData');
+    if (sdMount) {
+      const pageName = window.location.pathname.split('/').pop() || 'index.html';
+      const isAbout = pageName === 'about';
+      const isContact = pageName === 'contact';
+      const schemaType = isAbout ? 'AboutPage' : isContact ? 'ContactPage' : 'WebPage';
+      
+      sdMount.textContent = JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": schemaType,
+        "name": document.title,
+        "url": window.location.href,
+        "publisher": {
+          "@type": "Organization",
+          "name": "LearnHarmonium",
+          "logo": "https://webharmonium-ochre.vercel.app/icon.svg"
+        }
+      });
+    }
+
     // Mobile nav toggle
     const toggle    = document.getElementById('navToggle');
     const mobileNav = document.getElementById('mobileNav');

@@ -47,6 +47,7 @@ class AppController {
 
     // 2. Apply SEO from data
     this._applySEO(this._appModel.seo?.home);
+    this._applyStructuredData();
 
     // 3. Render full page
     this._renderPage();
@@ -152,6 +153,64 @@ class AppController {
     let el = document.querySelector(`meta[property="${property}"]`);
     if (!el) { el = document.createElement('meta'); el.setAttribute('property', property); document.head.appendChild(el); }
     el.content = content;
+  }
+
+  _applyStructuredData() {
+    const el = document.getElementById('structuredData');
+    if (!el) return;
+
+    const page = window.location.pathname.split('/').pop() || '';
+    
+    // Base Organization Data
+    const orgData = {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "LearnHarmonium",
+      "url": "https://webharmonium-ochre.vercel.app/",
+      "logo": "https://webharmonium-ochre.vercel.app/icon.svg"
+    };
+
+    let schema = [];
+
+    // WebSite / Homepage
+    if (page === '' || page === 'index.html') {
+      schema.push({
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "LearnHarmonium",
+        "url": "https://webharmonium-ochre.vercel.app/",
+        "description": "South Asia's best free online harmonium platform. Learn, play, and master the harmonium at zero cost.",
+        "publisher": orgData
+      });
+    }
+
+    // SoftwareApplication (Play / AI Assistant)
+    if (page === 'play' || page === 'ai-assistant' || page === '' || page === 'index.html') {
+      schema.push({
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Virtual Harmonium Web App",
+        "applicationCategory": "MultimediaApplication",
+        "operatingSystem": "Any",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      });
+    }
+
+    // CollectionPage (Learn)
+    if (page === 'learn') {
+      schema.push({
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Learn Harmonium Articles and Raags",
+        "description": "A collection of free articles, notes, and tutorials for learning harmonium."
+      });
+    }
+
+    el.textContent = JSON.stringify(schema.length === 1 ? schema[0] : schema);
   }
 
   // ── Nav UX ───────────────────────────────────────────────────────────────
