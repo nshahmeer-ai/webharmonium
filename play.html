@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!--
+    SEO meta tags are injected dynamically by AppController._applySEO()
+    using values from data/site.json — no hardcoding here.
+  -->
+  <title>Play Virtual Harmonium - LearnHarmonium</title>
+
+  <!-- Canonical (static — URL never changes for homepage) -->
+  <link rel="canonical" href="https://webharmonium-ochre.vercel.app/play" />
+
+  <!-- Structured Data: injected from data in AppController (Phase 2) -->
+  <script type="application/ld+json" id="structuredData"></script>
+
+  <!-- PWA Manifest -->
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#141414">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+
+  <!-- Open Graph / Social Media Meta -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="LearnHarmonium — Free Online Virtual Harmonium | Learn & Play" />
+  <meta property="og:description" content="Play a free virtual harmonium online. Learn harmonium notes, scales, and raags. Interactive keyboard with real reed sounds. Perfect for beginners and professionals." />
+  <meta property="og:url" content="https://webharmonium-ochre.vercel.app/play" />
+  <meta property="og:image" content="https://webharmonium-ochre.vercel.app/playicon.svg" />
+
+  <!-- Structured Data: WebSite & Organization Identity for Search Engine Snippets -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "LearnHarmonium",
+    "url": "https://webharmonium-ochre.vercel.app/play",
+    "description": "Play a free virtual harmonium online. Learn harmonium notes, scales, and raags.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "LearnHarmonium",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://webharmonium-ochre.vercel.app/playicon.svg"
+      }
+    }
+  }
+  </script>
+
+  <!-- Design System -->
+  <link rel="stylesheet" href="index.css?v=3" />
+
+  <!-- Footer badge helpers (small style additions only) -->
+  <style>
+    .footer-badge {
+      font-size: 12px;
+      padding: 4px 10px;
+      border-radius: 999px;
+    }
+    .footer-badge.badge-green {
+      background: rgba(34,197,94,0.1);
+      border: 1px solid rgba(34,197,94,0.2);
+      color: var(--cta);
+    }
+    .footer-badge.badge-gold {
+      background: rgba(212,175,55,0.1);
+      border: 1px solid rgba(212,175,55,0.2);
+      color: var(--accent-gold);
+    }
+  </style>
+
+  <!-- Google Analytics — replace G-XXXXXXXXXX with real ID -->
+  <!--
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  -->
+</head>
+<body>
+
+  <!-- Full Screen Loader to prevent FOUC -->
+  <div id="app-loader">
+    <div class="loader-spinner"></div>
+  </div>
+
+  <!--
+    ═══════════════════════════════════════════════════════
+    MVC MOUNT POINTS
+    All content is injected by AppController via Views.
+    No hardcoded text or links below this comment.
+    ═══════════════════════════════════════════════════════
+  -->
+
+  <!-- NAV: NavView → renders navbar + mobile drawer -->
+  <div id="navMount"></div>
+
+  <main id="mainContent">
+    
+    
+    <!-- HARMONIUM: HarmoniumView -->
+    <div id="harmoniumMount"></div>
+
+    
+    
+    
+    
+    <!-- CTA: AppController._renderCTA() -->
+    <div id="ctaMount"></div>
+  </main>
+
+  <!-- FOOTER: FooterView -->
+  <div id="footerMount">
+    <footer role="contentinfo">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="/" class="logo" style="display:inline-flex;align-items:center;gap:8px;margin-bottom:4px">
+            <svg class="logo-svg" viewBox="0 0 100 100" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" style="filter: drop-shadow(0 2px 6px rgba(212,175,55,0.3));">
+              <defs>
+                <linearGradient id="goldGradFooter" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#FFE082" />
+                  <stop offset="50%" stop-color="#D4AF37" />
+                  <stop offset="100%" stop-color="#AA7C11" />
+                </linearGradient>
+              </defs>
+              <rect x="5" y="5" width="90" height="90" rx="18" fill="#141414" stroke="url(#goldGradFooter)" stroke-width="3"/>
+              <rect x="25" y="32" width="12" height="38" rx="2" fill="#FFFFFF" />
+              <rect x="41" y="32" width="12" height="38" rx="2" fill="#FFFFFF" />
+              <rect x="57" y="32" width="12" height="38" rx="2" fill="#FFFFFF" />
+              <rect x="33" y="32" width="7" height="22" rx="1" fill="#2A2A2A" />
+              <rect x="49" y="32" width="7" height="22" rx="1" fill="#2A2A2A" />
+              <path d="M72 45 C72 41, 78 38, 78 41 C78 47, 72 47, 72 45 Z" fill="url(#goldGradFooter)" />
+              <path d="M77 22 L77 41" stroke="url(#goldGradFooter)" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M77 24 C77 24, 82 23, 85 27" stroke="url(#goldGradFooter)" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+            </svg>
+            <span class="text-gold" style="font-size:18px;font-family:var(--font-heading);font-weight:800">Learn</span>
+            <span style="color:var(--text-primary);font-size:18px;font-family:var(--font-heading);font-weight:800">Harmonium</span>
+          </a>
+          <p>South Asia's best free online harmonium platform. Learn, play, and master the harmonium at zero cost.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Learn</h5>
+          <ul class="footer-links">
+            <li><a href="articles/harmonium-basics.html">Harmonium Basics</a></li>
+            <li><a href="articles/sa-re-ga-ma-practice.html">Sa Re Ga Ma Guide</a></li>
+            <li><a href="articles/harmonium-notes-beginners.html">Beginner Notes</a></li>
+            <li><a href="articles/harmonium-exercises.html">Scale Practice</a></li>
+            <li><a href="articles/indian-classical-music-theory.html">Raag Introduction</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Explore</h5>
+          <ul class="footer-links">
+            <li><a href="index.html#raags">Raag Library</a></li>
+            <li><a href="articles/tajdar-e-haram-notes.html">Song Notes</a></li>
+            <li><a href="scales/c-major-scale.html">Scales Collection</a></li>
+            <li><a href="articles/alankar-practice.html">Practice Exercises</a></li>
+            <li><a href="articles/naat-harmonium-notes.html">Naat Notes</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Site</h5>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+            <li><a href="sitemap.xml">Sitemap</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2024 LearnHarmonium. All rights reserved.</span>
+        <span>Made with <i data-lucide="heart" style="width:14px;height:14px;vertical-align:middle;color:var(--accent-gold)"></i> for music lovers of South Asia</span>
+      </div>
+    </footer>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════
+       MVC SCRIPTS — loaded in dependency order
+       ═══════════════════════════════════════════════════ -->
+
+  <!-- Engine (no dependencies) -->
+  <script src="js/engine/AudioEngine.js" defer></script>
+
+  <!-- Models (no dependencies) -->
+  <script src="js/models/AppModel.js" defer></script>
+  <script src="js/models/NoteModel.js" defer></script>
+  <script src="js/models/ArticleModel.js" defer></script>
+  <script src="js/models/RaagModel.js" defer></script>
+  <script src="js/models/AIModel.js" defer></script>
+
+  <!-- Views (no dependencies) -->
+  <script src="js/views/NavView.js" defer></script>
+  <script src="js/views/HeroView.js" defer></script>
+  <script src="js/views/StatsView.js" defer></script>
+  <script src="js/views/HarmoniumView.js" defer></script>
+  <script src="js/views/FeaturesView.js" defer></script>
+  <script src="js/views/RaagView.js" defer></script>
+  <script src="js/views/ArticleView.js" defer></script>
+  <script src="js/views/AIView.js" defer></script>
+  <script src="js/views/FooterView.js" defer></script>
+
+  <!-- Controllers (depend on Models + Views) -->
+  <script src="js/controllers/HarmoniumController.js" defer></script>
+  <script src="js/controllers/ArticleController.js" defer></script>
+  <script src="js/controllers/AIController.js" defer></script>
+  <script src="js/controllers/AppController.js" defer></script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@0.400.0/dist/umd/lucide.min.js" defer></script>
+
+  <!-- Entry Point -->
+  <script src="js/app.js?v=3" defer></script>
+
+</body>
+</html>
+
+

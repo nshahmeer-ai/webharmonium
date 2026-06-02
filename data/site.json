@@ -16,17 +16,17 @@
       },
       {
         "label": "Play",
-        "href": "#harmonium",
+        "href": "/play",
         "icon": "play-circle"
       },
       {
         "label": "Learn",
-        "href": "#articles",
+        "href": "/learn",
         "icon": "book-open"
       },
       {
         "label": "AI Assistant",
-        "href": "#ai-assistant-section",
+        "href": "/ai-assistant",
         "icon": "sparkles"
       },
       {
@@ -42,7 +42,7 @@
     ],
     "cta": {
       "label": "Play Now",
-      "href": "#harmonium"
+      "href": "/play"
     },
     "mobileExtra": [
       {
@@ -63,12 +63,12 @@
     "cta": [
       {
         "label": "Play Now \u2014 Free",
-        "href": "#harmonium",
+        "href": "/play",
         "style": "btn-gold btn-lg"
       },
       {
         "label": "Start Learning",
-        "href": "#articles",
+        "href": "/learn",
         "style": "btn-outline btn-lg"
       }
     ],
@@ -216,7 +216,7 @@
     "body": "Free forever. No sign-up. No downloads. Just click Play and begin learning the beautiful sounds of the harmonium.",
     "button": {
       "label": "Play Virtual Harmonium \u2014 Free",
-      "href": "#harmonium",
+      "href": "/play",
       "style": "btn-cta btn-lg"
     }
   },

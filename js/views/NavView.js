@@ -24,7 +24,7 @@ class NavView {
 
     return /* html */`
       <header class="navbar" role="banner">
-        <a href="index.html" class="logo" aria-label="${siteConfig.name} Home" style="display: flex; align-items: center; gap: 8px;">
+        <a href="/" class="logo" aria-label="${siteConfig.name} Home" style="display: flex; align-items: center; gap: 8px;">
           <svg class="logo-svg" viewBox="0 0 100 100" width="28" height="28" fill="none" xmlns="http://www.w3.org/2000/svg" style="filter: drop-shadow(0 2px 8px rgba(212,175,55,0.3));">
             <defs>
               <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">

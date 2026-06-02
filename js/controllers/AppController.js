@@ -73,7 +73,8 @@ class AppController {
       this._audioEngine,
       this._harmoniumView
     );
-    this._aiCtrl.init(document.getElementById('aiMount'));
+    const aiMount = document.getElementById('aiMount');
+    if (aiMount) this._aiCtrl.init(aiMount);
 
     // 6. Page-level UX
     this._bindNav();
