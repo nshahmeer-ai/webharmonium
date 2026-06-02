@@ -11,7 +11,7 @@
     "links": [
       {
         "label": "Home",
-        "href": "index.html",
+        "href": "/",
         "icon": "home"
       },
       {
@@ -31,12 +31,12 @@
       },
       {
         "label": "About",
-        "href": "about.html",
+        "href": "/about",
         "icon": "info"
       },
       {
         "label": "Contact",
-        "href": "contact.html",
+        "href": "/contact",
         "icon": "mail"
       }
     ],
@@ -47,11 +47,11 @@
     "mobileExtra": [
       {
         "label": "Privacy Policy",
-        "href": "privacy.html"
+        "href": "/privacy"
       },
       {
         "label": "Terms",
-        "href": "terms.html"
+        "href": "/terms"
       }
     ]
   },
@@ -163,51 +163,51 @@
   "raagChips": [
     {
       "label": "Raag Yaman",
-      "href": "raags/raag-yaman.html"
+      "href": "/raags/raag-yaman"
     },
     {
       "label": "Raag Bhairav",
-      "href": "raags/raag-bhairav.html"
+      "href": "/raags/raag-bhairav"
     },
     {
       "label": "Raag Kafi",
-      "href": "raags/raag-kafi.html"
+      "href": "/raags/raag-kafi"
     },
     {
       "label": "Raag Bhopali",
-      "href": "raags/raag-bhopali.html"
+      "href": "/raags/raag-bhopali"
     },
     {
       "label": "Raag Durga",
-      "href": "raags/raag-durga.html"
+      "href": "/raags/raag-durga"
     },
     {
       "label": "C Major Scale",
-      "href": "scales/c-major-scale.html"
+      "href": "/scales/c-major-scale"
     },
     {
       "label": "D Major Scale",
-      "href": "scales/d-major-scale.html"
+      "href": "/scales/d-major-scale"
     },
     {
       "label": "G Major Scale",
-      "href": "scales/g-major-scale.html"
+      "href": "/scales/g-major-scale"
     },
     {
       "label": "A Minor Scale",
-      "href": "scales/a-minor-scale.html"
+      "href": "/scales/a-minor-scale"
     },
     {
       "label": "Pentatonic Scale",
-      "href": "scales/pentatonic-scale.html"
+      "href": "/scales/pentatonic-scale"
     },
     {
       "label": "Raag Marwa",
-      "href": "raags/raag-marwa.html"
+      "href": "/raags/raag-marwa"
     },
     {
       "label": "Raag Todi",
-      "href": "raags/raag-todi.html"
+      "href": "/raags/raag-todi"
     }
   ],
   "cta": {
@@ -237,23 +237,23 @@
         "links": [
           {
             "label": "Harmonium Basics",
-            "href": "articles/harmonium-basics.html"
+            "href": "/articles/harmonium-basics"
           },
           {
             "label": "Sa Re Ga Ma Guide",
-            "href": "articles/sa-re-ga-ma-practice.html"
+            "href": "/articles/sa-re-ga-ma-practice"
           },
           {
             "label": "Beginner Notes",
-            "href": "articles/harmonium-notes-beginners.html"
+            "href": "/articles/harmonium-notes-beginners"
           },
           {
             "label": "Scale Practice",
-            "href": "articles/harmonium-exercises.html"
+            "href": "/articles/harmonium-exercises"
           },
           {
             "label": "Raag Introduction",
-            "href": "articles/indian-classical-music-theory.html"
+            "href": "/articles/indian-classical-music-theory"
           }
         ]
       },
@@ -262,23 +262,23 @@
         "links": [
           {
             "label": "Raag Library",
-            "href": "index.html#raags"
+            "href": "/#raags"
           },
           {
             "label": "Song Notes",
-            "href": "articles/tajdar-e-haram-notes.html"
+            "href": "/articles/tajdar-e-haram-notes"
           },
           {
             "label": "Scales Collection",
-            "href": "scales/c-major-scale.html"
+            "href": "/scales/c-major-scale"
           },
           {
             "label": "Practice Exercises",
-            "href": "articles/alankar-practice.html"
+            "href": "/articles/alankar-practice"
           },
           {
             "label": "Naat Notes",
-            "href": "articles/naat-harmonium-notes.html"
+            "href": "/articles/naat-harmonium-notes"
           }
         ]
       },
@@ -287,23 +287,23 @@
         "links": [
           {
             "label": "About Us",
-            "href": "about.html"
+            "href": "/about"
           },
           {
             "label": "Contact",
-            "href": "contact.html"
+            "href": "/contact"
           },
           {
             "label": "Privacy Policy",
-            "href": "privacy.html"
+            "href": "/privacy"
           },
           {
             "label": "Terms of Service",
-            "href": "terms.html"
+            "href": "/terms"
           },
           {
             "label": "Sitemap",
-            "href": "sitemap.xml"
+            "href": "/sitemap.xml"
           }
         ]
       }

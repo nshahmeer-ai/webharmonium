@@ -13,7 +13,7 @@ class RaagView {
     `).join('');
 
     return /* html */`
-      <section class="section" aria-label="Quick access to raags and scales">
+      <section id="raags" class="section" aria-label="Quick access to raags and scales">
         <div class="section-header">
           <span class="label">Explore Music</span>
           <h2>Popular <span class="text-gold">Raags & Scales</span></h2>

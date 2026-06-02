@@ -1,343 +1,343 @@
 <?xml version="1.0" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://learnharmonium.netlify.app/</loc>
+    <loc>https://webharmonium-ochre.vercel.app/</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://learnharmonium.netlify.app/about.html</loc>
+    <loc>https://webharmonium-ochre.vercel.app/about</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://learnharmonium.netlify.app/contact.html</loc>
+    <loc>https://webharmonium-ochre.vercel.app/contact</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://learnharmonium.netlify.app/privacy.html</loc>
+    <loc>https://webharmonium-ochre.vercel.app/privacy</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://learnharmonium.netlify.app/terms.html</loc>
+    <loc>https://webharmonium-ochre.vercel.app/terms</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://learnharmonium.netlify.app/articles/learn-harmonium-online.html</loc>
+    <loc>https://webharmonium-ochre.vercel.app/articles/learn-harmonium-online</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://learnharmonium.netlify.app/articles/harmonium-notes-beginners.html</loc>
+    <loc>https://webharmonium-ochre.vercel.app/articles/harmonium-notes-beginners</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://learnharmonium.netlify.app/articles/sa-re-ga-ma-practice.html</loc>
+    <loc>https://webharmonium-ochre.vercel.app/articles/sa-re-ga-ma-practice</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://learnharmonium.netlify.app/articles/harmonium-keyboard-layout.html</loc>
+    <loc>https://webharmonium-ochre.vercel.app/articles/harmonium-keyboard-layout</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://learnharmonium.netlify.app/articles/harmonium-basics.html</loc>
+    <loc>https://webharmonium-ochre.vercel.app/articles/harmonium-basics</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://learnharmonium.netlify.app/articles/harmonium-exercises.html</loc>
+    <loc>https://webharmonium-ochre.vercel.app/articles/harmonium-exercises</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://learnharmonium.netlify.app/articles/raag-yaman.html</loc>
+    <loc>https://webharmonium-ochre.vercel.app/articles/raag-yaman</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://learnharmonium.netlify.app/articles/c-major-scale.html</loc>
+    <loc>https://webharmonium-ochre.vercel.app/articles/c-major-scale</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://learnharmonium.netlify.app/articles/tajdar-e-haram-notes.html</loc>
+    <loc>https://webharmonium-ochre.vercel.app/articles/tajdar-e-haram-notes</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://learnharmonium.netlify.app/articles/harmonium-learning-guide.html</loc>
+    <loc>https://webharmonium-ochre.vercel.app/articles/harmonium-learning-guide</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://learnharmonium.netlify.app/articles/raag-bhairav.html</loc>
+    <loc>https://webharmonium-ochre.vercel.app/articles/raag-bhairav</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://learnharmonium.netlify.app/articles/harmonium-stops.html</loc>
+    <loc>https://webharmonium-ochre.vercel.app/articles/harmonium-stops</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://learnharmonium.netlify.app/articles/alankar-practice.html</loc>
+    <loc>https://webharmonium-ochre.vercel.app/articles/alankar-practice</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://learnharmonium.netlify.app/articles/lab-pe-aati-hai-dua-notes.html</loc>
+    <loc>https://webharmonium-ochre.vercel.app/articles/lab-pe-aati-hai-dua-notes</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://learnharmonium.netlify.app/articles/virtual-vs-real-harmonium.html</loc>
+    <loc>https://webharmonium-ochre.vercel.app/articles/virtual-vs-real-harmonium</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://learnharmonium.netlify.app/articles/raag-kafi.html</loc>
+    <loc>https://webharmonium-ochre.vercel.app/articles/raag-kafi</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://learnharmonium.netlify.app/articles/harmonium-bellows.html</loc>
+    <loc>https://webharmonium-ochre.vercel.app/articles/harmonium-bellows</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://learnharmonium.netlify.app/articles/d-major-scale.html</loc>
+    <loc>https://webharmonium-ochre.vercel.app/articles/d-major-scale</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://learnharmonium.netlify.app/articles/naat-harmonium-notes.html</loc>
+    <loc>https://webharmonium-ochre.vercel.app/articles/naat-harmonium-notes</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://learnharmonium.netlify.app/articles/raag-bhopali.html</loc>
+    <loc>https://webharmonium-ochre.vercel.app/articles/raag-bhopali</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://learnharmonium.netlify.app/articles/harmonium-finger-exercises.html</loc>
+    <loc>https://webharmonium-ochre.vercel.app/articles/harmonium-finger-exercises</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://learnharmonium.netlify.app/articles/hamd-harmonium-notes.html</loc>
+    <loc>https://webharmonium-ochre.vercel.app/articles/hamd-harmonium-notes</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://learnharmonium.netlify.app/articles/indian-classical-music-theory.html</loc>
+    <loc>https://webharmonium-ochre.vercel.app/articles/indian-classical-music-theory</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://learnharmonium.netlify.app/articles/how-to-tune-harmonium.html</loc>
+    <loc>https://webharmonium-ochre.vercel.app/articles/how-to-tune-harmonium</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://learnharmonium.netlify.app/articles/qawwali-harmonium.html</loc>
+    <loc>https://webharmonium-ochre.vercel.app/articles/qawwali-harmonium</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://learnharmonium.netlify.app/notes/c.html</loc>
+    <loc>https://webharmonium-ochre.vercel.app/notes/c</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://learnharmonium.netlify.app/notes/db.html</loc>
+    <loc>https://webharmonium-ochre.vercel.app/notes/db</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://learnharmonium.netlify.app/notes/d.html</loc>
+    <loc>https://webharmonium-ochre.vercel.app/notes/d</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://learnharmonium.netlify.app/notes/eb.html</loc>
+    <loc>https://webharmonium-ochre.vercel.app/notes/eb</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://learnharmonium.netlify.app/notes/e.html</loc>
+    <loc>https://webharmonium-ochre.vercel.app/notes/e</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://learnharmonium.netlify.app/notes/f.html</loc>
+    <loc>https://webharmonium-ochre.vercel.app/notes/f</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://learnharmonium.netlify.app/notes/gb.html</loc>
+    <loc>https://webharmonium-ochre.vercel.app/notes/gb</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://learnharmonium.netlify.app/notes/g.html</loc>
+    <loc>https://webharmonium-ochre.vercel.app/notes/g</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://learnharmonium.netlify.app/notes/ab.html</loc>
+    <loc>https://webharmonium-ochre.vercel.app/notes/ab</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://learnharmonium.netlify.app/notes/a.html</loc>
+    <loc>https://webharmonium-ochre.vercel.app/notes/a</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://learnharmonium.netlify.app/notes/bb.html</loc>
+    <loc>https://webharmonium-ochre.vercel.app/notes/bb</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://learnharmonium.netlify.app/notes/b.html</loc>
+    <loc>https://webharmonium-ochre.vercel.app/notes/b</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://learnharmonium.netlify.app/scales/c-major-scale.html</loc>
+    <loc>https://webharmonium-ochre.vercel.app/scales/c-major-scale</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://learnharmonium.netlify.app/scales/d-major-scale.html</loc>
+    <loc>https://webharmonium-ochre.vercel.app/scales/d-major-scale</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://learnharmonium.netlify.app/scales/g-major-scale.html</loc>
+    <loc>https://webharmonium-ochre.vercel.app/scales/g-major-scale</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://learnharmonium.netlify.app/scales/a-minor-scale.html</loc>
+    <loc>https://webharmonium-ochre.vercel.app/scales/a-minor-scale</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://learnharmonium.netlify.app/scales/pentatonic-scale.html</loc>
+    <loc>https://webharmonium-ochre.vercel.app/scales/pentatonic-scale</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://learnharmonium.netlify.app/raags/raag-yaman.html</loc>
+    <loc>https://webharmonium-ochre.vercel.app/raags/raag-yaman</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://learnharmonium.netlify.app/raags/raag-bhairav.html</loc>
+    <loc>https://webharmonium-ochre.vercel.app/raags/raag-bhairav</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://learnharmonium.netlify.app/raags/raag-kafi.html</loc>
+    <loc>https://webharmonium-ochre.vercel.app/raags/raag-kafi</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://learnharmonium.netlify.app/raags/raag-bhopali.html</loc>
+    <loc>https://webharmonium-ochre.vercel.app/raags/raag-bhopali</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://learnharmonium.netlify.app/raags/raag-durga.html</loc>
+    <loc>https://webharmonium-ochre.vercel.app/raags/raag-durga</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://learnharmonium.netlify.app/raags/raag-marwa.html</loc>
+    <loc>https://webharmonium-ochre.vercel.app/raags/raag-marwa</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://learnharmonium.netlify.app/raags/raag-todi.html</loc>
+    <loc>https://webharmonium-ochre.vercel.app/raags/raag-todi</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://learnharmonium.netlify.app/songs/tajdar-e-haram.html</loc>
+    <loc>https://webharmonium-ochre.vercel.app/songs/tajdar-e-haram</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://learnharmonium.netlify.app/songs/lab-pe-aati-hai-dua.html</loc>
+    <loc>https://webharmonium-ochre.vercel.app/songs/lab-pe-aati-hai-dua</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://learnharmonium.netlify.app/songs/kun-faya-kun.html</loc>
+    <loc>https://webharmonium-ochre.vercel.app/songs/kun-faya-kun</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
