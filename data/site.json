@@ -237,23 +237,23 @@
         "links": [
           {
             "label": "Harmonium Basics",
-            "href": "#"
+            "href": "articles/harmonium-basics.html"
           },
           {
             "label": "Sa Re Ga Ma Guide",
-            "href": "#"
+            "href": "articles/sa-re-ga-ma-practice.html"
           },
           {
             "label": "Beginner Notes",
-            "href": "#"
+            "href": "articles/harmonium-notes-beginners.html"
           },
           {
             "label": "Scale Practice",
-            "href": "#"
+            "href": "articles/harmonium-exercises.html"
           },
           {
             "label": "Raag Introduction",
-            "href": "#"
+            "href": "articles/indian-classical-music-theory.html"
           }
         ]
       },
@@ -262,23 +262,23 @@
         "links": [
           {
             "label": "Raag Library",
-            "href": "#"
+            "href": "index.html#raags"
           },
           {
             "label": "Song Notes",
-            "href": "#"
+            "href": "articles/tajdar-e-haram-notes.html"
           },
           {
             "label": "Scales Collection",
-            "href": "#"
+            "href": "scales/c-major-scale.html"
           },
           {
             "label": "Practice Exercises",
-            "href": "#"
+            "href": "articles/alankar-practice.html"
           },
           {
             "label": "Naat Notes",
-            "href": "#"
+            "href": "articles/naat-harmonium-notes.html"
           }
         ]
       },
