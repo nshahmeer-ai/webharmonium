@@ -6,13 +6,17 @@ def optimize_html_file(filepath):
     with open(filepath, 'r', encoding='utf-8') as f:
         html = f.read()
 
-    # 1. Inject Google Fonts Preconnect
+    # 1. Inject Google Fonts Asynchronously (Non-Blocking)
     font_tags = """
-  <!-- Preconnect and Preload Google Fonts for PageSpeed -->
+  <!-- Preconnect and Async Google Fonts for Mobile PageSpeed -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Inter:wght@300;400;500;600&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Inter:wght@300;400;500;600&family=Montserrat:wght@400;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Inter:wght@300;400;500;600&family=Montserrat:wght@400;600;700&display=swap"></noscript>
 """
+    # Remove old blocking font tags if they exist
+    html = html.replace('<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Inter:wght@300;400;500;600&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">', '')
+    html = html.replace('<!-- Preconnect and Preload Google Fonts for PageSpeed -->', '')
     if "fonts.googleapis.com" not in html:
         # Inject right after <head> or <meta name="viewport" ...>
         if '<meta name="viewport"' in html:

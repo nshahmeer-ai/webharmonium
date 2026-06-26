@@ -15,7 +15,7 @@ class FooterView {
 
     const columns = footerConfig.columns.map(col => /* html */`
       <div class="footer-col">
-        <h5>${col.heading}</h5>
+        <h3>${col.heading}</h3>
         <ul class="footer-links">
           ${col.links.map(l => `<li><a href="${l.href}">${l.label}</a></li>`).join('')}
         </ul>

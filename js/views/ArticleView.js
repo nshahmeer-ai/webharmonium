@@ -71,18 +71,16 @@ class ArticleView {
     });
   }
 
-  _card(a) {
+  _card(a, index) {
     return /* html */`
-      <a href="${a.url || '#'}" class="article-card" aria-label="${a.title}">
-        <div class="article-card-body">
-          <span class="article-tag">${a.category}</span>
-          <h4>${a.title}</h4>
-          <p>${a.excerpt}</p>
+      <a href="${a.url || '#'}" class="article-card anim-fade-up-${index + 1}">
+        <div class="article-meta">
+          <span class="category">${a.category}</span>
+          <span class="read-time"><i data-lucide="clock" style="width:14px;height:14px"></i> ${a.readTime || '5 min read'}</span>
         </div>
-        <div class="article-card-footer">
-          <span>📖 ${a.readTime || '5 min read'}</span>
-          <span style="color:var(--accent-gold)">Read →</span>
-        </div>
+        <h3>${a.title}</h3>
+        <p>${a.excerpt}</p>
+        <span class="read-more">Read Article <i data-lucide="arrow-right" style="width:16px;height:16px"></i></span>
       </a>
     `;
   }
