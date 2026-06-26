@@ -7,9 +7,35 @@
       "key": "C",
       "type": "Major (Diatonic)",
       "difficulty": "Beginner",
-      "notes": ["C", "D", "E", "F", "G", "A", "B"],
-      "ascending": ["C", "D", "E", "F", "G", "A", "B", "C"],
-      "descending": ["C", "B", "A", "G", "F", "E", "D", "C"],
+      "notes": [
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "A",
+        "B"
+      ],
+      "ascending": [
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "A",
+        "B",
+        "C"
+      ],
+      "descending": [
+        "C",
+        "B",
+        "A",
+        "G",
+        "F",
+        "E",
+        "D",
+        "C"
+      ],
       "description": "The fundamental scale in Western music, containing no sharps or flats. It is equivalent to Bilawal Thaat (Alhaiya Bilawal) in Indian classical music.",
       "longDescription": "The C Major scale consists of seven notes: C, D, E, F, G, A, and B. Since it has no sharps or flats, it is the easiest scale to learn and play on the piano or virtual harmonium. Practicing C Major helps build finger strength, dexterity, and a clean mental model of interval spacing.",
       "intervalsDesc": "The step pattern for a Major scale is: Tone - Tone - Semitone - Tone - Tone - Tone - Semitone (W-W-H-W-W-W-H)."
@@ -21,9 +47,35 @@
       "key": "D",
       "type": "Major (Diatonic)",
       "difficulty": "Beginner",
-      "notes": ["D", "E", "Gb", "G", "A", "B", "Db"],
-      "ascending": ["D", "E", "Gb", "G", "A", "B", "Db", "D"],
-      "descending": ["D", "Db", "B", "A", "G", "Gb", "E", "D"],
+      "notes": [
+        "D",
+        "E",
+        "Gb",
+        "G",
+        "A",
+        "B",
+        "Db"
+      ],
+      "ascending": [
+        "D",
+        "E",
+        "Gb",
+        "G",
+        "A",
+        "B",
+        "Db",
+        "D"
+      ],
+      "descending": [
+        "D",
+        "Db",
+        "B",
+        "A",
+        "G",
+        "Gb",
+        "E",
+        "D"
+      ],
       "description": "A bright, triumphant scale containing two sharps (F# and C#, shown here as Gb and Db). Very common in folk, classical, and pop music.",
       "longDescription": "D Major is widely regarded as a highly resonant, bright, and cheerful key. On the harmonium, it requires transitioning between white and black keys (Gb/F# and Db/C#), making it an excellent step up from C Major to practice hand positioning.",
       "intervalsDesc": "Follows the standard Major scale step pattern (Tone - Tone - Semitone - Tone - Tone - Tone - Semitone) starting on D."
@@ -35,9 +87,35 @@
       "key": "G",
       "type": "Major (Diatonic)",
       "difficulty": "Beginner",
-      "notes": ["G", "A", "B", "C", "D", "E", "Gb"],
-      "ascending": ["G", "A", "B", "C", "D", "E", "Gb", "G"],
-      "descending": ["G", "Gb", "E", "D", "C", "B", "A", "G"],
+      "notes": [
+        "G",
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "Gb"
+      ],
+      "ascending": [
+        "G",
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "Gb",
+        "G"
+      ],
+      "descending": [
+        "G",
+        "Gb",
+        "E",
+        "D",
+        "C",
+        "B",
+        "A",
+        "G"
+      ],
       "description": "A warm, natural scale with one sharp (F#, shown here as Gb). Frequently used in classical compositions and acoustic songs.",
       "longDescription": "G Major contains only one sharp/black key (Gb), which makes it a very friendly scale for beginners. It has a warm, grounded sound and is highly popular in folk music, devotional songs, and traditional hymns.",
       "intervalsDesc": "Follows the standard Major scale step pattern starting on G, introducing Gb as the leading note."
@@ -49,9 +127,35 @@
       "key": "A",
       "type": "Natural Minor",
       "difficulty": "Intermediate",
-      "notes": ["A", "B", "C", "D", "E", "F", "G"],
-      "ascending": ["A", "B", "C", "D", "E", "F", "G", "A"],
-      "descending": ["A", "G", "F", "E", "D", "C", "B", "A"],
+      "notes": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G"
+      ],
+      "ascending": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "A"
+      ],
+      "descending": [
+        "A",
+        "G",
+        "F",
+        "E",
+        "D",
+        "C",
+        "B",
+        "A"
+      ],
       "description": "The relative minor of C Major, containing no sharps or flats. It has a sad, introspective, and hauntingly beautiful mood.",
       "longDescription": "A Natural Minor shares the exact same notes as C Major but starts and resolves on A. This shift in the root note completely changes the emotional color of the music, turning it from bright and cheerful to melancholic and contemplative (equivalent to Asavari Thaat notes).",
       "intervalsDesc": "The step pattern for a Natural Minor scale is: Tone - Semitone - Tone - Tone - Semitone - Tone - Tone (W-H-W-W-H-W-W)."
@@ -63,12 +167,832 @@
       "key": "C",
       "type": "Pentatonic (5-Note)",
       "difficulty": "Beginner",
-      "notes": ["C", "D", "E", "G", "A"],
-      "ascending": ["C", "D", "E", "G", "A", "C"],
-      "descending": ["C", "A", "G", "E", "D", "C"],
+      "notes": [
+        "C",
+        "D",
+        "E",
+        "G",
+        "A"
+      ],
+      "ascending": [
+        "C",
+        "D",
+        "E",
+        "G",
+        "A",
+        "C"
+      ],
+      "descending": [
+        "C",
+        "A",
+        "G",
+        "E",
+        "D",
+        "C"
+      ],
       "description": "A five-note scale with a universal, organic sound. Commonly found in traditional folk music worldwide, including Chinese, Celtic, and African melodies.",
       "longDescription": "The Major Pentatonic scale omits the 4th (F) and 7th (B) degrees of the major scale. Because it has no semitones, it sounds pleasant no matter what order the notes are played in, making it a wonderful tool for improvisation and creative melody writing.",
       "intervalsDesc": "Follows the 5-note pattern of intervals: Root, Major 2nd, Major 3rd, Perfect 5th, Major 6th."
+    },
+    {
+      "id": "c-minor",
+      "name": "C Minor",
+      "slug": "c-minor-scale",
+      "key": "C",
+      "type": "Natural Minor",
+      "difficulty": "Intermediate",
+      "notes": [
+        "C",
+        "D",
+        "Eb",
+        "F",
+        "G",
+        "Ab",
+        "Bb"
+      ],
+      "ascending": [
+        "C",
+        "D",
+        "Eb",
+        "F",
+        "G",
+        "Ab",
+        "Bb",
+        "C"
+      ],
+      "descending": [
+        "C",
+        "Bb",
+        "Ab",
+        "G",
+        "F",
+        "Eb",
+        "D",
+        "C"
+      ],
+      "description": "The C Minor scale. An essential scale for mastering piano chords and harmonium melodies.",
+      "longDescription": "Practicing the C Minor scale is critical for building finger dexterity on the harmonium. This page teaches you the exact notes and finger positions.",
+      "intervalsDesc": "Follows the standard step pattern for Western scales."
+    },
+    {
+      "id": "db-major",
+      "name": "Db Major",
+      "slug": "db-major-scale",
+      "key": "Db",
+      "type": "Major (Diatonic)",
+      "difficulty": "Intermediate",
+      "notes": [
+        "Db",
+        "Eb",
+        "F",
+        "Gb",
+        "Ab",
+        "Bb",
+        "C"
+      ],
+      "ascending": [
+        "Db",
+        "Eb",
+        "F",
+        "Gb",
+        "Ab",
+        "Bb",
+        "C",
+        "Db"
+      ],
+      "descending": [
+        "Db",
+        "C",
+        "Bb",
+        "Ab",
+        "Gb",
+        "F",
+        "Eb",
+        "Db"
+      ],
+      "description": "The Db Major scale. An essential scale for mastering piano chords and harmonium melodies.",
+      "longDescription": "Practicing the Db Major scale is critical for building finger dexterity on the harmonium. This page teaches you the exact notes and finger positions.",
+      "intervalsDesc": "Follows the standard step pattern for Western scales."
+    },
+    {
+      "id": "db-minor",
+      "name": "Db Minor",
+      "slug": "db-minor-scale",
+      "key": "Db",
+      "type": "Natural Minor",
+      "difficulty": "Intermediate",
+      "notes": [
+        "Db",
+        "Eb",
+        "E",
+        "Gb",
+        "Ab",
+        "A",
+        "B"
+      ],
+      "ascending": [
+        "Db",
+        "Eb",
+        "E",
+        "Gb",
+        "Ab",
+        "A",
+        "B",
+        "Db"
+      ],
+      "descending": [
+        "Db",
+        "B",
+        "A",
+        "Ab",
+        "Gb",
+        "E",
+        "Eb",
+        "Db"
+      ],
+      "description": "The Db Minor scale. An essential scale for mastering piano chords and harmonium melodies.",
+      "longDescription": "Practicing the Db Minor scale is critical for building finger dexterity on the harmonium. This page teaches you the exact notes and finger positions.",
+      "intervalsDesc": "Follows the standard step pattern for Western scales."
+    },
+    {
+      "id": "d-minor",
+      "name": "D Minor",
+      "slug": "d-minor-scale",
+      "key": "D",
+      "type": "Natural Minor",
+      "difficulty": "Intermediate",
+      "notes": [
+        "D",
+        "E",
+        "F",
+        "G",
+        "A",
+        "Bb",
+        "C"
+      ],
+      "ascending": [
+        "D",
+        "E",
+        "F",
+        "G",
+        "A",
+        "Bb",
+        "C",
+        "D"
+      ],
+      "descending": [
+        "D",
+        "C",
+        "Bb",
+        "A",
+        "G",
+        "F",
+        "E",
+        "D"
+      ],
+      "description": "The D Minor scale. An essential scale for mastering piano chords and harmonium melodies.",
+      "longDescription": "Practicing the D Minor scale is critical for building finger dexterity on the harmonium. This page teaches you the exact notes and finger positions.",
+      "intervalsDesc": "Follows the standard step pattern for Western scales."
+    },
+    {
+      "id": "eb-major",
+      "name": "Eb Major",
+      "slug": "eb-major-scale",
+      "key": "Eb",
+      "type": "Major (Diatonic)",
+      "difficulty": "Intermediate",
+      "notes": [
+        "Eb",
+        "F",
+        "G",
+        "Ab",
+        "Bb",
+        "C",
+        "D"
+      ],
+      "ascending": [
+        "Eb",
+        "F",
+        "G",
+        "Ab",
+        "Bb",
+        "C",
+        "D",
+        "Eb"
+      ],
+      "descending": [
+        "Eb",
+        "D",
+        "C",
+        "Bb",
+        "Ab",
+        "G",
+        "F",
+        "Eb"
+      ],
+      "description": "The Eb Major scale. An essential scale for mastering piano chords and harmonium melodies.",
+      "longDescription": "Practicing the Eb Major scale is critical for building finger dexterity on the harmonium. This page teaches you the exact notes and finger positions.",
+      "intervalsDesc": "Follows the standard step pattern for Western scales."
+    },
+    {
+      "id": "eb-minor",
+      "name": "Eb Minor",
+      "slug": "eb-minor-scale",
+      "key": "Eb",
+      "type": "Natural Minor",
+      "difficulty": "Intermediate",
+      "notes": [
+        "Eb",
+        "F",
+        "Gb",
+        "Ab",
+        "Bb",
+        "B",
+        "Db"
+      ],
+      "ascending": [
+        "Eb",
+        "F",
+        "Gb",
+        "Ab",
+        "Bb",
+        "B",
+        "Db",
+        "Eb"
+      ],
+      "descending": [
+        "Eb",
+        "Db",
+        "B",
+        "Bb",
+        "Ab",
+        "Gb",
+        "F",
+        "Eb"
+      ],
+      "description": "The Eb Minor scale. An essential scale for mastering piano chords and harmonium melodies.",
+      "longDescription": "Practicing the Eb Minor scale is critical for building finger dexterity on the harmonium. This page teaches you the exact notes and finger positions.",
+      "intervalsDesc": "Follows the standard step pattern for Western scales."
+    },
+    {
+      "id": "e-major",
+      "name": "E Major",
+      "slug": "e-major-scale",
+      "key": "E",
+      "type": "Major (Diatonic)",
+      "difficulty": "Intermediate",
+      "notes": [
+        "E",
+        "Gb",
+        "Ab",
+        "A",
+        "B",
+        "Db",
+        "Eb"
+      ],
+      "ascending": [
+        "E",
+        "Gb",
+        "Ab",
+        "A",
+        "B",
+        "Db",
+        "Eb",
+        "E"
+      ],
+      "descending": [
+        "E",
+        "Eb",
+        "Db",
+        "B",
+        "A",
+        "Ab",
+        "Gb",
+        "E"
+      ],
+      "description": "The E Major scale. An essential scale for mastering piano chords and harmonium melodies.",
+      "longDescription": "Practicing the E Major scale is critical for building finger dexterity on the harmonium. This page teaches you the exact notes and finger positions.",
+      "intervalsDesc": "Follows the standard step pattern for Western scales."
+    },
+    {
+      "id": "e-minor",
+      "name": "E Minor",
+      "slug": "e-minor-scale",
+      "key": "E",
+      "type": "Natural Minor",
+      "difficulty": "Intermediate",
+      "notes": [
+        "E",
+        "Gb",
+        "G",
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "ascending": [
+        "E",
+        "Gb",
+        "G",
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "descending": [
+        "E",
+        "D",
+        "C",
+        "B",
+        "A",
+        "G",
+        "Gb",
+        "E"
+      ],
+      "description": "The E Minor scale. An essential scale for mastering piano chords and harmonium melodies.",
+      "longDescription": "Practicing the E Minor scale is critical for building finger dexterity on the harmonium. This page teaches you the exact notes and finger positions.",
+      "intervalsDesc": "Follows the standard step pattern for Western scales."
+    },
+    {
+      "id": "f-major",
+      "name": "F Major",
+      "slug": "f-major-scale",
+      "key": "F",
+      "type": "Major (Diatonic)",
+      "difficulty": "Intermediate",
+      "notes": [
+        "F",
+        "G",
+        "A",
+        "Bb",
+        "C",
+        "D",
+        "E"
+      ],
+      "ascending": [
+        "F",
+        "G",
+        "A",
+        "Bb",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "descending": [
+        "F",
+        "E",
+        "D",
+        "C",
+        "Bb",
+        "A",
+        "G",
+        "F"
+      ],
+      "description": "The F Major scale. An essential scale for mastering piano chords and harmonium melodies.",
+      "longDescription": "Practicing the F Major scale is critical for building finger dexterity on the harmonium. This page teaches you the exact notes and finger positions.",
+      "intervalsDesc": "Follows the standard step pattern for Western scales."
+    },
+    {
+      "id": "f-minor",
+      "name": "F Minor",
+      "slug": "f-minor-scale",
+      "key": "F",
+      "type": "Natural Minor",
+      "difficulty": "Intermediate",
+      "notes": [
+        "F",
+        "G",
+        "Ab",
+        "Bb",
+        "C",
+        "Db",
+        "Eb"
+      ],
+      "ascending": [
+        "F",
+        "G",
+        "Ab",
+        "Bb",
+        "C",
+        "Db",
+        "Eb",
+        "F"
+      ],
+      "descending": [
+        "F",
+        "Eb",
+        "Db",
+        "C",
+        "Bb",
+        "Ab",
+        "G",
+        "F"
+      ],
+      "description": "The F Minor scale. An essential scale for mastering piano chords and harmonium melodies.",
+      "longDescription": "Practicing the F Minor scale is critical for building finger dexterity on the harmonium. This page teaches you the exact notes and finger positions.",
+      "intervalsDesc": "Follows the standard step pattern for Western scales."
+    },
+    {
+      "id": "gb-major",
+      "name": "Gb Major",
+      "slug": "gb-major-scale",
+      "key": "Gb",
+      "type": "Major (Diatonic)",
+      "difficulty": "Intermediate",
+      "notes": [
+        "Gb",
+        "Ab",
+        "Bb",
+        "B",
+        "Db",
+        "Eb",
+        "F"
+      ],
+      "ascending": [
+        "Gb",
+        "Ab",
+        "Bb",
+        "B",
+        "Db",
+        "Eb",
+        "F",
+        "Gb"
+      ],
+      "descending": [
+        "Gb",
+        "F",
+        "Eb",
+        "Db",
+        "B",
+        "Bb",
+        "Ab",
+        "Gb"
+      ],
+      "description": "The Gb Major scale. An essential scale for mastering piano chords and harmonium melodies.",
+      "longDescription": "Practicing the Gb Major scale is critical for building finger dexterity on the harmonium. This page teaches you the exact notes and finger positions.",
+      "intervalsDesc": "Follows the standard step pattern for Western scales."
+    },
+    {
+      "id": "gb-minor",
+      "name": "Gb Minor",
+      "slug": "gb-minor-scale",
+      "key": "Gb",
+      "type": "Natural Minor",
+      "difficulty": "Intermediate",
+      "notes": [
+        "Gb",
+        "Ab",
+        "A",
+        "B",
+        "Db",
+        "D",
+        "E"
+      ],
+      "ascending": [
+        "Gb",
+        "Ab",
+        "A",
+        "B",
+        "Db",
+        "D",
+        "E",
+        "Gb"
+      ],
+      "descending": [
+        "Gb",
+        "E",
+        "D",
+        "Db",
+        "B",
+        "A",
+        "Ab",
+        "Gb"
+      ],
+      "description": "The Gb Minor scale. An essential scale for mastering piano chords and harmonium melodies.",
+      "longDescription": "Practicing the Gb Minor scale is critical for building finger dexterity on the harmonium. This page teaches you the exact notes and finger positions.",
+      "intervalsDesc": "Follows the standard step pattern for Western scales."
+    },
+    {
+      "id": "g-minor",
+      "name": "G Minor",
+      "slug": "g-minor-scale",
+      "key": "G",
+      "type": "Natural Minor",
+      "difficulty": "Intermediate",
+      "notes": [
+        "G",
+        "A",
+        "Bb",
+        "C",
+        "D",
+        "Eb",
+        "F"
+      ],
+      "ascending": [
+        "G",
+        "A",
+        "Bb",
+        "C",
+        "D",
+        "Eb",
+        "F",
+        "G"
+      ],
+      "descending": [
+        "G",
+        "F",
+        "Eb",
+        "D",
+        "C",
+        "Bb",
+        "A",
+        "G"
+      ],
+      "description": "The G Minor scale. An essential scale for mastering piano chords and harmonium melodies.",
+      "longDescription": "Practicing the G Minor scale is critical for building finger dexterity on the harmonium. This page teaches you the exact notes and finger positions.",
+      "intervalsDesc": "Follows the standard step pattern for Western scales."
+    },
+    {
+      "id": "ab-major",
+      "name": "Ab Major",
+      "slug": "ab-major-scale",
+      "key": "Ab",
+      "type": "Major (Diatonic)",
+      "difficulty": "Intermediate",
+      "notes": [
+        "Ab",
+        "Bb",
+        "C",
+        "Db",
+        "Eb",
+        "F",
+        "G"
+      ],
+      "ascending": [
+        "Ab",
+        "Bb",
+        "C",
+        "Db",
+        "Eb",
+        "F",
+        "G",
+        "Ab"
+      ],
+      "descending": [
+        "Ab",
+        "G",
+        "F",
+        "Eb",
+        "Db",
+        "C",
+        "Bb",
+        "Ab"
+      ],
+      "description": "The Ab Major scale. An essential scale for mastering piano chords and harmonium melodies.",
+      "longDescription": "Practicing the Ab Major scale is critical for building finger dexterity on the harmonium. This page teaches you the exact notes and finger positions.",
+      "intervalsDesc": "Follows the standard step pattern for Western scales."
+    },
+    {
+      "id": "ab-minor",
+      "name": "Ab Minor",
+      "slug": "ab-minor-scale",
+      "key": "Ab",
+      "type": "Natural Minor",
+      "difficulty": "Intermediate",
+      "notes": [
+        "Ab",
+        "Bb",
+        "B",
+        "Db",
+        "Eb",
+        "E",
+        "Gb"
+      ],
+      "ascending": [
+        "Ab",
+        "Bb",
+        "B",
+        "Db",
+        "Eb",
+        "E",
+        "Gb",
+        "Ab"
+      ],
+      "descending": [
+        "Ab",
+        "Gb",
+        "E",
+        "Eb",
+        "Db",
+        "B",
+        "Bb",
+        "Ab"
+      ],
+      "description": "The Ab Minor scale. An essential scale for mastering piano chords and harmonium melodies.",
+      "longDescription": "Practicing the Ab Minor scale is critical for building finger dexterity on the harmonium. This page teaches you the exact notes and finger positions.",
+      "intervalsDesc": "Follows the standard step pattern for Western scales."
+    },
+    {
+      "id": "a-major",
+      "name": "A Major",
+      "slug": "a-major-scale",
+      "key": "A",
+      "type": "Major (Diatonic)",
+      "difficulty": "Intermediate",
+      "notes": [
+        "A",
+        "B",
+        "Db",
+        "D",
+        "E",
+        "Gb",
+        "Ab"
+      ],
+      "ascending": [
+        "A",
+        "B",
+        "Db",
+        "D",
+        "E",
+        "Gb",
+        "Ab",
+        "A"
+      ],
+      "descending": [
+        "A",
+        "Ab",
+        "Gb",
+        "E",
+        "D",
+        "Db",
+        "B",
+        "A"
+      ],
+      "description": "The A Major scale. An essential scale for mastering piano chords and harmonium melodies.",
+      "longDescription": "Practicing the A Major scale is critical for building finger dexterity on the harmonium. This page teaches you the exact notes and finger positions.",
+      "intervalsDesc": "Follows the standard step pattern for Western scales."
+    },
+    {
+      "id": "bb-major",
+      "name": "Bb Major",
+      "slug": "bb-major-scale",
+      "key": "Bb",
+      "type": "Major (Diatonic)",
+      "difficulty": "Intermediate",
+      "notes": [
+        "Bb",
+        "C",
+        "D",
+        "Eb",
+        "F",
+        "G",
+        "A"
+      ],
+      "ascending": [
+        "Bb",
+        "C",
+        "D",
+        "Eb",
+        "F",
+        "G",
+        "A",
+        "Bb"
+      ],
+      "descending": [
+        "Bb",
+        "A",
+        "G",
+        "F",
+        "Eb",
+        "D",
+        "C",
+        "Bb"
+      ],
+      "description": "The Bb Major scale. An essential scale for mastering piano chords and harmonium melodies.",
+      "longDescription": "Practicing the Bb Major scale is critical for building finger dexterity on the harmonium. This page teaches you the exact notes and finger positions.",
+      "intervalsDesc": "Follows the standard step pattern for Western scales."
+    },
+    {
+      "id": "bb-minor",
+      "name": "Bb Minor",
+      "slug": "bb-minor-scale",
+      "key": "Bb",
+      "type": "Natural Minor",
+      "difficulty": "Intermediate",
+      "notes": [
+        "Bb",
+        "C",
+        "Db",
+        "Eb",
+        "F",
+        "Gb",
+        "Ab"
+      ],
+      "ascending": [
+        "Bb",
+        "C",
+        "Db",
+        "Eb",
+        "F",
+        "Gb",
+        "Ab",
+        "Bb"
+      ],
+      "descending": [
+        "Bb",
+        "Ab",
+        "Gb",
+        "F",
+        "Eb",
+        "Db",
+        "C",
+        "Bb"
+      ],
+      "description": "The Bb Minor scale. An essential scale for mastering piano chords and harmonium melodies.",
+      "longDescription": "Practicing the Bb Minor scale is critical for building finger dexterity on the harmonium. This page teaches you the exact notes and finger positions.",
+      "intervalsDesc": "Follows the standard step pattern for Western scales."
+    },
+    {
+      "id": "b-major",
+      "name": "B Major",
+      "slug": "b-major-scale",
+      "key": "B",
+      "type": "Major (Diatonic)",
+      "difficulty": "Intermediate",
+      "notes": [
+        "B",
+        "Db",
+        "Eb",
+        "E",
+        "Gb",
+        "Ab",
+        "Bb"
+      ],
+      "ascending": [
+        "B",
+        "Db",
+        "Eb",
+        "E",
+        "Gb",
+        "Ab",
+        "Bb",
+        "B"
+      ],
+      "descending": [
+        "B",
+        "Bb",
+        "Ab",
+        "Gb",
+        "E",
+        "Eb",
+        "Db",
+        "B"
+      ],
+      "description": "The B Major scale. An essential scale for mastering piano chords and harmonium melodies.",
+      "longDescription": "Practicing the B Major scale is critical for building finger dexterity on the harmonium. This page teaches you the exact notes and finger positions.",
+      "intervalsDesc": "Follows the standard step pattern for Western scales."
+    },
+    {
+      "id": "b-minor",
+      "name": "B Minor",
+      "slug": "b-minor-scale",
+      "key": "B",
+      "type": "Natural Minor",
+      "difficulty": "Intermediate",
+      "notes": [
+        "B",
+        "Db",
+        "D",
+        "E",
+        "Gb",
+        "G",
+        "A"
+      ],
+      "ascending": [
+        "B",
+        "Db",
+        "D",
+        "E",
+        "Gb",
+        "G",
+        "A",
+        "B"
+      ],
+      "descending": [
+        "B",
+        "A",
+        "G",
+        "Gb",
+        "E",
+        "D",
+        "Db",
+        "B"
+      ],
+      "description": "The B Minor scale. An essential scale for mastering piano chords and harmonium melodies.",
+      "longDescription": "Practicing the B Minor scale is critical for building finger dexterity on the harmonium. This page teaches you the exact notes and finger positions.",
+      "intervalsDesc": "Follows the standard step pattern for Western scales."
     }
   ]
 }

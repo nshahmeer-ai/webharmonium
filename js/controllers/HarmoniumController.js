@@ -175,6 +175,28 @@ class HarmoniumController {
       a.href   = url;
       a.download = 'webharmonium-recording.webm';
       a.click();
+      
+      // Also show share modal when they download
+      document.getElementById('viralShareModal').style.display = 'block';
+    });
+
+    // Viral Share Logic
+    document.getElementById('viralShareBtn')?.addEventListener('click', () => {
+      document.getElementById('viralShareModal').style.display = 'block';
+    });
+    document.getElementById('closeShareModal')?.addEventListener('click', () => {
+      document.getElementById('viralShareModal').style.display = 'none';
+    });
+
+    const shareText = encodeURIComponent("Listen to what I just played on the Free Virtual Harmonium! 🎹🎶 Try it yourself: https://webharmonium-ochre.vercel.app");
+    document.getElementById('shareWaBtn')?.addEventListener('click', () => {
+      window.open(`https://api.whatsapp.com/send?text=${shareText}`, '_blank');
+    });
+    document.getElementById('shareFbBtn')?.addEventListener('click', () => {
+      window.open(`https://www.facebook.com/sharer/sharer.php?u=https://webharmonium-ochre.vercel.app&quote=${shareText}`, '_blank');
+    });
+    document.getElementById('shareTwBtn')?.addEventListener('click', () => {
+      window.open(`https://twitter.com/intent/tweet?text=${shareText}`, '_blank');
     });
   }
 

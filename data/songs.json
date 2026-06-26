@@ -19,7 +19,11 @@
           "western": "B3 C4 D4 E4, E4 D4 E4, D4 C4 B3 C4"
         }
       ],
-      "tags": ["Qawwali", "Sufi", "Devotional"]
+      "tags": [
+        "Qawwali",
+        "Sufi",
+        "Devotional"
+      ]
     },
     {
       "slug": "lab-pe-aati-hai-dua",
@@ -40,7 +44,11 @@
           "western": "E4 F4 G4 G4, G4 F4 G4, F4 E4 F4 G4, E4 D4 E4"
         }
       ],
-      "tags": ["Prayer", "Beginner", "School"]
+      "tags": [
+        "Prayer",
+        "Beginner",
+        "School"
+      ]
     },
     {
       "slug": "kun-faya-kun",
@@ -56,7 +64,11 @@
           "western": "C4 D4 E4, D4 C4 B3 A3"
         }
       ],
-      "tags": ["Bollywood", "Sufi", "ARRahman"]
+      "tags": [
+        "Bollywood",
+        "Sufi",
+        "ARRahman"
+      ]
     },
     {
       "slug": "happy-birthday",
@@ -77,7 +89,11 @@
           "western": "C4 C4 D4 C4, G4 F4"
         }
       ],
-      "tags": ["Western", "Beginner", "Universal"]
+      "tags": [
+        "Western",
+        "Beginner",
+        "Universal"
+      ]
     },
     {
       "slug": "ode-to-joy",
@@ -93,7 +109,11 @@
           "western": "E4 E4 F4 G4, G4 F4 E4 D4, C4 C4 D4 E4, E4 D4 D4"
         }
       ],
-      "tags": ["Classical", "Western", "Beethoven"]
+      "tags": [
+        "Classical",
+        "Western",
+        "Beethoven"
+      ]
     },
     {
       "slug": "mo-li-hua",
@@ -109,7 +129,11 @@
           "western": "E4 E4 G4 A4 G4, G4 A4 A4 G4"
         }
       ],
-      "tags": ["Chinese", "Traditional", "Folk"]
+      "tags": [
+        "Chinese",
+        "Traditional",
+        "Folk"
+      ]
     },
     {
       "slug": "my-heart-will-go-on",
@@ -130,7 +154,211 @@
           "western": "E4 D#4 E4 F#4 G#4 F#4"
         }
       ],
-      "tags": ["Western Pop", "Movie Theme", "Love Song"]
+      "tags": [
+        "Western Pop",
+        "Movie Theme",
+        "Love Song"
+      ]
+    },
+    {
+      "slug": "shape-of-you",
+      "title": "Shape of You",
+      "artist": "Ed Sheeran",
+      "scale": "C# Minor",
+      "difficulty": "Intermediate",
+      "description": "Learn to play Shape of You by Ed Sheeran on the harmonium. Get easy step-by-step notes and chords.",
+      "lyrics": [
+        {
+          "line": "Playing Shape of You",
+          "sargam": "Full notation coming soon!",
+          "western": "Full notation coming soon!"
+        }
+      ],
+      "tags": [
+        "Viral",
+        "Pop",
+        "Western"
+      ]
+    },
+    {
+      "slug": "let-it-be",
+      "title": "Let It Be",
+      "artist": "The Beatles",
+      "scale": "C Major",
+      "difficulty": "Intermediate",
+      "description": "Learn to play Let It Be by The Beatles on the harmonium. Get easy step-by-step notes and chords.",
+      "lyrics": [
+        {
+          "line": "Playing Let It Be",
+          "sargam": "Full notation coming soon!",
+          "western": "Full notation coming soon!"
+        }
+      ],
+      "tags": [
+        "Viral",
+        "Pop",
+        "Western"
+      ]
+    },
+    {
+      "slug": "hallelujah",
+      "title": "Hallelujah",
+      "artist": "Leonard Cohen",
+      "scale": "C Major",
+      "difficulty": "Intermediate",
+      "description": "Learn to play Hallelujah by Leonard Cohen on the harmonium. Get easy step-by-step notes and chords.",
+      "lyrics": [
+        {
+          "line": "Playing Hallelujah",
+          "sargam": "Full notation coming soon!",
+          "western": "Full notation coming soon!"
+        }
+      ],
+      "tags": [
+        "Viral",
+        "Pop",
+        "Western"
+      ]
+    },
+    {
+      "slug": "someone-like-you",
+      "title": "Someone Like You",
+      "artist": "Adele",
+      "scale": "A Major",
+      "difficulty": "Intermediate",
+      "description": "Learn to play Someone Like You by Adele on the harmonium. Get easy step-by-step notes and chords.",
+      "lyrics": [
+        {
+          "line": "Playing Someone Like You",
+          "sargam": "Full notation coming soon!",
+          "western": "Full notation coming soon!"
+        }
+      ],
+      "tags": [
+        "Viral",
+        "Pop",
+        "Western"
+      ]
+    },
+    {
+      "slug": "a-thousand-years",
+      "title": "A Thousand Years",
+      "artist": "Christina Perri",
+      "scale": "Bb Major",
+      "difficulty": "Intermediate",
+      "description": "Learn to play A Thousand Years by Christina Perri on the harmonium. Get easy step-by-step notes and chords.",
+      "lyrics": [
+        {
+          "line": "Playing A Thousand Years",
+          "sargam": "Full notation coming soon!",
+          "western": "Full notation coming soon!"
+        }
+      ],
+      "tags": [
+        "Viral",
+        "Pop",
+        "Western"
+      ]
+    },
+    {
+      "slug": "believer",
+      "title": "Believer",
+      "artist": "Imagine Dragons",
+      "scale": "Bb Minor",
+      "difficulty": "Intermediate",
+      "description": "Learn to play Believer by Imagine Dragons on the harmonium. Get easy step-by-step notes and chords.",
+      "lyrics": [
+        {
+          "line": "Playing Believer",
+          "sargam": "Full notation coming soon!",
+          "western": "Full notation coming soon!"
+        }
+      ],
+      "tags": [
+        "Viral",
+        "Pop",
+        "Western"
+      ]
+    },
+    {
+      "slug": "perfect",
+      "title": "Perfect",
+      "artist": "Ed Sheeran",
+      "scale": "Ab Major",
+      "difficulty": "Intermediate",
+      "description": "Learn to play Perfect by Ed Sheeran on the harmonium. Get easy step-by-step notes and chords.",
+      "lyrics": [
+        {
+          "line": "Playing Perfect",
+          "sargam": "Full notation coming soon!",
+          "western": "Full notation coming soon!"
+        }
+      ],
+      "tags": [
+        "Viral",
+        "Pop",
+        "Western"
+      ]
+    },
+    {
+      "slug": "despacito",
+      "title": "Despacito",
+      "artist": "Luis Fonsi",
+      "scale": "B Minor",
+      "difficulty": "Intermediate",
+      "description": "Learn to play Despacito by Luis Fonsi on the harmonium. Get easy step-by-step notes and chords.",
+      "lyrics": [
+        {
+          "line": "Playing Despacito",
+          "sargam": "Full notation coming soon!",
+          "western": "Full notation coming soon!"
+        }
+      ],
+      "tags": [
+        "Viral",
+        "Pop",
+        "Western"
+      ]
+    },
+    {
+      "slug": "billie-jean",
+      "title": "Billie Jean",
+      "artist": "Michael Jackson",
+      "scale": "F# Minor",
+      "difficulty": "Intermediate",
+      "description": "Learn to play Billie Jean by Michael Jackson on the harmonium. Get easy step-by-step notes and chords.",
+      "lyrics": [
+        {
+          "line": "Playing Billie Jean",
+          "sargam": "Full notation coming soon!",
+          "western": "Full notation coming soon!"
+        }
+      ],
+      "tags": [
+        "Viral",
+        "Pop",
+        "Western"
+      ]
+    },
+    {
+      "slug": "bohemian-rhapsody",
+      "title": "Bohemian Rhapsody",
+      "artist": "Queen",
+      "scale": "Bb Major",
+      "difficulty": "Intermediate",
+      "description": "Learn to play Bohemian Rhapsody by Queen on the harmonium. Get easy step-by-step notes and chords.",
+      "lyrics": [
+        {
+          "line": "Playing Bohemian Rhapsody",
+          "sargam": "Full notation coming soon!",
+          "western": "Full notation coming soon!"
+        }
+      ],
+      "tags": [
+        "Viral",
+        "Pop",
+        "Western"
+      ]
     }
   ]
 }

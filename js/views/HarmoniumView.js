@@ -75,6 +75,7 @@ class HarmoniumView {
               <div class="rec-playback" id="recPlayback">
                 <button class="play-btn" id="playBtn" aria-label="Play recording">▶ Play</button>
                 <button class="download-btn" id="downloadBtn" aria-label="Download recording">⬇ Save</button>
+                <button class="share-btn" id="viralShareBtn" aria-label="Share recording" style="background:var(--accent-gold);color:#000;border:none">🚀 Share</button>
               </div>
             </div>
             <div class="keyboard-hint" aria-label="Keyboard shortcuts">
@@ -83,6 +84,22 @@ class HarmoniumView {
             </div>
           </div>
         </div>
+        
+        <!-- Viral Share Modal -->
+        <div id="viralShareModal" class="share-modal" style="display:none;position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);background:var(--surface);border:1px solid var(--accent-gold);padding:30px;border-radius:12px;z-index:9999;box-shadow:0 10px 40px rgba(0,0,0,0.5);text-align:center;max-width:400px;width:90%;">
+          <h3 style="color:var(--text-primary);margin-bottom:10px;font-size:22px">🎉 Awesome Recording!</h3>
+          <p style="color:var(--text-secondary);margin-bottom:24px;font-size:15px;line-height:1.5">Your masterpiece is ready. Share it with your friends or post your downloaded video on TikTok to get featured!</p>
+          <div style="display:flex;gap:10px;justify-content:center;margin-bottom:20px;flex-wrap:wrap">
+            <button id="shareWaBtn" class="btn-wa" style="padding:10px 20px;border-radius:8px;border:none;cursor:pointer">💬 WhatsApp</button>
+            <button id="shareFbBtn" class="btn-fb" style="padding:10px 20px;border-radius:8px;border:none;cursor:pointer">📘 Facebook</button>
+            <button id="shareTwBtn" class="btn-tw" style="padding:10px 20px;border-radius:8px;border:none;cursor:pointer">🐦 Twitter</button>
+          </div>
+          <div style="background:rgba(212,175,55,0.1);border:1px dashed var(--accent-gold);padding:15px;border-radius:8px;margin-bottom:20px;color:var(--text-primary);font-size:14px">
+            📱 Tag <strong>#WebHarmonium</strong> on TikTok or Instagram Reels!
+          </div>
+          <button id="closeShareModal" style="background:transparent;border:1px solid var(--border);color:var(--text-secondary);padding:8px 24px;border-radius:6px;cursor:pointer">Close</button>
+        </div>
+        
       </section>
     `;
   }
