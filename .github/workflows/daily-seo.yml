@@ -2,8 +2,8 @@ name: Daily Autonomous SEO Agent
 
 on:
   schedule:
-    # Runs at 00:00 UTC every day
-    - cron: '0 0 * * *'
+    # Runs at 13:00 UTC every day (9:00 AM EST / 6:00 AM PST - USA morning)
+    - cron: '0 13 * * *'
   workflow_dispatch: # Allows manual trigger from GitHub UI
 
 jobs:
