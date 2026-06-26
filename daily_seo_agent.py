@@ -2,7 +2,7 @@ import json
 import os
 import re
 import datetime
-import google.generativeai as genai
+from google import genai
 
 # Setup Gemini API Key
 API_KEY = os.environ.get("GEMINI_API_KEY")
@@ -10,10 +10,7 @@ if not API_KEY:
     print("No GEMINI_API_KEY found. Exiting.")
     exit(1)
 
-genai.configure(api_key=API_KEY)
-
-# Use the latest model
-model = genai.GenerativeModel('gemini-1.5-pro-latest')
+client = genai.Client(api_key=API_KEY)
 
 def generate_article(topic):
     prompt = f"""
@@ -29,7 +26,10 @@ def generate_article(topic):
     """
     
     try:
-        response = model.generate_content(prompt)
+        response = client.models.generate_content(
+            model='gemini-2.5-flash',
+            contents=prompt,
+        )
         content = response.text
         # Clean up any markdown code blocks if the AI ignored the instruction
         if content.startswith("```html"):
@@ -52,7 +52,10 @@ def generate_meta(topic):
     }}
     """
     try:
-        response = model.generate_content(prompt)
+        response = client.models.generate_content(
+            model='gemini-2.5-flash',
+            contents=prompt,
+        )
         res_text = response.text
         if res_text.startswith("```json"):
             res_text = res_text[7:-3]
