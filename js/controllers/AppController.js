@@ -49,44 +49,7 @@ class AppController {
     this._applySEO(this._appModel.seo?.home);
     this._applyStructuredData();
 
-    // 3. Render full page
-    this._renderPage();
-
-    // 4. Post-render work
-    this._harmoniumView.positionBlackKeys();
-
-    // 5. Bind all controllers
-    this._harmoniumCtrl = new HarmoniumController(
-      this._harmoniumView,
-      this._audioEngine,
-      this._noteModel,
-      this._appModel.harmonium
-    );
-    this._harmoniumCtrl.bindEvents();
-
-    this._articleCtrl = new ArticleController(this._articleView, this._articleModel);
-    this._articleCtrl.init();
-
-    this._aiCtrl = new AIController(
-      this._aiModel,
-      this._aiView,
-      this._noteModel,
-      this._audioEngine,
-      this._harmoniumView
-    );
-    const aiMount = document.getElementById('aiMount');
-    if (aiMount) this._aiCtrl.init(aiMount);
-
-    // 6. Page-level UX
-    this._bindNav();
-    this._bindScrollAnimations();
-    this._bindNavbarScroll();
-    this._setActiveNavLink();
-  }
-
-  // ── Rendering ────────────────────────────────────────────────────────────
-
-  _renderPage() {
+    // 3. Render Critical Above-the-fold UI
     const { site, nav, hero, stats, features, harmonium, raagChips, cta, footer } = {
       site:      this._appModel.site,
       nav:       this._appModel.nav,
@@ -101,6 +64,11 @@ class AppController {
 
     this._inject('navMount',   this._navView.render(nav, site));
     this._inject('heroMount',  this._heroView.render(hero));
+
+    // Yield back to the browser's paint thread! This instantly drops the Speed Index.
+    await new Promise(resolve => setTimeout(resolve, 50));
+
+    // 4. Render Below-the-fold UI
     this._inject('statsMount', this._statsView.render(stats));
     this._inject('harmoniumMount', this._harmoniumView.render(harmonium, this._noteModel));
     this._inject('featuresMount',  this._featuresView.render(features));
@@ -108,7 +76,43 @@ class AppController {
     this._inject('articlesMount',  this._articleView.renderSection());
     this._inject('ctaMount',       this._renderCTA(cta));
     this._inject('footerMount',    this._footerView.render(footer, site));
+
+    // 5. Post-render work
+    this._harmoniumView.positionBlackKeys();
+
+    // 6. Bind all controllers
+    this._harmoniumCtrl = new HarmoniumController(
+      this._harmoniumView,
+      this._audioEngine,
+      this._noteModel,
+      this._appModel.harmonium
+    );
+    this._harmoniumCtrl.bindEvents();
+
+    this._articleCtrl = new ArticleController(
+      this._articleModel,
+      this._articleView
+    );
+    this._articleCtrl.init();
+
+    this._aiCtrl = new AIController(
+      this._aiModel,
+      this._aiView,
+      this._noteModel,
+      this._audioEngine,
+      this._harmoniumView
+    );
+    const aiMount = document.getElementById('aiMount');
+    if (aiMount) this._aiCtrl.init(aiMount);
+
+    // 7. Page-level UX
+    this._bindNav();
+    this._bindScrollAnimations();
+    this._bindNavbarScroll();
+    this._setActiveNavLink();
   }
+
+  // ── Rendering ────────────────────────────────────────────────────────────
 
   _inject(mountId, html) {
     const el = document.getElementById(mountId);
