@@ -3,8 +3,6 @@
    Brand: Modern, clean, educational music platform
    ============================================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Inter:wght@300;400;500;600&family=Montserrat:wght@400;600;700&display=swap');
-
 /* ── CSS Variables ── */
 :root {
   /* Color Palette */
@@ -17,7 +15,7 @@
   --cta:           #22C55E;
   --cta-hover:     #16A34A;
   --text-primary:  #F1F5F9;
-  --text-secondary:#94A3B8;
+  --text-secondary:#CBD5E1; /* Brightened for AAA Accessibility Contrast */
   --text-dark:     #0F172A;
   --border:        rgba(212,175,55,0.18);
   --glass-bg:      rgba(30,41,59,0.72);
