@@ -1,11 +1,11 @@
 {
   "site": {
     "name": "LearnHarmonium",
-    "tagline": "South Asia's #1 Free Harmonium Platform",
-    "description": "South Asia's best free online harmonium platform. Learn, play, and master the harmonium at zero cost.",
+    "tagline": "The World's #1 Free Virtual Harmonium & Pump Organ",
+    "description": "The world's best free online harmonium and pump organ platform. Learn, play, and master the keyboard at zero cost.",
     "url": "https://webharmonium-ochre.vercel.app",
     "year": "2024",
-    "madeWith": "Made with <i data-lucide=\"music\" style=\"width:1em;height:1em;vertical-align:middle;\"></i> for music lovers of South Asia"
+    "madeWith": "Made with <i data-lucide=\"music\" style=\"width:1em;height:1em;vertical-align:middle;\"></i> for music lovers worldwide"
   },
   "nav": {
     "links": [
@@ -56,10 +56,10 @@
     ]
   },
   "hero": {
-    "badge": "South Asia's #1 Free Harmonium Platform",
+    "badge": "The World's #1 Free Virtual Harmonium",
     "h1Line1": "Play & Learn Harmonium",
     "h1Gold": "Online for Free",
-    "lead": "Experience a beautifully crafted virtual harmonium with authentic multi-reed sound synthesis. Learn Sa Re Ga Ma, master Raags, and explore Indian classical music \u2014 no downloads required.",
+    "lead": "Experience a beautifully crafted virtual harmonium and pump organ with authentic multi-reed sound synthesis. Learn Western chords, master Raags, and play global songs \u2014 no downloads required.",
     "cta": [
       {
         "label": "Play Now \u2014 Free",

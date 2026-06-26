@@ -408,6 +408,50 @@
         "parent scales"
       ],
       "publishedAt": "2024-06-04"
+    },
+    {
+      "title": "How to Play Western Piano Chords on a Harmonium",
+      "excerpt": "Learn how to translate standard piano sheet music and chord progressions (C, F, G) onto the harmonium keyboard.",
+      "category": "Theory",
+      "url": "articles/western-chords-on-harmonium",
+      "readTime": "8 min read",
+      "slug": "western-chords-on-harmonium",
+      "keywords": [
+        "western chords",
+        "piano chords on harmonium",
+        "play piano on harmonium",
+        "pump organ chords"
+      ],
+      "publishedAt": "2024-06-05"
+    },
+    {
+      "title": "The Harmonium in Western Music: From Pump Organs to Beatles",
+      "excerpt": "Explore the European origins of the harmonium, its use as a pump organ in Western churches, and its presence in modern pop music.",
+      "category": "Theory",
+      "url": "articles/harmonium-in-western-music",
+      "readTime": "10 min read",
+      "slug": "harmonium-in-western-music",
+      "keywords": [
+        "pump organ",
+        "reed organ",
+        "history of pump organ",
+        "harmonium pop music"
+      ],
+      "publishedAt": "2024-06-06"
+    },
+    {
+      "title": "Harmonium vs. Accordion vs. Piano: What's the Difference?",
+      "excerpt": "A comprehensive comparison of the harmonium with the accordion and piano. Which instrument is right for you?",
+      "category": "Theory",
+      "url": "articles/harmonium-vs-accordion-vs-piano",
+      "readTime": "7 min read",
+      "slug": "harmonium-vs-accordion-vs-piano",
+      "keywords": [
+        "harmonium vs piano",
+        "harmonium vs accordion",
+        "difference between harmonium and piano"
+      ],
+      "publishedAt": "2024-06-07"
     }
   ]
 }

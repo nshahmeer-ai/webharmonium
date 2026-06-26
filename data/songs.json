@@ -57,6 +57,80 @@
         }
       ],
       "tags": ["Bollywood", "Sufi", "ARRahman"]
+    },
+    {
+      "slug": "happy-birthday",
+      "title": "Happy Birthday to You",
+      "artist": "Traditional",
+      "scale": "C Major",
+      "difficulty": "Beginner",
+      "description": "The most recognized song in the English language. A perfect starting point for playing Western melodies on the harmonium or pump organ.",
+      "lyrics": [
+        {
+          "line": "Happy birthday to you",
+          "sargam": "Sa Sa Re Sa, Ma Ga",
+          "western": "C4 C4 D4 C4, F4 E4"
+        },
+        {
+          "line": "Happy birthday to you",
+          "sargam": "Sa Sa Re Sa, Pa Ma",
+          "western": "C4 C4 D4 C4, G4 F4"
+        }
+      ],
+      "tags": ["Western", "Beginner", "Universal"]
+    },
+    {
+      "slug": "ode-to-joy",
+      "title": "Ode to Joy",
+      "artist": "Ludwig van Beethoven",
+      "scale": "C Major",
+      "difficulty": "Beginner",
+      "description": "Beethoven's masterpiece. This simple melody is globally recognized and very easy to play on a virtual piano or harmonium.",
+      "lyrics": [
+        {
+          "line": "Ode to Joy theme",
+          "sargam": "Ga Ga Ma Pa, Pa Ma Ga Re, Sa Sa Re Ga, Ga Re Re",
+          "western": "E4 E4 F4 G4, G4 F4 E4 D4, C4 C4 D4 E4, E4 D4 D4"
+        }
+      ],
+      "tags": ["Classical", "Western", "Beethoven"]
+    },
+    {
+      "slug": "mo-li-hua",
+      "title": "Mo Li Hua (Jasmine Flower)",
+      "artist": "Traditional Chinese",
+      "scale": "F Major Pentatonic",
+      "difficulty": "Intermediate",
+      "description": "A famous traditional Chinese folk song. Its pentatonic scale makes it sound beautiful on reed instruments.",
+      "lyrics": [
+        {
+          "line": "Hao yi duo mei li de mo li hua",
+          "sargam": "Ga Ga Pa Dha Pa, Pa Dha Dha Pa",
+          "western": "E4 E4 G4 A4 G4, G4 A4 A4 G4"
+        }
+      ],
+      "tags": ["Chinese", "Traditional", "Folk"]
+    },
+    {
+      "slug": "my-heart-will-go-on",
+      "title": "My Heart Will Go On",
+      "artist": "Celine Dion",
+      "scale": "E Major",
+      "difficulty": "Intermediate",
+      "description": "The iconic theme from Titanic. Very popular worldwide and sounds highly emotional on the harmonium.",
+      "lyrics": [
+        {
+          "line": "Every night in my dreams",
+          "sargam": "Sa Sa Sa Sa 'Ni Sa",
+          "western": "E4 E4 E4 E4 D#4 E4"
+        },
+        {
+          "line": "I see you, I feel you",
+          "sargam": "Sa 'Ni Sa Re Ga Re",
+          "western": "E4 D#4 E4 F#4 G#4 F#4"
+        }
+      ],
+      "tags": ["Western Pop", "Movie Theme", "Love Song"]
     }
   ]
 }
