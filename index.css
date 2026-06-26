@@ -170,11 +170,13 @@ p, .body-text {
 }
 .btn-cta {
   background: var(--cta);
-  color: #fff;
+  color: var(--primary); /* Dark text on bright green for AAA contrast */
+  font-weight: 800;
   box-shadow: 0 4px 20px rgba(34,197,94,0.35);
 }
 .btn-cta:hover {
   background: var(--cta-hover);
+  color: var(--primary);
   transform: translateY(-2px);
   box-shadow: 0 8px 28px rgba(34,197,94,0.45);
 }

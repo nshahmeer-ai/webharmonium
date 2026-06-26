@@ -6,8 +6,11 @@ def optimize_html_file(filepath):
     with open(filepath, 'r', encoding='utf-8') as f:
         html = f.read()
 
-    # 1. Inject Google Fonts Asynchronously (Non-Blocking)
+    # 1. Inject Google Fonts Asynchronously (Non-Blocking) + CSS Preload
     font_tags = """
+  <!-- Preload core CSS to fix 140ms Render-Blocking warning -->
+  <link rel="preload" href="/index.css" as="style">
+  
   <!-- Preconnect and Async Google Fonts for Mobile PageSpeed -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
